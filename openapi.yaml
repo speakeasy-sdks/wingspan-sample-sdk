@@ -1,0 +1,5536 @@
+openapi: 3.1.0
+info:
+  title: Wingspan Users API
+  description: Users
+  termsOfService: 'https://www.wingspan.app'
+  contact:
+    name: Wingspan API Support
+    url: 'https://www.wingspan.app'
+    email: support@wingspan.app
+  license:
+    name: UNLICENSED
+    url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
+  version: 1.0.0
+servers:
+  - url: 'https://api.wingspan.app/users'
+    description: Wingspan's Users API in Production
+  - url: 'https://stagingapi.wingspan.app/payments'
+    description: Wingspan's Users API in Staging
+security: []
+components:
+  schemas:
+    SessionCreateRequest:
+      type: object
+      properties:
+        email:
+          type:
+            - string
+            - 'null'
+        expiration:
+          type:
+            - string
+            - 'null'
+        otpExpiration:
+          type:
+            - string
+            - 'null'
+        password:
+          type:
+            - string
+            - 'null'
+    UserCreateRequest:
+      type: object
+      properties:
+        email:
+          type: string
+        notificationSettings:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/UserNotificationSettings'
+        password:
+          type:
+            - string
+            - 'null'
+        profile:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/UserProfile'
+        settings:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/NewUserSettings'
+        status:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Pending
+            - Active
+            - Disabled
+            - null
+      required:
+        - email
+    NewUser:
+      type: object
+      properties:
+        createdAt:
+          type: string
+        email:
+          type: string
+        eventActors:
+          $ref: >-
+            #/components/schemas/87539cb97aa7616e350fc0d23c5a49177ea4c4a8bd00ec2a2cfd2a9a5c4e648a
+        intercomUserHash:
+          type: string
+        labels:
+          $ref: '#/components/schemas/LabelsDictionary'
+        notificationSettings:
+          $ref: '#/components/schemas/UserNotificationSettings'
+        phone:
+          $ref: '#/components/schemas/Phone'
+        profile:
+          $ref: '#/components/schemas/UserProfile'
+        status:
+          type: string
+          enum:
+            - Pending
+            - Active
+            - Disabled
+        tag:
+          type: string
+        updatedAt:
+          type: string
+        userId:
+          type: string
+        userRoles:
+          $ref: '#/components/schemas/UserRoles'
+        emailVerificationState:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/EmailVerificationState'
+        isPasswordSet:
+          type:
+            - boolean
+            - 'null'
+        organizationAssociation:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/OrganizationAccount'
+        settings:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/NewUserSettings'
+      required:
+        - createdAt
+        - email
+        - eventActors
+        - intercomUserHash
+        - labels
+        - notificationSettings
+        - phone
+        - profile
+        - status
+        - tag
+        - updatedAt
+        - userId
+        - userRoles
+    LinkTokenRequest:
+      type: object
+      properties: {}
+    LinkTokenResponse:
+      type: object
+      properties:
+        expiration:
+          type: string
+        linkToken:
+          type: string
+      required:
+        - expiration
+        - linkToken
+    Account:
+      type: object
+      properties:
+        accountId:
+          type: string
+        createdAt:
+          type: string
+        eventActors:
+          $ref: >-
+            #/components/schemas/87539cb97aa7616e350fc0d23c5a49177ea4c4a8bd00ec2a2cfd2a9a5c4e648a
+        labels:
+          $ref: '#/components/schemas/LabelsDictionary'
+        name:
+          type: string
+        numbers:
+          $ref: '#/components/schemas/AccountNumbers'
+        status:
+          type: string
+          enum:
+            - Active
+            - Inactive
+            - Pending
+            - Disconnected
+            - Ephemeral
+        type:
+          type: string
+          enum:
+            - Depository
+            - Credit
+        updatedAt:
+          type: string
+        userId:
+          type: string
+        userRoles:
+          $ref: '#/components/schemas/UserRoles'
+        canBeUsedFor:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/AccountPurpose'
+        country:
+          type:
+            - string
+            - 'null'
+        currency:
+          type:
+            - string
+            - 'null'
+        events:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/AccountEvents'
+        externalIds:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/PlaidExternalIds'
+        institution:
+          type:
+            - string
+            - 'null'
+        institutionId:
+          type:
+            - string
+            - 'null'
+        integration:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/662b4b108cbbf88d6c8da2cc52e8dc2fcc4e24449d66b34b20beeb55bad5790d
+        mask:
+          type:
+            - string
+            - 'null'
+        owners:
+          type:
+            - array
+            - 'null'
+          items:
+            type:
+              - string
+              - 'null'
+        publicToken:
+          type:
+            - string
+            - 'null'
+        subType:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Paypal
+            - Checking
+            - Savings
+            - CreditCard
+            - null
+        usage:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Business
+            - Personal
+            - Mixed
+            - null
+        usedFor:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/AccountPurpose'
+      required:
+        - accountId
+        - createdAt
+        - eventActors
+        - labels
+        - name
+        - numbers
+        - status
+        - type
+        - updatedAt
+        - userId
+        - userRoles
+    AccountCreateRequest:
+      type: object
+      properties:
+        canBeUsedFor:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/AccountPurpose'
+        country:
+          type:
+            - string
+            - 'null'
+        currency:
+          type:
+            - string
+            - 'null'
+        institution:
+          type:
+            - string
+            - 'null'
+        mask:
+          type:
+            - string
+            - 'null'
+        name:
+          type:
+            - string
+            - 'null'
+        numbers:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/AccountNumbers'
+        owners:
+          type:
+            - array
+            - 'null'
+          items:
+            type:
+              - string
+              - 'null'
+        publicToken:
+          type:
+            - string
+            - 'null'
+        status:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Active
+            - Inactive
+            - Pending
+            - Disconnected
+            - Ephemeral
+            - null
+        subType:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Paypal
+            - Checking
+            - Savings
+            - CreditCard
+            - null
+        type:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Depository
+            - Credit
+            - null
+        usage:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Business
+            - Personal
+            - Mixed
+            - null
+        usedFor:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/AccountPurpose'
+    AccountCreateResponse:
+      oneOf:
+        - $ref: '#/components/schemas/Account'
+        - type: array
+          items:
+            $ref: '#/components/schemas/Account'
+    AccountUpdateRequest:
+      type: object
+      properties:
+        integration:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/662b4b108cbbf88d6c8da2cc52e8dc2fcc4e24449d66b34b20beeb55bad5790d
+        name:
+          type:
+            - string
+            - 'null'
+        status:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Active
+            - Inactive
+            - Pending
+            - Disconnected
+            - Ephemeral
+            - null
+        usage:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Business
+            - Personal
+            - Mixed
+            - null
+        usedFor:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/AccountPurpose'
+    GuestAccountRequest:
+      type: object
+      properties:
+        accountId:
+          type: string
+        publicToken:
+          type: string
+      required:
+        - accountId
+        - publicToken
+    AccountNumbers:
+      type: object
+      properties:
+        account:
+          type: string
+        routing:
+          type:
+            - string
+            - 'null'
+        routingSecondary:
+          type:
+            - string
+            - 'null'
+        routingWire:
+          type:
+            - string
+            - 'null'
+      required:
+        - account
+    OtpSessionCreateRequest:
+      type: object
+      properties:
+        appRedirectPath:
+          type:
+            - string
+            - 'null'
+        channel:
+          type:
+            - string
+            - 'null'
+          enum:
+            - SMS
+            - Email
+            - null
+    CompletePhoneVerificationRequest:
+      type: object
+      properties:
+        code:
+          type: string
+      required:
+        - code
+    ApiSessionCreateRequest:
+      type: object
+      properties:
+        expiration:
+          type:
+            - string
+            - 'null'
+        isUnlimitedExpiration:
+          type:
+            - boolean
+            - 'null'
+        labels:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/LabelsDictionary'
+    ApiSessionResponse:
+      type: object
+      properties:
+        expiration:
+          type: string
+        isUnlimitedExpiration:
+          type: boolean
+        sessionId:
+          type: string
+        sessionType:
+          type: string
+          enum:
+            - User
+            - API
+            - Guest
+        labels:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/LabelsDictionary'
+        token:
+          type:
+            - string
+            - 'null'
+        userId:
+          type:
+            - string
+            - 'null'
+      required:
+        - expiration
+        - isUnlimitedExpiration
+        - sessionId
+        - sessionType
+    ApiSessionUpdateRequest:
+      type: object
+      properties:
+        expiration:
+          type:
+            - string
+            - 'null'
+        isUnlimitedExpiration:
+          type:
+            - boolean
+            - 'null'
+        labels:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/LabelsDictionary'
+    UserUpdateRequest:
+      type: object
+      properties:
+        email:
+          type:
+            - string
+            - 'null'
+        notificationSettings:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/UserNotificationSettings'
+        password:
+          type:
+            - string
+            - 'null'
+        profile:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/UserProfile'
+        tag:
+          type:
+            - string
+            - 'null'
+    MemberCreateRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+        profile:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/MemberProfileWrite'
+      required:
+        - userId
+    Member:
+      type: object
+      properties:
+        createdAt:
+          type: string
+        enabledServices:
+          $ref: '#/components/schemas/EnabledServices'
+        eventActors:
+          $ref: >-
+            #/components/schemas/87539cb97aa7616e350fc0d23c5a49177ea4c4a8bd00ec2a2cfd2a9a5c4e648a
+        labels:
+          $ref: '#/components/schemas/LabelsDictionary'
+        memberId:
+          type: string
+        profile:
+          $ref: '#/components/schemas/MemberProfile'
+        serviceStatus:
+          $ref: '#/components/schemas/ServiceStatus'
+        updatedAt:
+          type: string
+        user:
+          $ref: '#/components/schemas/NewUser'
+        userRoles:
+          $ref: '#/components/schemas/UserRoles'
+        advocateId:
+          type:
+            - string
+            - 'null'
+      required:
+        - createdAt
+        - enabledServices
+        - eventActors
+        - labels
+        - memberId
+        - profile
+        - serviceStatus
+        - updatedAt
+        - user
+        - userRoles
+    MemberUpdateRequest:
+      type: object
+      properties:
+        memberId:
+          type: string
+        profile:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/MemberProfileWrite'
+      required:
+        - memberId
+    MemberAdvocate:
+      type: object
+      properties:
+        description:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        memberAdvocateId:
+          type: string
+        photoUrl:
+          type:
+            - string
+            - 'null'
+        schedulingUrl:
+          type:
+            - string
+            - 'null'
+      required:
+        - description
+        - firstName
+        - lastName
+        - memberAdvocateId
+    PasswordResetRequest:
+      type: object
+      properties:
+        email:
+          type: string
+        userType:
+          type: string
+          enum:
+            - Member
+            - Client
+      required:
+        - email
+        - userType
+    GrantedSubscriberResponse:
+      type: object
+      properties:
+        _id:
+          type: string
+        grantorId:
+          type: string
+        memberId:
+          type: string
+        package:
+          type: string
+          enum:
+            - None
+            - Benefits
+            - Essentials
+            - Professional
+            - Corporate
+        packageTier:
+          type: string
+          enum:
+            - Basic
+            - Premium
+        status:
+          type: string
+          enum:
+            - Pending
+            - Active
+            - Canceled
+        subscriptionGrantId:
+          type: string
+      required:
+        - _id
+        - grantorId
+        - memberId
+        - package
+        - packageTier
+        - status
+        - subscriptionGrantId
+    SubscriptionGrantCreateRequest:
+      type: object
+      properties:
+        granteeId:
+          type: string
+        package:
+          type: string
+          enum:
+            - None
+            - Benefits
+            - Essentials
+            - Professional
+            - Corporate
+        packageTier:
+          type: string
+          enum:
+            - Basic
+            - Premium
+      required:
+        - granteeId
+        - package
+        - packageTier
+    SubscriptionGrantResponse:
+      type: object
+      properties:
+        createdAt:
+          type: string
+        eventActors:
+          $ref: >-
+            #/components/schemas/87539cb97aa7616e350fc0d23c5a49177ea4c4a8bd00ec2a2cfd2a9a5c4e648a
+        granteeId:
+          type: string
+        granteeMember:
+          $ref: '#/components/schemas/RedactedMember'
+        granteeUser:
+          $ref: '#/components/schemas/RedactedUser'
+        grantorMember:
+          $ref: '#/components/schemas/RedactedMember'
+        grantorUser:
+          $ref: '#/components/schemas/RedactedUser'
+        labels:
+          $ref: '#/components/schemas/LabelsDictionary'
+        memberId:
+          type: string
+        package:
+          type: string
+          enum:
+            - None
+            - Benefits
+            - Essentials
+            - Professional
+            - Corporate
+        packageTier:
+          type: string
+          enum:
+            - Basic
+            - Premium
+        status:
+          type: string
+          enum:
+            - Pending
+            - Active
+            - Canceled
+        subscriptionGrantId:
+          type: string
+        updatedAt:
+          type: string
+        userRoles:
+          $ref: '#/components/schemas/UserRoles'
+      required:
+        - createdAt
+        - eventActors
+        - granteeId
+        - granteeMember
+        - granteeUser
+        - grantorMember
+        - grantorUser
+        - labels
+        - memberId
+        - package
+        - packageTier
+        - status
+        - subscriptionGrantId
+        - updatedAt
+        - userRoles
+    SubscriptionGrantUpdateRequest:
+      type: object
+      properties:
+        package:
+          type:
+            - string
+            - 'null'
+          enum:
+            - None
+            - Benefits
+            - Essentials
+            - Professional
+            - Corporate
+            - null
+        packageTier:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Basic
+            - Premium
+            - null
+    SubscriptionCreateRequest:
+      type: object
+      properties:
+        discountCode:
+          type:
+            - string
+            - 'null'
+        package:
+          type:
+            - string
+            - 'null'
+          enum:
+            - None
+            - Benefits
+            - Essentials
+            - Professional
+            - Corporate
+            - null
+        packageTier:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Basic
+            - Premium
+            - null
+        paymentMethodId:
+          type:
+            - string
+            - 'null'
+        planId:
+          type:
+            - string
+            - 'null'
+        subscriptionGrantId:
+          type:
+            - string
+            - 'null'
+        term:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Yearly
+            - Monthly
+            - null
+    Subscription:
+      type: object
+      properties:
+        createdAt:
+          type: string
+        currentPeriodEnd:
+          type: string
+        currentPeriodStart:
+          type: string
+        discountCode:
+          type: string
+        eventActors:
+          $ref: >-
+            #/components/schemas/87539cb97aa7616e350fc0d23c5a49177ea4c4a8bd00ec2a2cfd2a9a5c4e648a
+        gracePeriodEnd:
+          type: string
+        labels:
+          $ref: '#/components/schemas/LabelsDictionary'
+        latestPaymentStatus:
+          type: string
+          enum:
+            - Failed
+            - Succeeded
+            - ActionRequired
+        memberId:
+          type: string
+        package:
+          type: string
+          enum:
+            - None
+            - Benefits
+            - Essentials
+            - Professional
+            - Corporate
+        packageTier:
+          type: string
+          enum:
+            - Basic
+            - Premium
+        previouslyBilled:
+          $ref: '#/components/schemas/PreviouslyBilled'
+        status:
+          type: string
+          enum:
+            - incomplete
+            - incomplete_expired
+            - trialing
+            - active
+            - past_due
+            - canceled
+            - unpaid
+        subscriptionId:
+          type: string
+        term:
+          type: string
+          enum:
+            - Yearly
+            - Monthly
+        trialEnd:
+          type: string
+        updatedAt:
+          type: string
+        userRoles:
+          $ref: '#/components/schemas/UserRoles'
+        cancelAtPeriodEnd:
+          type:
+            - boolean
+            - 'null'
+        nextBillingAmount:
+          type:
+            - number
+            - 'null'
+        scheduledChanges:
+          type:
+            - array
+            - 'null'
+          items:
+            oneOf:
+              - type: 'null'
+              - $ref: '#/components/schemas/ScheduledChange'
+        subscriptionGrantId:
+          type:
+            - string
+            - 'null'
+      required:
+        - createdAt
+        - currentPeriodEnd
+        - currentPeriodStart
+        - discountCode
+        - eventActors
+        - gracePeriodEnd
+        - labels
+        - latestPaymentStatus
+        - memberId
+        - package
+        - packageTier
+        - previouslyBilled
+        - status
+        - subscriptionId
+        - term
+        - trialEnd
+        - updatedAt
+        - userRoles
+    SubscriptionUpdateRequest:
+      type: object
+      properties:
+        discountCode:
+          type:
+            - string
+            - 'null'
+        package:
+          type:
+            - string
+            - 'null'
+          enum:
+            - None
+            - Benefits
+            - Essentials
+            - Professional
+            - Corporate
+            - null
+        packageTier:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Basic
+            - Premium
+            - null
+        paymentMethodId:
+          type:
+            - string
+            - 'null'
+        planId:
+          type:
+            - string
+            - 'null'
+        subscriptionGrantId:
+          type:
+            - string
+            - 'null'
+        term:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Yearly
+            - Monthly
+            - null
+    Plan:
+      type: object
+      properties:
+        amount:
+          type: number
+        currency:
+          type: string
+        interval:
+          type: string
+          enum:
+            - day
+            - week
+            - month
+            - year
+        planId:
+          type: string
+        title:
+          type: string
+        trialPeriodDays:
+          type: number
+      required:
+        - amount
+        - currency
+        - interval
+        - planId
+        - title
+        - trialPeriodDays
+    PaymentReceiptWithCharge:
+      type: object
+      properties:
+        amountPaid:
+          type: number
+        charge:
+          $ref: '#/components/schemas/Charge'
+        invoiceId:
+          type: string
+        invoicePdf:
+          type: string
+        invoiceStatus:
+          type: string
+          enum:
+            - draft
+            - open
+            - paid
+            - uncollectible
+            - void
+        nextPaymentAttempt:
+          type: string
+        paidAt:
+          type: string
+        periodEnd:
+          type: string
+        periodStart:
+          type: string
+        startingBalance:
+          type: number
+      required:
+        - amountPaid
+        - charge
+        - invoiceId
+        - invoicePdf
+        - invoiceStatus
+        - nextPaymentAttempt
+        - paidAt
+        - periodEnd
+        - periodStart
+        - startingBalance
+    CreditCard:
+      type: object
+      properties:
+        cardBrand:
+          type:
+            - string
+            - 'null'
+        cardHolderName:
+          type:
+            - string
+            - 'null'
+        discount:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Discount'
+        expiryDate:
+          type:
+            - string
+            - 'null'
+        integration:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/1ec70b8932527ff4790394003fff4dc0129da172d7ffa7d79fdfb7db427d1746
+        last4:
+          type:
+            - string
+            - 'null'
+        paymentMethodId:
+          type:
+            - string
+            - 'null'
+    PaymentMethodWriteRequest:
+      type: object
+      properties:
+        discountCode:
+          type:
+            - string
+            - 'null'
+        paymentMethodId:
+          type:
+            - string
+            - 'null'
+    ClientResponse:
+      type: object
+      properties:
+        clientId:
+          type: string
+        createdAt:
+          type: string
+        enabledServices:
+          $ref: '#/components/schemas/EnabledServices'
+        eventActors:
+          $ref: >-
+            #/components/schemas/87539cb97aa7616e350fc0d23c5a49177ea4c4a8bd00ec2a2cfd2a9a5c4e648a
+        labels:
+          $ref: '#/components/schemas/LabelsDictionary'
+        profile:
+          $ref: '#/components/schemas/ClientProfile'
+        updatedAt:
+          type: string
+        user:
+          $ref: '#/components/schemas/NewUser'
+        userRoles:
+          $ref: '#/components/schemas/UserRoles'
+      required:
+        - clientId
+        - createdAt
+        - enabledServices
+        - eventActors
+        - labels
+        - profile
+        - updatedAt
+        - user
+        - userRoles
+    ClientCreateRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+        profile:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/ClientProfileCreate'
+      required:
+        - userId
+    ClientUpdateRequest:
+      type: object
+      properties:
+        clientId:
+          type: string
+        profile:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/ClientProfileUpdate'
+      required:
+        - clientId
+    UserTagResponse:
+      type: object
+      properties:
+        user:
+          $ref: '#/components/schemas/RedactedUser'
+        userId:
+          type: string
+        member:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/RedactedMember'
+      required:
+        - user
+        - userId
+    UserByEmailResponse:
+      type: object
+      properties:
+        user:
+          $ref: '#/components/schemas/RedactedUser'
+        userId:
+          type: string
+      required:
+        - user
+        - userId
+    PublicUserResponse:
+      type: object
+      properties:
+        user:
+          $ref: '#/components/schemas/RedactedUser'
+        userId:
+          type: string
+        member:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/RedactedMember'
+      required:
+        - user
+        - userId
+    SignInWithGoogleRequest:
+      type: object
+      properties:
+        idToken:
+          type: string
+      required:
+        - idToken
+    SessionResponse:
+      type: object
+      properties:
+        expiration:
+          type: string
+        sessionType:
+          type: string
+          enum:
+            - User
+            - API
+            - Guest
+        labels:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/LabelsDictionary'
+        token:
+          type:
+            - string
+            - 'null'
+        userId:
+          type:
+            - string
+            - 'null'
+      required:
+        - expiration
+        - sessionType
+    BeginExistingEmailVerificationRequest:
+      type: object
+      properties:
+        redirectPath:
+          type:
+            - string
+            - 'null'
+    EmailVerificationResponse:
+      type: object
+      properties:
+        email:
+          type: string
+        status:
+          type: string
+          enum:
+            - Pending
+            - Verified
+        userId:
+          type: string
+      required:
+        - email
+        - status
+        - userId
+    BeginEmailVerificationRequest:
+      type: object
+      properties:
+        email:
+          type: string
+        redirectPath:
+          type:
+            - string
+            - 'null'
+      required:
+        - email
+    CompleteEmailVerificationRequest:
+      type: object
+      properties:
+        emailVerificationId:
+          type: string
+      required:
+        - emailVerificationId
+    BeginPhoneVerificationRequest:
+      type: object
+      properties:
+        phone:
+          type: string
+        channel:
+          type:
+            - string
+            - 'null'
+          enum:
+            - PhoneCall
+            - SMS
+            - null
+      required:
+        - phone
+    PhoneVerificationResponse:
+      type: object
+      properties:
+        phone:
+          type: string
+        session:
+          $ref: '#/components/schemas/SessionResponse'
+        status:
+          type: string
+          enum:
+            - Pending
+            - Verified
+        userId:
+          type: string
+      required:
+        - phone
+        - session
+        - status
+        - userId
+    SsoSessionCreateRequest:
+      type: object
+      properties:
+        singleSignOnCode:
+          type: string
+      required:
+        - singleSignOnCode
+    AuthenticationRequest:
+      type: object
+      properties:
+        email:
+          type: string
+      required:
+        - email
+    AuthenticationRequestResponse:
+      type: object
+      properties:
+        authenticationStrategy:
+          type: string
+          enum:
+            - Password
+            - SingleSignOn
+        authenticationUrl:
+          type:
+            - string
+            - 'null'
+      required:
+        - authenticationStrategy
+    AuthorizationCreateRequest:
+      type: object
+      properties:
+        requestingUserId:
+          type: string
+        allowedAction:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Read
+            - Write
+            - null
+        allowedScope:
+          type:
+            - string
+            - 'null'
+        allowedScopeGroupId:
+          type:
+            - string
+            - 'null'
+        authorizationId:
+          type:
+            - string
+            - 'null'
+        scopeModifications:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/ScopeModificationsMap'
+      required:
+        - requestingUserId
+    AuthorizationResponse:
+      type: object
+      properties:
+        createdAt:
+          type: string
+        eventActors:
+          $ref: >-
+            #/components/schemas/87539cb97aa7616e350fc0d23c5a49177ea4c4a8bd00ec2a2cfd2a9a5c4e648a
+        labels:
+          $ref: '#/components/schemas/LabelsDictionary'
+        principalMember:
+          $ref: '#/components/schemas/RedactedMember'
+        principalUser:
+          $ref: '#/components/schemas/RedactedUser'
+        requestingMember:
+          $ref: '#/components/schemas/RedactedMember'
+        requestingUser:
+          $ref: '#/components/schemas/RedactedUser'
+        updatedAt:
+          type: string
+        userId:
+          type: string
+        userRoles:
+          $ref: '#/components/schemas/UserRoles'
+        allowedAction:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Read
+            - Write
+            - null
+        allowedScope:
+          type:
+            - string
+            - 'null'
+        allowedScopeGroupId:
+          type:
+            - string
+            - 'null'
+        authorizationId:
+          type:
+            - string
+            - 'null'
+        requestingUserId:
+          type:
+            - string
+            - 'null'
+        scopeModifications:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/ScopeModificationsMap'
+      required:
+        - createdAt
+        - eventActors
+        - labels
+        - principalMember
+        - principalUser
+        - requestingMember
+        - requestingUser
+        - updatedAt
+        - userId
+        - userRoles
+    AuthorizationListResponse:
+      type: array
+      items:
+        $ref: '#/components/schemas/AuthorizationResponse'
+    AuthorizationScopeGroup:
+      type: object
+      properties:
+        scopeGroupId:
+          type: string
+      required:
+        - scopeGroupId
+    AuthorizationScopes:
+      type: object
+      properties:
+        Read:
+          type:
+            - array
+            - 'null'
+          items:
+            type:
+              - string
+              - 'null'
+        Write:
+          type:
+            - array
+            - 'null'
+          items:
+            type:
+              - string
+              - 'null'
+    AuthorizationUpdateRequest:
+      type: object
+      properties:
+        allowedAction:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Read
+            - Write
+            - null
+        allowedScope:
+          type:
+            - string
+            - 'null'
+        allowedScopeGroupId:
+          type:
+            - string
+            - 'null'
+        requestingUserId:
+          type:
+            - string
+            - 'null'
+    AuthorizedAccountsResponse:
+      type: array
+      items:
+        $ref: '#/components/schemas/AuthorizedAccount'
+    Activity:
+      type: object
+      properties:
+        events:
+          $ref: '#/components/schemas/ActivityEvents'
+        flows:
+          $ref: '#/components/schemas/Flows'
+        userId:
+          type: string
+        context:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/ActivityContext'
+      required:
+        - events
+        - flows
+        - userId
+    ActivityCreateRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+      required:
+        - userId
+    ActivityUpdateRequest:
+      type: object
+      properties:
+        context:
+          anyOf:
+            - type: 'null'
+            - type: object
+        events:
+          anyOf:
+            - type: 'null'
+            - type: object
+        flows:
+          anyOf:
+            - type: 'null'
+            - type: object
+    Occupation:
+      type: object
+      properties:
+        category:
+          type: string
+        mccCode:
+          type: string
+        jobs:
+          anyOf:
+            - type: 'null'
+            - {}
+      required:
+        - category
+        - mccCode
+    NextgenSubscriptionPlan:
+      type: object
+      properties:
+        level:
+          type: number
+        name:
+          type: string
+        planId:
+          type: string
+        planType:
+          type: string
+          enum:
+            - Base
+            - Benefits
+            - Corporate
+            - Service
+        price:
+          type: number
+        prices:
+          $ref: >-
+            #/components/schemas/629d384730e878960087338a314c3117c9abb8337ea9c58dda95ee9d8385a278
+        partner:
+          type:
+            - string
+            - 'null'
+          enum:
+            - USA
+            - null
+      required:
+        - level
+        - name
+        - planId
+        - planType
+        - price
+        - prices
+    NextgenSubscriptionResponse:
+      type: object
+      properties:
+        createdAt:
+          type: string
+        currentPeriodEnd:
+          type: string
+        currentPeriodStart:
+          type: string
+        discounts:
+          type: array
+          items:
+            $ref: '#/components/schemas/NextgenSubscriptionDiscount'
+        eventActors:
+          $ref: >-
+            #/components/schemas/87539cb97aa7616e350fc0d23c5a49177ea4c4a8bd00ec2a2cfd2a9a5c4e648a
+        gracePeriodEnd:
+          type: string
+        labels:
+          $ref: '#/components/schemas/LabelsDictionary'
+        memberId:
+          type: string
+        plan:
+          $ref: '#/components/schemas/NextgenSubscriptionPlan'
+        planId:
+          type: string
+        price:
+          $ref: '#/components/schemas/NextgenSubscriptionPrice'
+        quantity:
+          type: number
+        status:
+          type: string
+          enum:
+            - Active
+            - Canceled
+        subscriptionEndDate:
+          type: string
+        subscriptionId:
+          type: string
+        subscriptionStart:
+          type: string
+        term:
+          type: string
+          enum:
+            - Yearly
+            - Monthly
+        units:
+          type: string
+          enum:
+            - Month
+        updatedAt:
+          type: string
+        userRoles:
+          $ref: '#/components/schemas/UserRoles'
+        cancelAtPeriodEnd:
+          type:
+            - boolean
+            - 'null'
+      required:
+        - createdAt
+        - currentPeriodEnd
+        - currentPeriodStart
+        - discounts
+        - eventActors
+        - gracePeriodEnd
+        - labels
+        - memberId
+        - plan
+        - planId
+        - price
+        - quantity
+        - status
+        - subscriptionEndDate
+        - subscriptionId
+        - subscriptionStart
+        - term
+        - units
+        - updatedAt
+        - userRoles
+    LocationResponse:
+      type: object
+      properties:
+        countryName:
+          type: string
+        isoCode:
+          type: string
+      required:
+        - countryName
+        - isoCode
+    AccountRequirementsRequest:
+      type: object
+      properties:
+        country:
+          type: string
+        currency:
+          type: string
+      required:
+        - country
+        - currency
+    AccountRequirementsResponse:
+      type: object
+      properties:
+        accountNumber:
+          $ref: >-
+            #/components/schemas/9ebbbc3cd350921a45b309ded4e5f141c39010cff4692acdd754cd0084136a62
+        routing:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/9ebbbc3cd350921a45b309ded4e5f141c39010cff4692acdd754cd0084136a62
+        routingSecondary:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/9ebbbc3cd350921a45b309ded4e5f141c39010cff4692acdd754cd0084136a62
+      required:
+        - accountNumber
+    OrganizationUserAssociation:
+      type: object
+      properties:
+        inheritanceStrategy:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/OrganizationInheritanceStrategy'
+        parentUserId:
+          type:
+            - string
+            - 'null'
+    OrganizationAccount:
+      type: object
+      properties:
+        childUserId:
+          type: string
+        createdAt:
+          type: string
+        eventActors:
+          $ref: >-
+            #/components/schemas/87539cb97aa7616e350fc0d23c5a49177ea4c4a8bd00ec2a2cfd2a9a5c4e648a
+        inheritanceStrategy:
+          $ref: '#/components/schemas/OrganizationInheritanceStrategy'
+        labels:
+          $ref: '#/components/schemas/LabelsDictionary'
+        organizationId:
+          type: string
+        parentUserId:
+          type: string
+        updatedAt:
+          type: string
+        userId:
+          type: string
+        userRoles:
+          $ref: '#/components/schemas/UserRoles'
+        billingUserId:
+          type:
+            - string
+            - 'null'
+      required:
+        - childUserId
+        - createdAt
+        - eventActors
+        - inheritanceStrategy
+        - labels
+        - organizationId
+        - parentUserId
+        - updatedAt
+        - userId
+        - userRoles
+    OrganizationUserAssociationUpdate:
+      type: object
+      properties:
+        inheritanceStrategy:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/OrganizationInheritanceStrategy'
+    FlatfileAuthTokenRequest:
+      type: object
+      properties:
+        embedId:
+          type: string
+      required:
+        - embedId
+    FlatfileAuthTokenResponse:
+      type: object
+      properties:
+        token:
+          type: string
+      required:
+        - token
+    UserProfile:
+      type: object
+      properties:
+        dob:
+          type:
+            - string
+            - 'null'
+        firstName:
+          type:
+            - string
+            - 'null'
+        gender:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Male
+            - Female
+            - Other
+            - null
+        lastName:
+          type:
+            - string
+            - 'null'
+        photo:
+          type:
+            - string
+            - 'null'
+        preferredName:
+          type:
+            - string
+            - 'null'
+    UserStatus:
+      type: string
+      enum:
+        - Pending
+        - Active
+        - Disabled
+    UserNotificationSettings:
+      type: object
+      properties:
+        newsletters:
+          type:
+            - boolean
+            - 'null'
+        reviewNotifications:
+          type:
+            - boolean
+            - 'null'
+    NewUserSettings:
+      type: object
+      properties:
+        userAccountType:
+          type:
+            - string
+            - 'null'
+          enum:
+            - member
+            - enterprise
+            - null
+    EmailVerificationState:
+      type: object
+      properties:
+        emailPendingVerification:
+          type:
+            - string
+            - 'null'
+        status:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Pending
+            - Verified
+            - null
+    Phone:
+      type: object
+      properties:
+        channel:
+          type:
+            - string
+            - 'null'
+          enum:
+            - PhoneCall
+            - SMS
+            - null
+        channelPendingVerification:
+          type:
+            - string
+            - 'null'
+          enum:
+            - PhoneCall
+            - SMS
+            - null
+        number:
+          type:
+            - string
+            - 'null'
+        numberPendingVerification:
+          type:
+            - string
+            - 'null'
+        status:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Pending
+            - Verified
+            - null
+    UserRoles:
+      type: object
+      properties:
+        ownerIds:
+          type: array
+          items:
+            type: string
+        viewerIds:
+          type: array
+          items:
+            type: string
+      required:
+        - ownerIds
+        - viewerIds
+    87539cb97aa7616e350fc0d23c5a49177ea4c4a8bd00ec2a2cfd2a9a5c4e648a:
+      type: object
+      additionalProperties:
+        type: string
+    LabelsDictionary:
+      type: object
+      additionalProperties:
+        type: string
+    PlaidExternalIds:
+      type: object
+      properties:
+        plaidAccessToken:
+          type: string
+        plaidAccountId:
+          type: string
+        plaidInstitutionId:
+          type: string
+        plaidItemId:
+          type: string
+        checkbookAccountId:
+          type:
+            - string
+            - 'null'
+        quickbooks:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/QuickbooksAccountExternalIds'
+      required:
+        - plaidAccessToken
+        - plaidAccountId
+        - plaidInstitutionId
+        - plaidItemId
+    AccountEvents:
+      type: object
+      properties:
+        initialSetupAt:
+          type:
+            - string
+            - 'null'
+        isInitialSetupStarted:
+          type:
+            - boolean
+            - 'null'
+        transactionsSyncedAt:
+          type:
+            - string
+            - 'null'
+    AccountStatus:
+      type: string
+      enum:
+        - Active
+        - Inactive
+        - Pending
+        - Disconnected
+        - Ephemeral
+    AccountType:
+      type: string
+      enum:
+        - Depository
+        - Credit
+    AccountSubType:
+      type: string
+      enum:
+        - Paypal
+        - Checking
+        - Savings
+        - CreditCard
+    AccountPurpose:
+      type: object
+      properties:
+        bookkeeping:
+          type:
+            - boolean
+            - 'null'
+        payments:
+          type:
+            - boolean
+            - 'null'
+        payouts:
+          type:
+            - boolean
+            - 'null'
+        rtp:
+          type:
+            - boolean
+            - 'null'
+    662b4b108cbbf88d6c8da2cc52e8dc2fcc4e24449d66b34b20beeb55bad5790d:
+      type: object
+      properties:
+        quickbooks:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/f8c6f82160a6fdfd5126819f1852fc694cb8161367b6d04413104146646d63fb
+    AccountUsage:
+      type: string
+      enum:
+        - Business
+        - Personal
+        - Mixed
+    OtpVerificationChannel:
+      type: string
+      enum:
+        - SMS
+        - Email
+    SessionType:
+      type: string
+      enum:
+        - user
+        - api
+        - guest
+    MemberProfileWrite:
+      type: object
+      properties:
+        address:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Address'
+        bookkeepingProductsUsed:
+          type:
+            - array
+            - 'null'
+          items:
+            enum:
+              - AccountingSoftware
+              - CPA
+              - PenAndPaper
+              - Spreadsheet
+              - Other
+              - null
+            type:
+              - string
+              - 'null'
+        bookkeepingProductsUsedOther:
+          type:
+            - string
+            - 'null'
+        company:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/CompanyWrite'
+        foreignTaxCountry:
+          type:
+            - string
+            - 'null'
+        foreignTaxId:
+          type:
+            - string
+            - 'null'
+        freelanceDuration:
+          type:
+            - string
+            - 'null'
+          enum:
+            - LessThanOne
+            - OneToThree
+            - ThreeToFive
+            - OverFive
+            - null
+        freelanceType:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Team
+            - FullTime
+            - PartTime
+            - NotFreelancing
+            - null
+        homeAddress:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Address'
+        industry:
+          type:
+            - string
+            - 'null'
+          enum:
+            - AdultEntertainmentDatingOrEscortServices
+            - AgricultureForestryFishingOrHunting
+            - ArtsEntertainmentAndRecreation
+            - BusinessSupportOrBuildingServices
+            - Cannabis
+            - Construction
+            - DirectMarketingOrTelemarketing
+            - EducationalServices
+            - FinancialServices
+            - GamingOrGambling
+            - HealthCareAndSocialAssistance
+            - HospitalityAccommodationOrFoodServices
+            - LegalAccountingConsultingOrComputerProgramming
+            - Manufacturing
+            - Mining
+            - Nutraceuticals
+            - PersonalCareServices
+            - PublicAdministration
+            - RealEstate
+            - ReligiousCivicAndSocialOrganizations
+            - RepairAndMaintenance
+            - RetailTrade
+            - TechnologyMediaOrTelecom
+            - TransportationOrWarehousing
+            - Utilities
+            - WholesaleTrade
+            - null
+        interests:
+          type:
+            - array
+            - 'null'
+          items:
+            enum:
+              - Incorporating
+              - Marketing
+              - FindingWork
+              - Documents
+              - Invoicing
+              - Bookkeeping
+              - TaxSaving
+              - Benefits
+              - Community
+              - null
+            type:
+              - string
+              - 'null'
+        logoFileId:
+          type:
+            - string
+            - 'null'
+        mcc:
+          type:
+            - string
+            - 'null'
+        nationality:
+          type:
+            - string
+            - 'null'
+        passportNumber:
+          type:
+            - string
+            - 'null'
+        passportNumberProvided:
+          type:
+            - boolean
+            - 'null'
+        phone:
+          type:
+            - string
+            - 'null'
+        productAspectImportance:
+          type:
+            - array
+            - 'null'
+          items:
+            enum:
+              - Invoicing
+              - PaymentSpeed
+              - ClientManagement
+              - TrackIncomeStreams
+              - ExpenseTracking
+              - TaxDeductions
+              - TaxFiling
+              - HealthInsurance
+              - SavingMoneyOnMedicine
+              - LegalAndFinancialSupport
+              - MindAndBodySupport
+              - null
+            type:
+              - string
+              - 'null'
+        productImportance:
+          type:
+            - array
+            - 'null'
+          items:
+            enum:
+              - Payments
+              - Bookkeeping
+              - Benefits
+              - null
+            type:
+              - string
+              - 'null'
+        ssn:
+          type:
+            - string
+            - 'null'
+        ssnLastFour:
+          type:
+            - string
+            - 'null'
+        ssnLastFourProvided:
+          type:
+            - boolean
+            - 'null'
+        ssnProvided:
+          type:
+            - boolean
+            - 'null'
+        taxInfo:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/MemberTaxInfo'
+        verificationDocumentBack:
+          type:
+            - string
+            - 'null'
+        verificationDocumentFront:
+          type:
+            - string
+            - 'null'
+        visibilityMap:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/MemberProfileVisibilityMap'
+        withholdings:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/MemberWithholdings'
+    MemberProfile:
+      type: object
+      properties:
+        address:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Address'
+        bookkeepingProductsUsed:
+          type:
+            - array
+            - 'null'
+          items:
+            enum:
+              - AccountingSoftware
+              - CPA
+              - PenAndPaper
+              - Spreadsheet
+              - Other
+              - null
+            type:
+              - string
+              - 'null'
+        bookkeepingProductsUsedOther:
+          type:
+            - string
+            - 'null'
+        company:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Company'
+        freelanceDuration:
+          type:
+            - string
+            - 'null'
+          enum:
+            - LessThanOne
+            - OneToThree
+            - ThreeToFive
+            - OverFive
+            - null
+        freelanceType:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Team
+            - FullTime
+            - PartTime
+            - NotFreelancing
+            - null
+        homeAddress:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Address'
+        industry:
+          type:
+            - string
+            - 'null'
+          enum:
+            - AdultEntertainmentDatingOrEscortServices
+            - AgricultureForestryFishingOrHunting
+            - ArtsEntertainmentAndRecreation
+            - BusinessSupportOrBuildingServices
+            - Cannabis
+            - Construction
+            - DirectMarketingOrTelemarketing
+            - EducationalServices
+            - FinancialServices
+            - GamingOrGambling
+            - HealthCareAndSocialAssistance
+            - HospitalityAccommodationOrFoodServices
+            - LegalAccountingConsultingOrComputerProgramming
+            - Manufacturing
+            - Mining
+            - Nutraceuticals
+            - PersonalCareServices
+            - PublicAdministration
+            - RealEstate
+            - ReligiousCivicAndSocialOrganizations
+            - RepairAndMaintenance
+            - RetailTrade
+            - TechnologyMediaOrTelecom
+            - TransportationOrWarehousing
+            - Utilities
+            - WholesaleTrade
+            - null
+        interests:
+          type:
+            - array
+            - 'null'
+          items:
+            enum:
+              - Incorporating
+              - Marketing
+              - FindingWork
+              - Documents
+              - Invoicing
+              - Bookkeeping
+              - TaxSaving
+              - Benefits
+              - Community
+              - null
+            type:
+              - string
+              - 'null'
+        logoFileId:
+          type:
+            - string
+            - 'null'
+        mcc:
+          type:
+            - string
+            - 'null'
+        nationality:
+          type:
+            - string
+            - 'null'
+        passportNumberProvided:
+          type:
+            - boolean
+            - 'null'
+        phone:
+          type:
+            - string
+            - 'null'
+        productAspectImportance:
+          type:
+            - array
+            - 'null'
+          items:
+            enum:
+              - Invoicing
+              - PaymentSpeed
+              - ClientManagement
+              - TrackIncomeStreams
+              - ExpenseTracking
+              - TaxDeductions
+              - TaxFiling
+              - HealthInsurance
+              - SavingMoneyOnMedicine
+              - LegalAndFinancialSupport
+              - MindAndBodySupport
+              - null
+            type:
+              - string
+              - 'null'
+        productImportance:
+          type:
+            - array
+            - 'null'
+          items:
+            enum:
+              - Payments
+              - Bookkeeping
+              - Benefits
+              - null
+            type:
+              - string
+              - 'null'
+        ssnLastFourProvided:
+          type:
+            - boolean
+            - 'null'
+        ssnProvided:
+          type:
+            - boolean
+            - 'null'
+        taxInfo:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/MemberTaxInfo'
+        verificationDocumentBack:
+          type:
+            - string
+            - 'null'
+        verificationDocumentFront:
+          type:
+            - string
+            - 'null'
+        visibilityMap:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/MemberProfileVisibilityMap'
+        withholdings:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/MemberWithholdings'
+    EnabledServices:
+      type: object
+      additionalProperties:
+        type: boolean
+    ServiceStatus:
+      type: object
+      properties:
+        benefits:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Disabled
+            - Enabled
+            - Pending
+            - null
+        payments:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Disabled
+            - Enabled
+            - Pending
+            - null
+    UserType:
+      type: string
+      enum:
+        - Member
+        - Client
+    SubscriptionGrantStatus:
+      type: string
+      enum:
+        - Pending
+        - Active
+        - Canceled
+    SubscriptionPackage:
+      type: string
+      enum:
+        - None
+        - Benefits
+        - Essentials
+        - Professional
+        - Corporate
+    SubscriptionPackageTier:
+      type: string
+      enum:
+        - Basic
+        - Premium
+    RedactedMember:
+      type: object
+      properties:
+        user:
+          $ref: '#/components/schemas/RedactedUser'
+        profile:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/23d776fc12e56286a20f36065e4f942c43a28218a62eb2f211116c130deb74eb
+      required:
+        - user
+    RedactedUser:
+      type: object
+      properties:
+        email:
+          type:
+            - string
+            - 'null'
+        phone:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/7996a6815c717c0e93865680b5cd47dec90314e97e4e7282bed7fc2f367bc051
+        profile:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/f6f2bd1a2fc7bad4e0d8f22345fc5f6699d096b7797b93575869c544a4fc5cef
+        tag:
+          type:
+            - string
+            - 'null'
+    SubscriptionTerm:
+      type: string
+      enum:
+        - Yearly
+        - Monthly
+    PaymentStatus:
+      type: string
+      enum:
+        - Failed
+        - Succeeded
+        - ActionRequired
+    PreviouslyBilled:
+      type: object
+      properties:
+        package:
+          type:
+            - string
+            - 'null'
+          enum:
+            - None
+            - Benefits
+            - Essentials
+            - Professional
+            - Corporate
+            - null
+        packageTier:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Basic
+            - Premium
+            - null
+        term:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Yearly
+            - Monthly
+            - null
+    SubscriptionStatus:
+      type: string
+      enum:
+        - incomplete
+        - incomplete_expired
+        - trialing
+        - active
+        - past_due
+        - canceled
+        - unpaid
+    ScheduledChange:
+      type: object
+      properties:
+        effectiveDate:
+          type: string
+        package:
+          type:
+            - string
+            - 'null'
+          enum:
+            - None
+            - Benefits
+            - Essentials
+            - Professional
+            - Corporate
+            - null
+        packageTier:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Basic
+            - Premium
+            - null
+        planId:
+          type:
+            - string
+            - 'null'
+        status:
+          type:
+            - string
+            - 'null'
+          enum:
+            - incomplete
+            - incomplete_expired
+            - trialing
+            - active
+            - past_due
+            - canceled
+            - unpaid
+            - null
+        term:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Yearly
+            - Monthly
+            - null
+      required:
+        - effectiveDate
+    PlanInterval:
+      type: string
+      enum:
+        - day
+        - week
+        - month
+        - year
+    Charge:
+      type: object
+      properties:
+        amount:
+          type: number
+        cardLast4:
+          type: string
+        chargeId:
+          type: string
+        chargeStatus:
+          type: string
+          enum:
+            - 0
+            - 1
+            - 2
+        created:
+          type: string
+      required:
+        - amount
+        - cardLast4
+        - chargeId
+        - chargeStatus
+        - created
+    InvoiceStatus:
+      type: string
+      enum:
+        - draft
+        - open
+        - paid
+        - uncollectible
+        - void
+    1ec70b8932527ff4790394003fff4dc0129da172d7ffa7d79fdfb7db427d1746:
+      type: object
+      properties:
+        quickbooks:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/5a32679f9ede76c39a5dbdbf1b227070bff3053fb97aac841f885751d36d7dac
+    Discount:
+      type: object
+      properties:
+        couponId:
+          type: string
+        name:
+          type: string
+        amountOff:
+          type:
+            - number
+            - 'null'
+        percentOff:
+          type:
+            - number
+            - 'null'
+      required:
+        - couponId
+        - name
+    ClientProfile:
+      type: object
+      properties:
+        defaultPaymentMethod:
+          $ref: '#/components/schemas/DefaultPaymentMethod'
+        subscriptionPaymentMethod:
+          $ref: '#/components/schemas/DefaultPaymentMethod'
+        address:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Address'
+        company:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Company'
+        phone:
+          type:
+            - string
+            - 'null'
+        savedPaymentMethods:
+          type:
+            - array
+            - 'null'
+          items:
+            oneOf:
+              - type: 'null'
+              - $ref: '#/components/schemas/CreditCard'
+      required:
+        - defaultPaymentMethod
+        - subscriptionPaymentMethod
+    ClientProfileCreate:
+      type: object
+      properties:
+        address:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Address'
+        company:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Company'
+        defaultPaymentMethod:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/DefaultPaymentMethod'
+        phone:
+          type:
+            - string
+            - 'null'
+        savedPaymentMethods:
+          type:
+            - array
+            - 'null'
+          items:
+            oneOf:
+              - type: 'null'
+              - $ref: '#/components/schemas/PaymentMethodUpdate'
+        subscriptionPaymentMethod:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/DefaultPaymentMethod'
+    ClientProfileUpdate:
+      type: object
+      properties:
+        address:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Address'
+        company:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Company'
+        defaultPaymentMethod:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/DefaultPaymentMethod'
+        phone:
+          type:
+            - string
+            - 'null'
+        savedPaymentMethods:
+          type:
+            - array
+            - 'null'
+          items:
+            oneOf:
+              - type: 'null'
+              - $ref: '#/components/schemas/PaymentMethodUpdate'
+        subscriptionPaymentMethod:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/DefaultPaymentMethod'
+    EmailVerificationStatus:
+      type: string
+      enum:
+        - Pending
+        - Verified
+    PhoneVerificationChannel:
+      type: string
+      enum:
+        - PhoneCall
+        - SMS
+    PhoneVerificationStatus:
+      type: string
+      enum:
+        - Pending
+        - Verified
+    AuthenticationStrategy:
+      type: string
+      enum:
+        - Password
+        - SingleSignOn
+    ScopeModificationsMap:
+      type: object
+      properties:
+        payments:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/bf168ad7d016496dfd65f4d4bc3208501a96ad4f4048d001e6ebdb3a4b8311b1
+    AuthorizedAction:
+      type: string
+      enum:
+        - Read
+        - Write
+    AuthorizedAccount:
+      type: object
+      properties:
+        accessibleMember:
+          $ref: '#/components/schemas/RedactedMember'
+        accessibleUser:
+          $ref: '#/components/schemas/RedactedUser'
+        allowedScopeGroupIds:
+          type: array
+          items:
+            type: string
+        userId:
+          type: string
+      required:
+        - accessibleMember
+        - accessibleUser
+        - allowedScopeGroupIds
+        - userId
+    Flows:
+      type: object
+      properties:
+        benefitsSetup:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        bookkeepingSetup:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        businessSetup:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        collaboratorInvite:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        enterprise:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        fileVaultInfoBanner:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        nec1099Setup:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        onboarding:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        onboarding1099:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        paymentsSetup:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        personalPayLinkSetup:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        settingsFoundingMemberInterest:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        taxWithholdingsBeta:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        taxWithholdingsSetup:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+        walletSetup:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/FlowProgress'
+    ActivityEvents:
+      type: object
+      properties:
+        agreeToClientTermsToDoStatus:
+          type:
+            - string
+            - 'null'
+          enum:
+            - ToDo
+            - InProgress
+            - Completed
+            - null
+        benefitsOnlySignup:
+          type:
+            - boolean
+            - 'null'
+        calendlyWidgedOpened:
+          type:
+            - boolean
+            - 'null'
+        debitCardTCAcceptedAt:
+          type:
+            - string
+            - 'null'
+        eftpsEnrolledAt:
+          type:
+            - string
+            - 'null'
+        electronic1099Consent:
+          type:
+            - boolean
+            - 'null'
+        expensesReviewedAt:
+          type:
+            - string
+            - 'null'
+        findFirstDeductibleExpenseToDoStatus:
+          type:
+            - string
+            - 'null'
+          enum:
+            - ToDo
+            - InProgress
+            - Completed
+            - null
+        incomeReviewedAt:
+          type:
+            - string
+            - 'null'
+        internationalWaitListed:
+          type:
+            - boolean
+            - 'null'
+        knowingCompanyStructureToDoStatus:
+          type:
+            - string
+            - 'null'
+          enum:
+            - ToDo
+            - InProgress
+            - Completed
+            - null
+        paymentsInfoBannerClosed:
+          type:
+            - boolean
+            - 'null'
+        paymentsTestInvoiceBannerClosed:
+          type:
+            - boolean
+            - 'null'
+        w8BenFormAcknowledged:
+          type:
+            - string
+            - 'null'
+        w9FormAcknowledged:
+          type:
+            - string
+            - 'null'
+        walletIncomePercent:
+          type:
+            - number
+            - 'null'
+        watchTourVideoToDoStatus:
+          type:
+            - string
+            - 'null'
+          enum:
+            - ToDo
+            - InProgress
+            - Completed
+            - null
+    ActivityContext:
+      type: object
+      properties:
+        growthSource:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Partner
+            - Referral
+            - Collaborator
+            - Team
+            - Invoice
+            - Content
+            - Enterprise
+            - EnterpriseClient
+            - null
+        growthSourceName:
+          type:
+            - string
+            - 'null'
+    NextgenSubscriptionPartner:
+      type: string
+      enum:
+        - USA
+    629d384730e878960087338a314c3117c9abb8337ea9c58dda95ee9d8385a278:
+      type: object
+      properties:
+        Monthly:
+          $ref: '#/components/schemas/NextgenSubscriptionPrice'
+        Yearly:
+          $ref: '#/components/schemas/NextgenSubscriptionPrice'
+      required:
+        - Monthly
+        - Yearly
+    NextgenSubscriptionPlanType:
+      type: string
+      enum:
+        - Base
+        - Benefits
+        - Corporate
+        - Service
+    NextgenSubscriptionStatus:
+      type: string
+      enum:
+        - Active
+        - Canceled
+    NextgenSubscriptionDiscount:
+      type: object
+      properties:
+        reason:
+          type: string
+        amount:
+          type:
+            - number
+            - 'null'
+        discountEndDate:
+          type:
+            - string
+            - 'null'
+        percent:
+          type:
+            - number
+            - 'null'
+      required:
+        - reason
+    NextgenSubscriptionUnit:
+      type: string
+      enum:
+        - Month
+    NextgenSubscriptionTerm:
+      type: string
+      enum:
+        - Yearly
+        - Monthly
+    NextgenSubscriptionPrice:
+      type: object
+      properties:
+        amount:
+          type: number
+        skuId:
+          $ref: '#/components/schemas/SkuId'
+        skuQuantity:
+          type:
+            - number
+            - 'null'
+      required:
+        - amount
+        - skuId
+    9ebbbc3cd350921a45b309ded4e5f141c39010cff4692acdd754cd0084136a62:
+      type: object
+      properties:
+        format:
+          type: string
+        name:
+          type: string
+      required:
+        - format
+        - name
+    OrganizationInheritanceStrategy:
+      type: object
+      properties:
+        externalFinancialAccounts:
+          type: string
+          enum:
+            - None
+            - Parent
+        fundingSource:
+          type: string
+          enum:
+            - None
+            - Parent
+        payoutSettings:
+          type: string
+          enum:
+            - None
+            - Parent
+        wingspanAccount:
+          type: string
+          enum:
+            - None
+            - Parent
+        wingspanFinancialSettings:
+          type: string
+          enum:
+            - None
+            - Parent
+      required:
+        - externalFinancialAccounts
+        - fundingSource
+        - payoutSettings
+        - wingspanAccount
+        - wingspanFinancialSettings
+    Gender:
+      type: string
+      enum:
+        - male
+        - female
+        - other
+    UserAccountType:
+      type: string
+      enum:
+        - member
+        - enterprise
+    QuickbooksAccountExternalIds:
+      type: object
+      properties:
+        accountId:
+          type: string
+      required:
+        - accountId
+    f8c6f82160a6fdfd5126819f1852fc694cb8161367b6d04413104146646d63fb:
+      type: object
+      properties:
+        assetId:
+          type:
+            - string
+            - 'null'
+        bankAccountId:
+          type:
+            - string
+            - 'null'
+        expenseId:
+          type:
+            - string
+            - 'null'
+        liabilityId:
+          type:
+            - string
+            - 'null'
+    CompanyWrite:
+      type: object
+      properties:
+        banking:
+          type:
+            - boolean
+            - 'null'
+        companyOwners:
+          type:
+            - array
+            - 'null'
+          items:
+            oneOf:
+              - type: 'null'
+              - $ref: '#/components/schemas/CompanyPersonWrite'
+        description:
+          type:
+            - string
+            - 'null'
+        legalBusinessName:
+          type:
+            - string
+            - 'null'
+        links:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/CompanyLinks'
+        name:
+          type:
+            - string
+            - 'null'
+        stateOfIncorporation:
+          type:
+            - string
+            - 'null'
+        structure:
+          type:
+            - string
+            - 'null'
+          enum:
+            - None
+            - SoleProprietorship
+            - LlcSingleMember
+            - LlcMultiMember
+            - CorporationS
+            - LLCCorporationS
+            - LLCCorporationC
+            - LLCPartnership
+            - CorporationC
+            - Partnership
+            - null
+        taxId:
+          type:
+            - string
+            - 'null'
+        website:
+          type:
+            - string
+            - 'null'
+        yearOfIncorporation:
+          type:
+            - string
+            - 'null'
+    Address:
+      type: object
+      properties:
+        country:
+          type: string
+        addressLine1:
+          type:
+            - string
+            - 'null'
+        addressLine2:
+          type:
+            - string
+            - 'null'
+        city:
+          type:
+            - string
+            - 'null'
+        postalCode:
+          type:
+            - string
+            - 'null'
+        state:
+          type:
+            - string
+            - 'null'
+      required:
+        - country
+    MemberTaxInfo:
+      type: object
+      properties:
+        expensesEstimateForYear:
+          type:
+            - number
+            - 'null'
+        filingCode:
+          type:
+            - string
+            - 'null'
+          enum:
+            - S
+            - M
+            - H
+            - MS
+            - QW
+            - null
+        filingType:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Personal
+            - Business
+            - null
+        incomeEstimateForYear:
+          type:
+            - number
+            - 'null'
+        numExemptions:
+          type:
+            - number
+            - 'null'
+        occupations:
+          type:
+            - array
+            - 'null'
+          items:
+            oneOf:
+              - type: 'null'
+              - $ref: '#/components/schemas/MemberOccupation'
+        stateOfResidence:
+          type:
+            - string
+            - 'null'
+    Interests:
+      type: string
+      enum:
+        - Incorporating
+        - Marketing
+        - FindingWork
+        - Documents
+        - Invoicing
+        - Bookkeeping
+        - TaxSaving
+        - Benefits
+        - Community
+    FreelanceDuration:
+      type: string
+      enum:
+        - LessThanOne
+        - OneToThree
+        - ThreeToFive
+        - OverFive
+    FreelanceType:
+      type: string
+      enum:
+        - Team
+        - FullTime
+        - PartTime
+        - NotFreelancing
+    WingspanProducts:
+      type: string
+      enum:
+        - Payments
+        - Bookkeeping
+        - Benefits
+    WingspanProductAspects:
+      type: string
+      enum:
+        - Invoicing
+        - PaymentSpeed
+        - ClientManagement
+        - TrackIncomeStreams
+        - ExpenseTracking
+        - TaxDeductions
+        - TaxFiling
+        - HealthInsurance
+        - SavingMoneyOnMedicine
+        - LegalAndFinancialSupport
+        - MindAndBodySupport
+    BookkeepingProductsUsed:
+      type: string
+      enum:
+        - AccountingSoftware
+        - CPA
+        - PenAndPaper
+        - Spreadsheet
+        - Other
+    MemberProfileVisibilityMap:
+      type: object
+      properties:
+        address:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Private
+            - ClientVisible
+            - Public
+            - null
+        phone:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Private
+            - ClientVisible
+            - Public
+            - null
+    MemberWithholdings:
+      type: object
+      properties:
+        tax:
+          anyOf:
+            - type: 'null'
+            - $ref: >-
+                #/components/schemas/617ceb0bc24fcf187ab7e6b13633442b8671de98ff04917ce2c41034e5482b5f
+    IndustryVertical:
+      type: string
+      enum:
+        - AdultEntertainmentDatingOrEscortServices
+        - AgricultureForestryFishingOrHunting
+        - ArtsEntertainmentAndRecreation
+        - BusinessSupportOrBuildingServices
+        - Cannabis
+        - Construction
+        - DirectMarketingOrTelemarketing
+        - EducationalServices
+        - FinancialServices
+        - GamingOrGambling
+        - HealthCareAndSocialAssistance
+        - HospitalityAccommodationOrFoodServices
+        - LegalAccountingConsultingOrComputerProgramming
+        - Manufacturing
+        - Mining
+        - Nutraceuticals
+        - PersonalCareServices
+        - PublicAdministration
+        - RealEstate
+        - ReligiousCivicAndSocialOrganizations
+        - RepairAndMaintenance
+        - RetailTrade
+        - TechnologyMediaOrTelecom
+        - TransportationOrWarehousing
+        - Utilities
+        - WholesaleTrade
+    Company:
+      type: object
+      properties:
+        banking:
+          type:
+            - boolean
+            - 'null'
+        companyOwners:
+          type:
+            - array
+            - 'null'
+          items:
+            oneOf:
+              - type: 'null'
+              - $ref: '#/components/schemas/CompanyPerson'
+        description:
+          type:
+            - string
+            - 'null'
+        legalBusinessName:
+          type:
+            - string
+            - 'null'
+        links:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/CompanyLinks'
+        name:
+          type:
+            - string
+            - 'null'
+        stateOfIncorporation:
+          type:
+            - string
+            - 'null'
+        structure:
+          type:
+            - string
+            - 'null'
+          enum:
+            - None
+            - SoleProprietorship
+            - LlcSingleMember
+            - LlcMultiMember
+            - CorporationS
+            - LLCCorporationS
+            - LLCCorporationC
+            - LLCPartnership
+            - CorporationC
+            - Partnership
+            - null
+        taxId:
+          type:
+            - string
+            - 'null'
+        website:
+          type:
+            - string
+            - 'null'
+        yearOfIncorporation:
+          type:
+            - string
+            - 'null'
+    ServiceState:
+      type: string
+      enum:
+        - Disabled
+        - Enabled
+        - Pending
+    23d776fc12e56286a20f36065e4f942c43a28218a62eb2f211116c130deb74eb:
+      type: object
+      properties:
+        address:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Address'
+        company:
+          anyOf:
+            - type: 'null'
+            - $ref: '#/components/schemas/Company'
+        logoUrl:
+          type:
+            - string
+            - 'null'
+        ssnLastFour:
+          type:
+            - string
+            - 'null'
+    7996a6815c717c0e93865680b5cd47dec90314e97e4e7282bed7fc2f367bc051:
+      type: object
+      properties:
+        number:
+          type:
+            - string
+            - 'null'
+    f6f2bd1a2fc7bad4e0d8f22345fc5f6699d096b7797b93575869c544a4fc5cef:
+      type: object
+      properties:
+        firstName:
+          type:
+            - string
+            - 'null'
+        lastName:
+          type:
+            - string
+            - 'null'
+    ChargeStatus:
+      type: string
+      enum:
+        - succeeded
+        - pending
+        - failed
+    5a32679f9ede76c39a5dbdbf1b227070bff3053fb97aac841f885751d36d7dac:
+      type: object
+      properties:
+        bankAccountId:
+          type:
+            - string
+            - 'null'
+    DefaultPaymentMethod:
+      type: object
+      properties:
+        accountId:
+          type:
+            - string
+            - 'null'
+        defaultPaymentWeekday:
+          type:
+            - number
+            - 'null'
+        paymentMethodId:
+          type:
+            - string
+            - 'null'
+    PaymentMethodUpdate:
+      type: object
+      properties:
+        paymentMethodId:
+          type:
+            - string
+            - 'null'
+    bf168ad7d016496dfd65f4d4bc3208501a96ad4f4048d001e6ebdb3a4b8311b1:
+      type: object
+      properties:
+        memberClient:
+          type:
+            - array
+            - 'null'
+          items:
+            oneOf:
+              - type: 'null'
+              - $ref: '#/components/schemas/ScopeModification'
+        payable:
+          type:
+            - array
+            - 'null'
+          items:
+            oneOf:
+              - type: 'null'
+              - $ref: '#/components/schemas/ScopeModification'
+    FlowProgress:
+      type: object
+      properties:
+        complete:
+          type: boolean
+        currentStep:
+          type: number
+        totalSteps:
+          type: number
+        version:
+          type: number
+      required:
+        - complete
+        - currentStep
+        - totalSteps
+        - version
+    ToDoStatus:
+      type: string
+      enum:
+        - ToDo
+        - InProgress
+        - Completed
+    IGrowthSourceNames:
+      type: string
+      enum:
+        - Partner
+        - Referral
+        - Collaborator
+        - Team
+        - Invoice
+        - Content
+        - Enterprise
+        - EnterpriseClient
+    SkuId:
+      type: object
+      properties:
+        productId:
+          type: string
+        productLineId:
+          type: string
+        serialNumber:
+          type: string
+      required:
+        - productId
+        - productLineId
+        - serialNumber
+    InheritanceStrategy:
+      type: string
+      enum:
+        - None
+        - Parent
+    CompanyPersonWrite:
+      type: object
+      properties:
+        email:
+          type: string
+        memberId:
+          type: string
+        firstName:
+          type:
+            - string
+            - 'null'
+        lastName:
+          type:
+            - string
+            - 'null'
+        member:
+          anyOf:
+            - type: 'null'
+            - type: object
+        ownershipPercentage:
+          type:
+            - number
+            - 'null'
+      required:
+        - email
+        - memberId
+    CompanyStructure:
+      type: string
+      enum:
+        - None
+        - SoleProprietorship
+        - LlcSingleMember
+        - LlcMultiMember
+        - CorporationS
+        - LLCCorporationS
+        - LLCCorporationC
+        - LLCPartnership
+        - CorporationC
+        - Partnership
+    CompanyLinks:
+      type: object
+      properties:
+        instagramUrl:
+          type:
+            - string
+            - 'null'
+        linkedInUrl:
+          type:
+            - string
+            - 'null'
+        otherUrl:
+          type:
+            - string
+            - 'null'
+        twitterUrl:
+          type:
+            - string
+            - 'null'
+        websiteUrl:
+          type:
+            - string
+            - 'null'
+    MemberOccupation:
+      type: object
+      properties:
+        category:
+          type: string
+        customCategory:
+          type:
+            - string
+            - 'null'
+        endDate:
+          type:
+            - string
+            - 'null'
+        startDate:
+          type:
+            - string
+            - 'null'
+        taxCategory:
+          type:
+            - string
+            - 'null'
+      required:
+        - category
+    TaxFilingType:
+      type: string
+      enum:
+        - personal
+        - business
+    TaxFilingCode:
+      type: string
+      enum:
+        - Single
+        - Married
+        - HeadOfHousehold
+        - MarriedFilingSeparately
+        - QualifiedWidower
+    Visibility:
+      type: string
+      enum:
+        - Private
+        - ClientVisible
+        - Public
+    617ceb0bc24fcf187ab7e6b13633442b8671de98ff04917ce2c41034e5482b5f:
+      type: object
+      properties:
+        rate:
+          type:
+            - number
+            - 'null'
+        status:
+          type:
+            - string
+            - 'null'
+          enum:
+            - Active
+            - Paused
+            - null
+    CompanyPerson:
+      type: object
+      properties:
+        memberId:
+          type: string
+        ownershipPercentage:
+          type:
+            - number
+            - 'null'
+      required:
+        - memberId
+    ScopeModification:
+      type: object
+      properties:
+        action:
+          type: string
+          enum:
+            - Include
+            - Exclude
+            - Allow
+            - Deny
+        attribute:
+          type: string
+        comparator:
+          type: string
+          enum:
+            - Equals
+            - Includes
+        value:
+          type: string
+      required:
+        - action
+        - attribute
+        - comparator
+        - value
+    MemberWithholdingStatus:
+      type: string
+      enum:
+        - Active
+        - Paused
+    ScopeModificationAction:
+      type: string
+      enum:
+        - Include
+        - Exclude
+        - Allow
+        - Deny
+    ScopeModificationComparator:
+      type: string
+      enum:
+        - Equals
+        - Includes
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
+paths:
+  /users/:
+    get:
+      summary: Health Check for User Service
+      description: >-
+        Verifies the connectivity and health status of the User Service by
+        sending a ping request. Useful for monitoring and ensuring the service
+        is up and running.
+      responses:
+        '204':
+          description: This is a default response
+  /users/pending/session:
+    post:
+      summary: Initiate a new session with pending status
+      description: >-
+        Creates a new user session that's initialized with a "pending" status.
+        This can be used to temporarily hold a session spot before confirming.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SessionCreateRequest'
+      responses:
+        '204':
+          description: This is a default response
+  /users/pending/user:
+    post:
+      summary: Register a new user with pending status
+      description: >-
+        Allows the creation of a new user with a "pending" status. This can be
+        utilized when the user registration process requires a confirmation step
+        before fully activating the user.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserCreateRequest'
+      responses:
+        '200':
+          description: User object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewUser'
+  /users/account-link:
+    post:
+      summary: Generate Plaid Link Token for Account Integration
+      description: >-
+        Initiates the process to generate a token for integrating with Plaid
+        Link or conducting OAuth authentication. Essential for securely linking
+        user bank accounts.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LinkTokenRequest'
+      responses:
+        '200':
+          description: link-token and expiration
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LinkTokenResponse'
+  /users/account:
+    get:
+      summary: Retrieve All Linked Bank Accounts
+      description: >-
+        Fetches a list of all bank accounts associated with the member,
+        providing an overview of linked financial institutions.
+      responses:
+        '200':
+          description: A list of bank accounts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Account'
+    post:
+      summary: Add New Bank Account
+      description: >-
+        Link a new bank account either by synchronizing with Plaid or by
+        manually providing necessary account details.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccountCreateRequest'
+      responses:
+        '200':
+          description: A member's bank account
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountCreateResponse'
+  '/users/account/{id}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Fetch Specific Bank Account Details
+      description: >-
+        Retrieves comprehensive details for a specified bank account linked to
+        the member.
+      responses:
+        '200':
+          description: A member's bank account
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+    delete:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Unlink Bank Account
+      description: >-
+        Allows members to securely remove a linked bank account from their
+        profile.
+      responses:
+        '200':
+          description: A member's bank account
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Modify Bank Account Details
+      description: >-
+        Enables members to make modifications to the details of their linked
+        bank account.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccountUpdateRequest'
+      responses:
+        '200':
+          description: A member's bank account
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+  /users/guest/account-numbers:
+    post:
+      summary: Retrieve Account Numbers for Guests
+      description: >-
+        Allows guest users to fetch their associated bank account numbers based
+        on the provided request details.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GuestAccountRequest'
+      responses:
+        '200':
+          description: Bank account numbers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountNumbers'
+  /users/session:
+    post:
+      summary: Initiate a New User Session
+      description: >-
+        Creates a new user session based on the provided credentials or token,
+        allowing authenticated access to protected resources.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SessionCreateRequest'
+      responses:
+        '204':
+          description: This is a default response
+  /users/session/otp:
+    post:
+      summary: Initiate OTP/2FA Verification Process
+      description: >-
+        Begins the One-Time Password (OTP) or Two-Factor Authentication (2FA)
+        verification process for enhanced security during user login or critical
+        operations.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OtpSessionCreateRequest'
+      responses:
+        '204':
+          description: This is a default response
+    patch:
+      summary: Confirm OTP/2FA Verification
+      description: >-
+        Validates and completes the OTP/2FA verification process by checking the
+        provided OTP or verification code against the server's stored value.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CompletePhoneVerificationRequest'
+      responses:
+        '204':
+          description: This is a default response
+  /users/session/requesting-user:
+    post:
+      summary: Request to Sign-In on Behalf of Another User
+      description: >-
+        Allows an authorized user (e.g., admin) to create a session by signing
+        in as another user. Useful for support or administrative purposes.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SessionCreateRequest'
+      responses:
+        '204':
+          description: This is a default response
+  /users/session/api:
+    post:
+      summary: Create a New API Session
+      description: >-
+        Initiates a session specifically for API interactions, providing the
+        necessary credentials for automated tasks.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApiSessionCreateRequest'
+      responses:
+        '200':
+          description: an api session object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiSessionResponse'
+    get:
+      summary: Retrieve All API Sessions Created by the Current User
+      description: >-
+        Lists all API sessions that were initiated by the authenticated user,
+        aiding in management and tracking.
+      responses:
+        '200':
+          description: a list of api session objects
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ApiSessionResponse'
+  '/users/session/api/{id}':
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Modify a Specific API Session
+      description: >-
+        Updates the properties of an existing API session based on provided
+        input.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApiSessionUpdateRequest'
+      responses:
+        '200':
+          description: an api session object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiSessionResponse'
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Fetch Details of a Specific API Session
+      description: Retrieves the details of an API session using its unique identifier.
+      responses:
+        '200':
+          description: an api session object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiSessionResponse'
+    delete:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Terminate a Specific API Session
+      description: >-
+        Deletes a specific API session, ending its validity and associated
+        permissions.
+      responses:
+        '200':
+          description: an api session object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiSessionResponse'
+  '/users/session/token/{id}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Retrieve session details using token ID
+      description: >-
+        Fetches details of an active user session using the provided unique
+        session token ID.
+      responses:
+        '204':
+          description: This is a default response
+    delete:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Terminate a user session using token ID
+      description: >-
+        Safely terminates the active user session associated with the provided
+        session token ID.
+      responses:
+        '204':
+          description: This is a default response
+  /users/user:
+    post:
+      summary: Register a new user
+      description: >-
+        Allows the creation of a new user account by providing necessary
+        details.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserCreateRequest'
+      responses:
+        '200':
+          description: User object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewUser'
+  '/users/user/{id}':
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Modify user account details using user ID
+      description: >-
+        Enables modifications to the existing user account information using the
+        specified user ID.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserUpdateRequest'
+      responses:
+        '200':
+          description: User object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewUser'
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Fetch user profile details using user ID
+      description: >-
+        Retrieves comprehensive details of a user account using the provided
+        unique user ID.
+      responses:
+        '200':
+          description: User object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewUser'
+  '/users/user/member/{id}':
+    post:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Register a New Subscription for Member
+      description: >-
+        Creates a new subscription for the specified member based on the
+        provided details.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MemberCreateRequest'
+      responses:
+        '200':
+          description: Member object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Retrieve Subscription Details by ID
+      description: >-
+        Fetches the details of the subscription associated with the specified
+        member.
+      responses:
+        '200':
+          description: Member object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Modify Subscription Details for Member
+      description: >-
+        Updates the details of an existing subscription for the specified member
+        based on the provided modifications.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MemberUpdateRequest'
+      responses:
+        '200':
+          description: Member object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+  '/users/user/member/{id}/advocate':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Retrieve Advocate Information for the Specified Member
+      description: >-
+        Fetches the advocate details associated with the specified member. An
+        advocate often refers to a person who supports or recommends a
+        particular cause or policy, in this context, related to the member.
+      responses:
+        '200':
+          description: MemberAdvocate
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MemberAdvocate'
+  /users/user/password/reset:
+    post:
+      summary: Initiate User Password Reset Process
+      description: >-
+        Request to start the password reset process for a user. Upon successful
+        request, the user will receive instructions on how to reset their
+        password.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PasswordResetRequest'
+      responses:
+        '204':
+          description: This is a default response
+  /users/granted-subscriber/subscription-grant:
+    get:
+      summary: Retrieve Subscription Grants for a Granted Subscriber
+      description: >-
+        Fetches a list of subscription grants associated with a specific granted
+        subscriber. Helps in understanding and managing subscriber benefits.
+      responses:
+        '200':
+          description: A list of subscription grants
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/GrantedSubscriberResponse'
+  /users/subscription-grant:
+    post:
+      summary: New Subscription Grant
+      description: >-
+        Create a new subscription grant to a user. Useful for promoting and
+        providing specific subscription benefits to users.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubscriptionGrantCreateRequest'
+      responses:
+        '200':
+          description: A subscription grant
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SubscriptionGrantResponse'
+    get:
+      summary: Fetch All Subscription Grants
+      description: >-
+        Lists all the subscription grants in the system, helping administrators
+        or managers overview and manage these grants.
+      responses:
+        '200':
+          description: A list of subscription grants
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SubscriptionGrantResponse'
+  '/users/subscription-grant/{id}':
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Modify subscription grant details
+      description: >-
+        Updates specific details of a users subscription grant using the
+        provided unique identifier.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubscriptionGrantUpdateRequest'
+      responses:
+        '200':
+          description: A subscription grant
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SubscriptionGrantResponse'
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Retrieve subscription grant details by ID
+      description: >-
+        Fetches the details of a specific subscription grant for a user using
+        the provided unique identifier.
+      responses:
+        '200':
+          description: A subscription grant
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SubscriptionGrantResponse'
+    delete:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Terminate a specific subscription grant by ID
+      description: >-
+        Safely deletes the subscription grant associated with the provided
+        unique identifier.
+      responses:
+        '200':
+          description: A subscription grant
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SubscriptionGrantResponse'
+  '/users/user/member/{id}/subscription':
+    post:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Register a New Subscription for Member
+      description: >-
+        Creates a new subscription for the specified member based on the
+        provided details.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubscriptionCreateRequest'
+      responses:
+        '200':
+          description: A subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Subscription'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Modify Subscription Details for Member
+      description: >-
+        Updates the details of an existing subscription for the specified member
+        based on the provided modifications.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubscriptionUpdateRequest'
+      responses:
+        '200':
+          description: A subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Subscription'
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Retrieve Subscription Details by ID
+      description: >-
+        Fetches the details of the subscription associated with the specified
+        member.
+      responses:
+        '200':
+          description: A subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Subscription'
+    delete:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Remove Subscription for Member
+      description: >-
+        Deletes the specified subscription associated with the member, removing
+        any related data and settings.
+      responses:
+        '200':
+          description: A subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Subscription'
+  '/users/user/member/subscription/{id}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: DEPRECATEDgetSubscription
+      responses:
+        '200':
+          description: A subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Subscription'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: DEPRECATEDupdateSubscription
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubscriptionUpdateRequest'
+      responses:
+        '200':
+          description: A subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Subscription'
+    delete:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: DEPRECATEDdeleteSubscription
+      responses:
+        '200':
+          description: A subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Subscription'
+  /users/user/member/subscription/plan:
+    get:
+      summary: DEPRECATEDlist membership plans
+      responses:
+        '200':
+          description: A list of available subscription plans
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Plan'
+  '/users/user/member/subscription/plan/{id}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: DEPRECATEDget membership plan
+      responses:
+        '200':
+          description: Membership/subscription plan
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plan'
+  /users/user/member/subscription/payment/history:
+    get:
+      summary: Retrieve payment history for membership
+      description: >-
+        Fetches a history of payments made for the user's membership
+        subscription.
+      responses:
+        '200':
+          description: Payment Receipt
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentReceiptWithCharge'
+  /users/user/member/subscription/payment/method:
+    get:
+      summary: DEPRECATED Get Payment Method
+      responses:
+        '200':
+          description: redacted credit card
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreditCard'
+    post:
+      summary: DEPRECATED create Payment Method
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentMethodWriteRequest'
+      responses:
+        '200':
+          description: A subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Subscription'
+    patch:
+      summary: DEPRECATED Update Payment Method
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentMethodWriteRequest'
+      responses:
+        '200':
+          description: A subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Subscription'
+  '/users/user/client/{id}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Retrieve Client Details by ID
+      description: >-
+        Fetches the comprehensive details of a specific client using the given
+        unique identifier.
+      responses:
+        '200':
+          description: A client
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientResponse'
+    post:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Register a New Client with Specific ID
+      description: >-
+        Creates a new client entry using the provided details and the specified
+        identifier.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ClientCreateRequest'
+      responses:
+        '200':
+          description: A client
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientResponse'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Modify Existing Client Details by ID
+      description: >-
+        Updates the details of an existing client using the given unique
+        identifier based on the provided modifications.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ClientUpdateRequest'
+      responses:
+        '200':
+          description: A client
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientResponse'
+  '/users/user/tag/{id}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Retrieve User by Tag ID
+      description: >-
+        Fetches the user details associated with a specific tag identifier.
+        Useful for querying users based on custom tags or categories.
+      responses:
+        '200':
+          description: a newuser object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserTagResponse'
+  '/users/user/email/{email}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: email
+          description: Email Address
+          schema:
+            type: string
+      summary: Retrieve User by Email Address
+      description: >-
+        Fetches user details based on the provided email address. Useful for
+        situations where the email is known, and user specifics are required.
+      responses:
+        '200':
+          description: A newuser object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserByEmailResponse'
+  '/users/user/public/{id}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Retrieve Public User Profile by ID
+      description: >-
+        Obtains the public profile details of a user using their unique
+        identifier. This is useful when only non-sensitive, public-facing user
+        details are required.
+      responses:
+        '200':
+          description: A newuser object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicUserResponse'
+  /users/session/social-auth/google:
+    post:
+      summary: Authenticate using Google
+      description: >-
+        Allows users to sign in using their Google account. The client must
+        provide a valid Google token in the request.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SignInWithGoogleRequest'
+      responses:
+        '200':
+          description: user's session details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SessionResponse'
+  '/users/user/{id}/verification/existing-email':
+    post:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Initiate verification for an existing email address
+      description: >-
+        Starts the process of verifying an existing email address associated
+        with the user. This may trigger a verification email to be sent to the
+        user.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BeginExistingEmailVerificationRequest'
+      responses:
+        '200':
+          description: Email Verification Status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EmailVerificationResponse'
+  '/users/user/{id}/verification/email':
+    post:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Initiate Email Verification Process for User
+      description: >-
+        Starts the email verification procedure for the specified user by
+        sending a verification email.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BeginEmailVerificationRequest'
+      responses:
+        '200':
+          description: Email Verification Status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EmailVerificationResponse'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Confirm Email Verification Status
+      description: >-
+        Validates the email verification for the specified user using the
+        received verification code or token.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CompleteEmailVerificationRequest'
+      responses:
+        '200':
+          description: Email Verification Status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EmailVerificationResponse'
+  '/users/user/{id}/verification/phone':
+    post:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Start Phone Verification Process for User
+      description: >-
+        Initiates the phone verification procedure by sending an OTP or
+        verification code to the user's registered phone number.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BeginPhoneVerificationRequest'
+      responses:
+        '200':
+          description: Phone Verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PhoneVerificationResponse'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Validate Phone Verification Status
+      description: >-
+        Confirms the phone verification for the specified user using the
+        received OTP or verification code.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CompletePhoneVerificationRequest'
+      responses:
+        '200':
+          description: Phone Verification
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PhoneVerificationResponse'
+  /users/session/single-sign-on:
+    post:
+      summary: Create a Single Sign-On (SSO) Session
+      description: >-
+        Initiates a Single Sign-On (SSO) session for a user, allowing seamless
+        integration and login across multiple platforms or applications.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SsoSessionCreateRequest'
+      responses:
+        '200':
+          description: user's session details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SessionResponse'
+  /users/authentication:
+    post:
+      summary: Authenticate User Request
+      description: >-
+        Processes the user's credentials and generates a response indicating the
+        authentication status and potentially returning a token or session ID.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthenticationRequest'
+      responses:
+        '200':
+          description: Response for an authentication request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthenticationRequestResponse'
+  /users/authorization:
+    post:
+      summary: Request User Authorization
+      description: >-
+        Grants or verifies specific permissions (scopes) for a user based on the
+        provided request. This is commonly used for third-party applications
+        seeking access to certain user data or functionalities.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthorizationCreateRequest'
+      responses:
+        '200':
+          description: Authorized scopes on member
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthorizationResponse'
+    get:
+      summary: Retrieve All User Authorizations
+      description: >-
+        Lists all the authorizations and permissions that have been granted to a
+        user, providing an overview of their access levels across various
+        platforms or applications.
+      responses:
+        '200':
+          description: Authorized scopes on member
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthorizationListResponse'
+  /users/authorized-scopes:
+    get:
+      summary: Retrieve all authorized scopes
+      description: >-
+        Fetches a comprehensive list of all authorized scopes available in the
+        system.
+      responses:
+        '200':
+          description: A list of of authorization scope-groups
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AuthorizationScopeGroup'
+  /users/authorized-scope-groups:
+    get:
+      summary: Obtain all authorized scope-groups
+      description: >-
+        Provides an overview of all scope-groups which define a set of
+        permissions within the system.
+      responses:
+        '200':
+          description: A list of of authorization scope-groups
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AuthorizationScopeGroup'
+  '/users/authorized-scope-groups/{requestingUserId}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: requestingUserId
+          description: Requesting User Id
+          schema:
+            type: string
+      summary: Retrieve authorized scope-groups specific to a user
+      description: >-
+        Fetches authorized scope-groups that are assigned or relevant to a
+        particular user based on their user ID.
+      responses:
+        '200':
+          description: Authorized scopes on member
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthorizationScopes'
+  '/users/authorized-scopes/{requestingUserId}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: requestingUserId
+          description: Requesting User Id
+          schema:
+            type: string
+      summary: Obtain authorized scopes specific to a user
+      description: >-
+        Fetches the distinct authorized scopes assigned or relevant to a
+        particular user based on their user ID.
+      responses:
+        '200':
+          description: Authorized scopes on member
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthorizationScopes'
+  '/users/authorization/{authorizationId}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: authorizationId
+          description: Authorization Id
+          schema:
+            type: string
+      summary: Retrieve Authorization Details by ID
+      description: >-
+        Fetch the detailed information and scope of a specific authorization
+        using its unique identifier.
+      responses:
+        '200':
+          description: Authorized scopes on member
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthorizationResponse'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: authorizationId
+          description: Authorization Id
+          schema:
+            type: string
+      summary: Modify Existing Authorization Details
+      description: >-
+        Update the details or scopes of a specific authorization using its
+        unique identifier, allowing adjustment of the granted permissions.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthorizationUpdateRequest'
+      responses:
+        '200':
+          description: Authorized scopes on member
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthorizationResponse'
+    delete:
+      parameters:
+        - in: path
+          required: true
+          name: authorizationId
+          description: Authorization Id
+          schema:
+            type: string
+      summary: Revoke and Remove Authorization Record
+      description: >-
+        Completely removes an authorization, effectively revoking all its
+        associated permissions and scopes for the user.
+      responses:
+        '200':
+          description: Authorized scopes on member
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthorizationResponse'
+  '/users/authorization/accounts/{userId}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: userId
+          description: User Id
+          schema:
+            type: string
+      summary: Retrieve Accounts Authorized by User
+      description: >-
+        Fetches the list of accounts or services that the specified user has
+        granted authorization to.
+      responses:
+        '200':
+          description: List of users authorized on member
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthorizedAccountsResponse'
+  /users/activity:
+    get:
+      summary: Retrieve All Activities of a Member
+      description: >-
+        Lists all activities associated with a member, providing a comprehensive
+        view of their interactions and actions within the platform.
+      responses:
+        '200':
+          description: A member's activity
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Activity'
+    post:
+      summary: Log New Activity for Member
+      description: >-
+        Records a new activity for a member, detailing their recent actions or
+        interactions on the platform.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ActivityCreateRequest'
+      responses:
+        '200':
+          description: A member's activity
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Activity'
+  '/users/activity/{id}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Retrieve Specific Activity Details for a Member
+      description: >-
+        Fetches detailed information about a specific activity associated with a
+        member using its unique identifier.
+      responses:
+        '200':
+          description: A member's activity
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Activity'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Modify Specific Activity Details for a Member
+      description: >-
+        Updates the details of a specific activity record associated with a
+        member.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ActivityUpdateRequest'
+      responses:
+        '200':
+          description: A member's activity
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Activity'
+    delete:
+      parameters:
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Remove Specific Activity Record for a Member
+      description: >-
+        Deletes a specific activity record associated with a member, ensuring
+        that its details are no longer retrievable.
+      responses:
+        '200':
+          description: A member's activity
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Activity'
+  /users/user/occupation:
+    get:
+      summary: Retrieve User's Occupation Details
+      description: >-
+        Fetches a comprehensive list of occupations that users can associate
+        with their profiles. This provides insight into the user's profession or
+        field of expertise.
+      responses:
+        '200':
+          description: A list of occupations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Occupation'
+  '/users/user/member/{memberId}/nextgen-subscription-plan/{id}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: memberId
+          description: member ident
+          schema:
+            type: string
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Retrieve Specific Nextgen Subscription Plan
+      description: >-
+        Fetches detailed information and pricing for a specific Nextgen
+        Subscription Plan based on the provided plan ID.
+      responses:
+        '200':
+          description: A Nextgen Subscription Plan
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NextgenSubscriptionPlan'
+  '/users/user/member/{memberId}/nextgen-subscription-plan':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: memberId
+          description: member ident
+          schema:
+            type: string
+      summary: Browse Available Nextgen Subscription Plans
+      description: >-
+        Fetches an array of available Nextgen Subscription Plans, providing
+        members with an overview of the different subscription options,
+        features, and pricing details.
+      responses:
+        '200':
+          description: A list of Nextgen Subscription Plans
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/NextgenSubscriptionPlan'
+  '/users/user/member/{memberId}/nextgen-subscription':
+    post:
+      parameters:
+        - in: path
+          required: true
+          name: memberId
+          description: member ident
+          schema:
+            type: string
+      summary: Initiate a New Nextgen Subscription for a Member
+      description: >-
+        Create a Nextgen subscription for a specific member, granting them
+        access to Nextgen features and services.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubscriptionCreateRequest'
+      responses:
+        '200':
+          description: A nextgen subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NextgenSubscriptionResponse'
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: memberId
+          description: member ident
+          schema:
+            type: string
+      summary: Fetch All Nextgen Subscriptions for Member
+      description: >-
+        Retrieve all the active and previous Nextgen subscriptions associated
+        with the specified member.
+      responses:
+        '200':
+          description: A list of nextgen subscriptions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/NextgenSubscriptionResponse'
+  '/users/user/member/{memberId}/nextgen-subscription/{id}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: memberId
+          description: member ident
+          schema:
+            type: string
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Retrieve Details of a Specific Nextgen Subscription
+      description: >-
+        Fetch detailed information about a specific Nextgen subscription
+        associated with the member.
+      responses:
+        '200':
+          description: A nextgen subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NextgenSubscriptionResponse'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: memberId
+          description: member ident
+          schema:
+            type: string
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Modify an Existing Nextgen Subscription for Member
+      description: >-
+        Update the details or terms of an existing Nextgen subscription
+        associated with the specified member.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubscriptionUpdateRequest'
+      responses:
+        '200':
+          description: A nextgen subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NextgenSubscriptionResponse'
+    delete:
+      parameters:
+        - in: path
+          required: true
+          name: memberId
+          description: member ident
+          schema:
+            type: string
+        - in: path
+          required: true
+          name: id
+          description: Unique identifier
+          schema:
+            type: string
+      summary: Revoke a Nextgen Subscription for Member
+      description: >-
+        Remove and terminate a specific Nextgen subscription associated with the
+        member, revoking their access to Nextgen features.
+      responses:
+        '200':
+          description: A nextgen subscription object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NextgenSubscriptionResponse'
+  /users/user/location:
+    get:
+      summary: Retrieve User's Location
+      description: >-
+        Fetches the geographical location information associated with the user,
+        such as city, state, and country details.
+      responses:
+        '200':
+          description: Location Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LocationResponse'
+  /users/account-requirements:
+    post:
+      summary: Fetch Necessary Account Details
+      description: >-
+        Obtains the specific details and information required for the user to
+        set up or complete their account configuration.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccountRequirementsRequest'
+      responses:
+        '200':
+          description: Response for an account requirements request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountRequirementsResponse'
+  /users/organization/user:
+    post:
+      summary: Register New User within Organization
+      description: >-
+        Enables the creation of a new user account that will be linked to the
+        organization the current user belongs to.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserCreateRequest'
+      responses:
+        '200':
+          description: User object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewUser'
+    get:
+      summary: Retrieve All Organization User Accounts
+      description: >-
+        Provides a comprehensive list of all user accounts that are affiliated
+        with or under the jurisdiction of the specified organization.
+      responses:
+        '200':
+          description: List of user objects (used only as part organization user accounts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/NewUser'
+  '/users/organization/user/{userId}':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: userId
+          description: User Id
+          schema:
+            type: string
+      summary: Retrieve Organization User Profile
+      description: >-
+        Fetches detailed profile information of a specific user associated with
+        an organization using their unique user ID.
+      responses:
+        '200':
+          description: User object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewUser'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: userId
+          description: User Id
+          schema:
+            type: string
+      summary: Modify Organization User Profile
+      description: >-
+        Updates profile details of a user associated with an organization. Only
+        modified fields need to be included in the request.
+      responses:
+        '200':
+          description: User object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewUser'
+  '/users/organization/user/{userId}/session':
+    get:
+      parameters:
+        - in: path
+          required: true
+          name: userId
+          description: User Id
+          schema:
+            type: string
+      summary: Initiate Session for Organization User
+      description: >-
+        Initiates a session for an organization user, providing them access to
+        authorized resources.
+      responses:
+        '200':
+          description: user's session details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SessionResponse'
+  '/users/organization/user/{userId}/associate':
+    post:
+      parameters:
+        - in: path
+          required: true
+          name: userId
+          description: User Id
+          schema:
+            type: string
+      summary: Link a Child User to a Parent Organization Account
+      description: >-
+        Associates a user (child account) to a specific parent organization
+        account, enabling shared resources and permissions.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrganizationUserAssociation'
+      responses:
+        '200':
+          description: Association between a child user account and its parent
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrganizationAccount'
+    patch:
+      parameters:
+        - in: path
+          required: true
+          name: userId
+          description: User Id
+          schema:
+            type: string
+      summary: Modify the Association of Child User to Parent Organization
+      description: >-
+        Update the relationship details or permissions between a user and its
+        parent organization account.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrganizationUserAssociationUpdate'
+      responses:
+        '200':
+          description: Association between a child user account and its parent
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrganizationAccount'
+  /users/flatfile-auth-token:
+    post:
+      summary: Retrieve Authentication Token for Flatfile
+      description: >-
+        Request an authentication token required to access Flatfile services and
+        features.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlatfileAuthTokenRequest'
+      responses:
+        '200':
+          description: Response for flatfile auth token request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FlatfileAuthTokenResponse'
