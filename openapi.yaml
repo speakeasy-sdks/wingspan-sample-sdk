@@ -3707,10 +3707,9 @@ components:
         - Equals
         - Includes
   securitySchemes:
-    api_key:
-      type: apiKey
-      name: api_key
-      in: header
+    BearerAuth:
+      type: http
+      scheme: basic
 paths:
   /users/:
     get:
