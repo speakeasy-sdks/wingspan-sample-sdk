@@ -6,10 +6,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async () => {
     const sdk = new WingspanUsersAPI({
-        security: {
-            password: "",
-            username: "",
-        },
+        bearerAuth: "",
     });
 
     const res = await sdk.wingspanUsersAPI.deleteUsersAccountId({

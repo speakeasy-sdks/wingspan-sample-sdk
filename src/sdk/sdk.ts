@@ -27,10 +27,7 @@ export const ServerList = [
  * The available configuration options for the SDK
  */
 export type SDKProps = {
-    /**
-     * The security details required to authenticate the SDK
-     */
-    security?: shared.Security | (() => Promise<shared.Security>);
+    bearerAuth?: string;
 
     /**
      * Allows overriding the default axios client used by the SDK
@@ -59,9 +56,9 @@ export class SDKConfiguration {
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "1.0.0";
-    sdkVersion = "0.1.2";
+    sdkVersion = "0.1.3";
     genVersion = "2.169.3";
-    userAgent = "speakeasy-sdk/typescript 0.1.2 2.169.3 1.0.0 Wingspan-Users-API";
+    userAgent = "speakeasy-sdk/typescript 0.1.3 2.169.3 1.0.0 Wingspan-Users-API";
     retryConfig?: utils.RetryConfig;
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -85,7 +82,8 @@ export class WingspanUsersAPI {
         const defaultClient = props?.defaultClient ?? axios.create({ baseURL: serverURL });
         this.sdkConfiguration = new SDKConfiguration({
             defaultClient: defaultClient,
-            security: props?.security,
+            security: new shared.Security({ bearerAuth: props?.bearerAuth }),
+
             serverURL: serverURL,
             retryConfig: props?.retryConfig,
         });

@@ -114,10 +114,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersAccountId({
@@ -154,10 +151,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersActivityId({
@@ -194,10 +188,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersAuthorizationAuthorizationId({
@@ -234,10 +225,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersSessionApiId({
@@ -274,10 +262,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersSessionTokenId({
@@ -314,10 +299,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersSubscriptionGrantId({
@@ -354,10 +336,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersUserMemberSubscriptionId({
@@ -394,10 +373,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersUserMemberIdSubscription({
@@ -434,10 +410,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersUserMemberMemberIdNextgenSubscriptionId({
@@ -475,10 +448,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsers();
@@ -512,10 +482,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersAccount();
@@ -549,10 +516,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersAccountId({
@@ -589,10 +553,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersActivity();
@@ -626,10 +587,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersActivityId({
@@ -666,10 +624,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorization();
@@ -703,10 +658,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizationAccountsUserId({
@@ -743,10 +695,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizationAuthorizationId({
@@ -783,10 +732,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopeGroups();
@@ -820,10 +766,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopeGroupsRequestingUserId({
@@ -860,10 +803,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopes();
@@ -897,10 +837,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopesRequestingUserId({
@@ -937,10 +874,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersGrantedSubscriberSubscriptionGrant();
@@ -974,10 +908,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersOrganizationUser();
@@ -1011,10 +942,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersOrganizationUserUserId({
@@ -1051,10 +979,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersOrganizationUserUserIdSession({
@@ -1091,10 +1016,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersSessionApi();
@@ -1128,10 +1050,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersSessionApiId({
@@ -1168,10 +1087,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersSessionTokenId({
@@ -1208,10 +1124,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersSubscriptionGrant();
@@ -1245,10 +1158,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersSubscriptionGrantId({
@@ -1285,10 +1195,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserClientId({
@@ -1325,10 +1232,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserEmailEmail({
@@ -1365,10 +1269,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserLocation();
@@ -1402,10 +1303,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPaymentHistory();
@@ -1439,10 +1337,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPaymentMethod();
@@ -1476,10 +1371,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPlan();
@@ -1513,10 +1405,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPlanId({
@@ -1553,10 +1442,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionId({
@@ -1593,10 +1479,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberId({
@@ -1633,10 +1516,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberIdAdvocate({
@@ -1673,10 +1553,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberIdSubscription({
@@ -1713,10 +1590,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscription({
@@ -1753,10 +1627,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscriptionPlan({
@@ -1793,10 +1664,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscriptionPlanId({
@@ -1834,10 +1702,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscriptionId({
@@ -1875,10 +1740,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserOccupation();
@@ -1912,10 +1774,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserPublicId({
@@ -1952,10 +1811,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserTagId({
@@ -1992,10 +1848,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserId({
@@ -2033,10 +1886,7 @@ import { AccountUpdateRequestStatus, AccountUpdateRequestUsage } from "Wingspan-
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersAccountId({
@@ -2079,10 +1929,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersActivityId({
@@ -2125,10 +1972,7 @@ import { AuthorizationUpdateRequestAllowedAction } from "Wingspan-Users-API/dist
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersAuthorizationAuthorizationId({
@@ -2166,10 +2010,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersOrganizationUserUserId({
@@ -2213,10 +2054,7 @@ import {
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersOrganizationUserUserIdAssociate({
@@ -2262,10 +2100,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersSessionApiId({
@@ -2307,10 +2142,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersSessionOtp({
@@ -2348,10 +2180,7 @@ import { SubscriptionGrantUpdateRequestPackage, SubscriptionGrantUpdateRequestPa
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersSubscriptionGrantId({
@@ -2390,10 +2219,7 @@ import { CompanyStructure } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserClientId({
@@ -2451,10 +2277,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserMemberSubscriptionPaymentMethod({});
@@ -2494,10 +2317,7 @@ import {
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserMemberSubscriptionId({
@@ -2550,10 +2370,7 @@ import {
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserMemberId({
@@ -2639,10 +2456,7 @@ import {
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserMemberIdSubscription({
@@ -2685,10 +2499,7 @@ import {
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserMemberMemberIdNextgenSubscriptionId({
@@ -2728,10 +2539,7 @@ import { UserProfileGender } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserId({
@@ -2772,10 +2580,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserIdVerificationEmail({
@@ -2815,10 +2620,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserIdVerificationPhone({
@@ -2864,10 +2666,7 @@ import {
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersAccount({
@@ -2911,10 +2710,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersAccountLink({});
@@ -2949,10 +2745,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersAccountRequirements({
@@ -2990,10 +2783,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersActivity({
@@ -3030,10 +2820,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersAuthentication({
@@ -3075,10 +2862,7 @@ import {
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersAuthorization({
@@ -3135,10 +2919,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersFlatfileAuthToken({
@@ -3175,10 +2956,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersGuestAccountNumbers({
@@ -3217,10 +2995,7 @@ import { NewUserSettingsUserAccountType, UserCreateRequestStatus, UserProfileGen
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersOrganizationUser({
@@ -3267,10 +3042,7 @@ import {
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersOrganizationUserUserIdAssociate({
@@ -3316,10 +3088,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersPendingSession({});
@@ -3355,10 +3124,7 @@ import { NewUserSettingsUserAccountType, UserCreateRequestStatus, UserProfileGen
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersPendingUser({
@@ -3398,10 +3164,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersSession({});
@@ -3436,10 +3199,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersSessionApi({
@@ -3479,10 +3239,7 @@ import { OtpSessionCreateRequestChannel } from "Wingspan-Users-API/dist/sdk/mode
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersSessionOtp({});
@@ -3517,10 +3274,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersSessionRequestingUser({});
@@ -3555,10 +3309,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersSessionSingleSignOn({
@@ -3595,10 +3346,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersSessionSocialAuthGoogle({
@@ -3636,10 +3384,7 @@ import { SubscriptionGrantCreateRequestPackage, SubscriptionGrantCreateRequestPa
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersSubscriptionGrant({
@@ -3679,10 +3424,7 @@ import { NewUserSettingsUserAccountType, UserCreateRequestStatus, UserProfileGen
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersUser({
@@ -3723,10 +3465,7 @@ import { CompanyStructure } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserClientId({
@@ -3784,10 +3523,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserMemberSubscriptionPaymentMethod({});
@@ -3837,10 +3573,7 @@ import {
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserMemberId({
@@ -3926,10 +3659,7 @@ import {
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserMemberIdSubscription({
@@ -3972,10 +3702,7 @@ import {
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserMemberMemberIdNextgenSubscription({
@@ -4014,10 +3741,7 @@ import { PasswordResetRequestUserType } from "Wingspan-Users-API/dist/sdk/models
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserPasswordReset({
@@ -4055,10 +3779,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserIdVerificationEmail({
@@ -4098,10 +3819,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserIdVerificationExistingEmail({
@@ -4140,10 +3858,7 @@ import { BeginPhoneVerificationRequestChannel } from "Wingspan-Users-API/dist/sd
 
 (async() => {
   const sdk = new WingspanUsersAPI({
-    security: {
-      password: "",
-      username: "",
-    },
+    bearerAuth: "",
   });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserIdVerificationPhone({
