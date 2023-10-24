@@ -16,7 +16,8 @@ servers:
     description: Wingspan's Users API in Production
   - url: 'https://stagingapi.wingspan.app/payments'
     description: Wingspan's Users API in Staging
-security: []
+security:
+  - BearerAuth: []
 components:
   schemas:
     SessionCreateRequest:
