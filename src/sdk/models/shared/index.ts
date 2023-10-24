@@ -102,6 +102,7 @@ export * from "./redacteduser";
 export * from "./scheduledchange";
 export * from "./scopemodification";
 export * from "./scopemodificationsmap";
+export * from "./security";
 export * from "./servicestatus";
 export * from "./sessioncreaterequest";
 export * from "./sessionresponse";

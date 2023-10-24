@@ -238,6 +238,7 @@ src/sdk/models/shared/passwordresetrequest.ts
 src/sdk/models/shared/beginemailverificationrequest.ts
 src/sdk/models/shared/beginexistingemailverificationrequest.ts
 src/sdk/models/shared/beginphoneverificationrequest.ts
+src/sdk/models/shared/security.ts
 src/sdk/models/shared/index.ts
 src/sdk/models/errors/index.ts
 USAGE.md
@@ -621,5 +622,6 @@ docs/models/shared/beginemailverificationrequest.md
 docs/models/shared/beginexistingemailverificationrequest.md
 docs/models/shared/beginphoneverificationrequestchannel.md
 docs/models/shared/beginphoneverificationrequest.md
+docs/models/shared/security.md
 docs/sdks/wingspanusersapi/README.md
 .gitattributes

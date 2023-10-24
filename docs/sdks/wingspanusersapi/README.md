@@ -113,7 +113,12 @@ Allows members to securely remove a linked bank account from their profile.
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersAccountId({
     id: "<ID>",
@@ -148,7 +153,12 @@ Deletes a specific activity record associated with a member, ensuring that its d
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersActivityId({
     id: "<ID>",
@@ -183,7 +193,12 @@ Completely removes an authorization, effectively revoking all its associated per
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersAuthorizationAuthorizationId({
     authorizationId: "string",
@@ -218,7 +233,12 @@ Deletes a specific API session, ending its validity and associated permissions.
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersSessionApiId({
     id: "<ID>",
@@ -253,7 +273,12 @@ Safely terminates the active user session associated with the provided session t
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersSessionTokenId({
     id: "<ID>",
@@ -288,7 +313,12 @@ Safely deletes the subscription grant associated with the provided unique identi
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersSubscriptionGrantId({
     id: "<ID>",
@@ -323,7 +353,12 @@ DEPRECATEDdeleteSubscription
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersUserMemberSubscriptionId({
     id: "<ID>",
@@ -358,7 +393,12 @@ Deletes the specified subscription associated with the member, removing any rela
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersUserMemberIdSubscription({
     id: "<ID>",
@@ -393,7 +433,12 @@ Remove and terminate a specific Nextgen subscription associated with the member,
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.deleteUsersUserMemberMemberIdNextgenSubscriptionId({
     id: "<ID>",
@@ -429,7 +474,12 @@ Verifies the connectivity and health status of the User Service by sending a pin
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsers();
 
@@ -461,7 +511,12 @@ Fetches a list of all bank accounts associated with the member, providing an ove
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersAccount();
 
@@ -493,7 +548,12 @@ Retrieves comprehensive details for a specified bank account linked to the membe
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersAccountId({
     id: "<ID>",
@@ -528,7 +588,12 @@ Lists all activities associated with a member, providing a comprehensive view of
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersActivity();
 
@@ -560,7 +625,12 @@ Fetches detailed information about a specific activity associated with a member 
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersActivityId({
     id: "<ID>",
@@ -595,7 +665,12 @@ Lists all the authorizations and permissions that have been granted to a user, p
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorization();
 
@@ -627,7 +702,12 @@ Fetches the list of accounts or services that the specified user has granted aut
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizationAccountsUserId({
     userId: "string",
@@ -662,7 +742,12 @@ Fetch the detailed information and scope of a specific authorization using its u
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizationAuthorizationId({
     authorizationId: "string",
@@ -697,7 +782,12 @@ Provides an overview of all scope-groups which define a set of permissions withi
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopeGroups();
 
@@ -729,7 +819,12 @@ Fetches authorized scope-groups that are assigned or relevant to a particular us
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopeGroupsRequestingUserId({
     requestingUserId: "string",
@@ -764,7 +859,12 @@ Fetches a comprehensive list of all authorized scopes available in the system.
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopes();
 
@@ -796,7 +896,12 @@ Fetches the distinct authorized scopes assigned or relevant to a particular user
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopesRequestingUserId({
     requestingUserId: "string",
@@ -831,7 +936,12 @@ Fetches a list of subscription grants associated with a specific granted subscri
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersGrantedSubscriberSubscriptionGrant();
 
@@ -863,7 +973,12 @@ Provides a comprehensive list of all user accounts that are affiliated with or u
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersOrganizationUser();
 
@@ -895,7 +1010,12 @@ Fetches detailed profile information of a specific user associated with an organ
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersOrganizationUserUserId({
     userId: "string",
@@ -930,7 +1050,12 @@ Initiates a session for an organization user, providing them access to authorize
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersOrganizationUserUserIdSession({
     userId: "string",
@@ -965,7 +1090,12 @@ Lists all API sessions that were initiated by the authenticated user, aiding in 
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersSessionApi();
 
@@ -997,7 +1127,12 @@ Retrieves the details of an API session using its unique identifier.
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersSessionApiId({
     id: "<ID>",
@@ -1032,7 +1167,12 @@ Fetches details of an active user session using the provided unique session toke
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersSessionTokenId({
     id: "<ID>",
@@ -1067,7 +1207,12 @@ Lists all the subscription grants in the system, helping administrators or manag
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersSubscriptionGrant();
 
@@ -1099,7 +1244,12 @@ Fetches the details of a specific subscription grant for a user using the provid
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersSubscriptionGrantId({
     id: "<ID>",
@@ -1134,7 +1284,12 @@ Fetches the comprehensive details of a specific client using the given unique id
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserClientId({
     id: "<ID>",
@@ -1169,7 +1324,12 @@ Fetches user details based on the provided email address. Useful for situations 
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserEmailEmail({
     email: "Vincenzo19@gmail.com",
@@ -1204,7 +1364,12 @@ Fetches the geographical location information associated with the user, such as 
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserLocation();
 
@@ -1236,7 +1401,12 @@ Fetches a history of payments made for the user's membership subscription.
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPaymentHistory();
 
@@ -1268,7 +1438,12 @@ DEPRECATED Get Payment Method
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPaymentMethod();
 
@@ -1300,7 +1475,12 @@ DEPRECATEDlist membership plans
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPlan();
 
@@ -1332,7 +1512,12 @@ DEPRECATEDget membership plan
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPlanId({
     id: "<ID>",
@@ -1367,7 +1552,12 @@ DEPRECATEDgetSubscription
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionId({
     id: "<ID>",
@@ -1402,7 +1592,12 @@ Fetches the details of the subscription associated with the specified member.
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberId({
     id: "<ID>",
@@ -1437,7 +1632,12 @@ Fetches the advocate details associated with the specified member. An advocate o
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberIdAdvocate({
     id: "<ID>",
@@ -1472,7 +1672,12 @@ Fetches the details of the subscription associated with the specified member.
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberIdSubscription({
     id: "<ID>",
@@ -1507,7 +1712,12 @@ Retrieve all the active and previous Nextgen subscriptions associated with the s
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscription({
     memberId: "string",
@@ -1542,7 +1752,12 @@ Fetches an array of available Nextgen Subscription Plans, providing members with
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscriptionPlan({
     memberId: "string",
@@ -1577,7 +1792,12 @@ Fetches detailed information and pricing for a specific Nextgen Subscription Pla
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscriptionPlanId({
     id: "<ID>",
@@ -1613,7 +1833,12 @@ Fetch detailed information about a specific Nextgen subscription associated with
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscriptionId({
     id: "<ID>",
@@ -1649,7 +1874,12 @@ Fetches a comprehensive list of occupations that users can associate with their 
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserOccupation();
 
@@ -1681,7 +1911,12 @@ Obtains the public profile details of a user using their unique identifier. This
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserPublicId({
     id: "<ID>",
@@ -1716,7 +1951,12 @@ Fetches the user details associated with a specific tag identifier. Useful for q
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserTagId({
     id: "<ID>",
@@ -1751,7 +1991,12 @@ Retrieves comprehensive details of a user account using the provided unique user
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.getUsersUserId({
     id: "<ID>",
@@ -1787,7 +2032,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { AccountUpdateRequestStatus, AccountUpdateRequestUsage } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersAccountId({
     accountUpdateRequest: {
@@ -1828,7 +2078,12 @@ Updates the details of a specific activity record associated with a member.
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersActivityId({
     activityUpdateRequest: {
@@ -1869,7 +2124,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { AuthorizationUpdateRequestAllowedAction } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersAuthorizationAuthorizationId({
     authorizationUpdateRequest: {},
@@ -1905,7 +2165,12 @@ Updates profile details of a user associated with an organization. Only modified
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersOrganizationUserUserId({
     userId: "string",
@@ -1947,7 +2212,12 @@ import {
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersOrganizationUserUserIdAssociate({
     organizationUserAssociationUpdate: {
@@ -1991,7 +2261,12 @@ Updates the properties of an existing API session based on provided input.
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersSessionApiId({
     apiSessionUpdateRequest: {
@@ -2031,7 +2306,12 @@ Validates and completes the OTP/2FA verification process by checking the provide
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersSessionOtp({
     code: "string",
@@ -2067,7 +2347,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { SubscriptionGrantUpdateRequestPackage, SubscriptionGrantUpdateRequestPackageTier } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersSubscriptionGrantId({
     subscriptionGrantUpdateRequest: {},
@@ -2104,7 +2389,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { CompanyStructure } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserClientId({
     clientUpdateRequest: {
@@ -2160,7 +2450,12 @@ DEPRECATED Update Payment Method
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserMemberSubscriptionPaymentMethod({});
 
@@ -2198,7 +2493,12 @@ import {
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserMemberSubscriptionId({
     subscriptionUpdateRequest: {},
@@ -2249,7 +2549,12 @@ import {
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserMemberId({
     memberUpdateRequest: {
@@ -2333,7 +2638,12 @@ import {
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserMemberIdSubscription({
     subscriptionUpdateRequest: {},
@@ -2374,7 +2684,12 @@ import {
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserMemberMemberIdNextgenSubscriptionId({
     subscriptionUpdateRequest: {},
@@ -2412,7 +2727,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { UserProfileGender } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserId({
     userUpdateRequest: {
@@ -2451,7 +2771,12 @@ Validates the email verification for the specified user using the received verif
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserIdVerificationEmail({
     completeEmailVerificationRequest: {
@@ -2489,7 +2814,12 @@ Confirms the phone verification for the specified user using the received OTP or
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.patchUsersUserIdVerificationPhone({
     completePhoneVerificationRequest: {
@@ -2533,7 +2863,12 @@ import {
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersAccount({
     canBeUsedFor: {},
@@ -2575,7 +2910,12 @@ Initiates the process to generate a token for integrating with Plaid Link or con
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersAccountLink({});
 
@@ -2608,7 +2948,12 @@ Obtains the specific details and information required for the user to set up or 
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersAccountRequirements({
     country: "Tokelau",
@@ -2644,7 +2989,12 @@ Records a new activity for a member, detailing their recent actions or interacti
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersActivity({
     userId: "string",
@@ -2679,7 +3029,12 @@ Processes the user's credentials and generates a response indicating the authent
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersAuthentication({
     email: "Malvina_Christiansen@gmail.com",
@@ -2719,7 +3074,12 @@ import {
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersAuthorization({
     requestingUserId: "string",
@@ -2774,7 +3134,12 @@ Request an authentication token required to access Flatfile services and feature
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersFlatfileAuthToken({
     embedId: "string",
@@ -2809,7 +3174,12 @@ Allows guest users to fetch their associated bank account numbers based on the p
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersGuestAccountNumbers({
     accountId: "string",
@@ -2846,7 +3216,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { NewUserSettingsUserAccountType, UserCreateRequestStatus, UserProfileGender } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersOrganizationUser({
     email: "Finn_Kunze32@hotmail.com",
@@ -2891,7 +3266,12 @@ import {
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersOrganizationUserUserIdAssociate({
     organizationUserAssociation: {
@@ -2935,7 +3315,12 @@ Creates a new user session that's initialized with a "pending" status. This can 
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersPendingSession({});
 
@@ -2969,7 +3354,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { NewUserSettingsUserAccountType, UserCreateRequestStatus, UserProfileGender } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersPendingUser({
     email: "Vicente11@hotmail.com",
@@ -3007,7 +3397,12 @@ Creates a new user session based on the provided credentials or token, allowing 
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersSession({});
 
@@ -3040,7 +3435,12 @@ Initiates a session specifically for API interactions, providing the necessary c
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersSessionApi({
     labels: {
@@ -3078,7 +3478,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { OtpSessionCreateRequestChannel } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersSessionOtp({});
 
@@ -3111,7 +3516,12 @@ Allows an authorized user (e.g., admin) to create a session by signing in as ano
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersSessionRequestingUser({});
 
@@ -3144,7 +3554,12 @@ Initiates a Single Sign-On (SSO) session for a user, allowing seamless integrati
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersSessionSingleSignOn({
     singleSignOnCode: "string",
@@ -3179,7 +3594,12 @@ Allows users to sign in using their Google account. The client must provide a va
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersSessionSocialAuthGoogle({
     idToken: "string",
@@ -3215,7 +3635,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { SubscriptionGrantCreateRequestPackage, SubscriptionGrantCreateRequestPackageTier } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersSubscriptionGrant({
     granteeId: "string",
@@ -3253,7 +3678,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { NewUserSettingsUserAccountType, UserCreateRequestStatus, UserProfileGender } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersUser({
     email: "Juana_Balistreri@gmail.com",
@@ -3292,7 +3722,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { CompanyStructure } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserClientId({
     clientCreateRequest: {
@@ -3348,7 +3783,12 @@ DEPRECATED create Payment Method
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserMemberSubscriptionPaymentMethod({});
 
@@ -3396,7 +3836,12 @@ import {
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserMemberId({
     memberCreateRequest: {
@@ -3480,7 +3925,12 @@ import {
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserMemberIdSubscription({
     subscriptionCreateRequest: {},
@@ -3521,7 +3971,12 @@ import {
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserMemberMemberIdNextgenSubscription({
     subscriptionCreateRequest: {},
@@ -3558,7 +4013,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { PasswordResetRequestUserType } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserPasswordReset({
     email: "Corrine44@yahoo.com",
@@ -3594,7 +4054,12 @@ Starts the email verification procedure for the specified user by sending a veri
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserIdVerificationEmail({
     beginEmailVerificationRequest: {
@@ -3632,7 +4097,12 @@ Starts the process of verifying an existing email address associated with the us
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserIdVerificationExistingEmail({
     beginExistingEmailVerificationRequest: {},
@@ -3669,7 +4139,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 import { BeginPhoneVerificationRequestChannel } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
-  const sdk = new WingspanUsersAPI();
+  const sdk = new WingspanUsersAPI({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
 
   const res = await sdk.wingspanUsersAPI.postUsersUserIdVerificationPhone({
     beginPhoneVerificationRequest: {
