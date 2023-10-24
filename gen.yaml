@@ -1,15 +1,28 @@
 configVersion: 1.0.0
+management:
+  docChecksum: 44be4f57251e2adb5c2f21b8ae57f164
+  docVersion: 1.0.0
+  speakeasyVersion: 1.105.0
+  generationVersion: 2.169.3
 generation:
   comments:
     disableComments: false
     omitDescriptionIfSummaryPresent: false
   baseServerURL: ""
+  repoURL: https://github.com/speakeasy-sdks/wingspan-sample-sdk.git
   sdkClassName: Wingspan-Users-API
   singleTagPerOp: false
   tagNamespacingDisabled: false
+features:
+  typescript:
+    core: 2.93.0
+    globalServerURLs: 2.82.0
 typescript:
-  version: 0.0.1
+  version: 0.1.0
   author: wingspan
   clientServerStatusCodesAsErrors: true
+  flattenGlobalSecurity: true
+  installationURL: https://github.com/speakeasy-sdks/wingspan-sample-sdk
   maxMethodParams: 0
   packageName: Wingspan-Users-API
+  repoSubDirectory: .
