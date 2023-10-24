@@ -15,15 +15,15 @@ It has been generated successfully based on your OpenAPI spec. However, it is no
 - [ ] 🎁 Publish your SDK to package managers by [configuring automatic publishing](https://www.speakeasyapi.dev/docs/productionize-sdks/publish-sdks)
 - [ ] ✨ When ready to productionize, delete this section from the README
 <!-- Start SDK Installation -->
-# SDK Installation
+## SDK Installation
 
-## NPM
+### NPM
 
 ```bash
 npm add https://github.com/speakeasy-sdks/wingspan-sample-sdk
 ```
 
-## Yarn
+### Yarn
 
 ```bash
 yarn add https://github.com/speakeasy-sdks/wingspan-sample-sdk
@@ -32,8 +32,6 @@ yarn add https://github.com/speakeasy-sdks/wingspan-sample-sdk
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
@@ -53,9 +51,9 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 <!-- End SDK Example Usage -->
 
 <!-- Start SDK Available Operations -->
-# Available Resources and Operations
+## Available Resources and Operations
 
-## [WingspanUsersAPI SDK](docs/sdks/wingspanusersapi/README.md)
+### [WingspanUsersAPI SDK](docs/sdks/wingspanusersapi/README.md)
 
 * [deleteUsersAccountId](docs/sdks/wingspanusersapi/README.md#deleteusersaccountid) - Unlink Bank Account
 * [deleteUsersActivityId](docs/sdks/wingspanusersapi/README.md#deleteusersactivityid) - Remove Specific Activity Record for a Member
@@ -155,8 +153,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 <!-- End SDK Available Operations -->
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 
