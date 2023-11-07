@@ -117,9 +117,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.deleteUsersAccountId({
+  const res = await sdk.deleteUsersAccountId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -154,9 +155,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.deleteUsersActivityId({
+  const res = await sdk.deleteUsersActivityId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -191,9 +193,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.deleteUsersAuthorizationAuthorizationId({
+  const res = await sdk.deleteUsersAuthorizationAuthorizationId({
     authorizationId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -228,9 +231,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.deleteUsersSessionApiId({
+  const res = await sdk.deleteUsersSessionApiId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -265,9 +269,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.deleteUsersSessionTokenId({
+  const res = await sdk.deleteUsersSessionTokenId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -302,9 +307,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.deleteUsersSubscriptionGrantId({
+  const res = await sdk.deleteUsersSubscriptionGrantId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -339,9 +345,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.deleteUsersUserMemberSubscriptionId({
+  const res = await sdk.deleteUsersUserMemberSubscriptionId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -376,9 +383,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.deleteUsersUserMemberIdSubscription({
+  const res = await sdk.deleteUsersUserMemberIdSubscription({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -413,10 +421,11 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.deleteUsersUserMemberMemberIdNextgenSubscriptionId({
+  const res = await sdk.deleteUsersUserMemberMemberIdNextgenSubscriptionId({
     id: "<ID>",
     memberId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -451,7 +460,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsers();
+  const res = await sdk.getUsers();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -485,7 +495,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersAccount();
+  const res = await sdk.getUsersAccount();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -519,9 +530,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersAccountId({
+  const res = await sdk.getUsersAccountId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -556,7 +568,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersActivity();
+  const res = await sdk.getUsersActivity();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -590,9 +603,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersActivityId({
+  const res = await sdk.getUsersActivityId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -627,7 +641,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersAuthorization();
+  const res = await sdk.getUsersAuthorization();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -661,9 +676,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersAuthorizationAccountsUserId({
+  const res = await sdk.getUsersAuthorizationAccountsUserId({
     userId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -698,9 +714,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersAuthorizationAuthorizationId({
+  const res = await sdk.getUsersAuthorizationAuthorizationId({
     authorizationId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -735,7 +752,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopeGroups();
+  const res = await sdk.getUsersAuthorizedScopeGroups();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -769,9 +787,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopeGroupsRequestingUserId({
+  const res = await sdk.getUsersAuthorizedScopeGroupsRequestingUserId({
     requestingUserId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -806,7 +825,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopes();
+  const res = await sdk.getUsersAuthorizedScopes();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -840,9 +860,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersAuthorizedScopesRequestingUserId({
+  const res = await sdk.getUsersAuthorizedScopesRequestingUserId({
     requestingUserId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -877,7 +898,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersGrantedSubscriberSubscriptionGrant();
+  const res = await sdk.getUsersGrantedSubscriberSubscriptionGrant();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -911,7 +933,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersOrganizationUser();
+  const res = await sdk.getUsersOrganizationUser();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -945,9 +968,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersOrganizationUserUserId({
+  const res = await sdk.getUsersOrganizationUserUserId({
     userId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -982,9 +1006,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersOrganizationUserUserIdSession({
+  const res = await sdk.getUsersOrganizationUserUserIdSession({
     userId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1019,7 +1044,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersSessionApi();
+  const res = await sdk.getUsersSessionApi();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1053,9 +1079,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersSessionApiId({
+  const res = await sdk.getUsersSessionApiId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1090,9 +1117,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersSessionTokenId({
+  const res = await sdk.getUsersSessionTokenId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1127,7 +1155,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersSubscriptionGrant();
+  const res = await sdk.getUsersSubscriptionGrant();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1161,9 +1190,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersSubscriptionGrantId({
+  const res = await sdk.getUsersSubscriptionGrantId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1198,9 +1228,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserClientId({
+  const res = await sdk.getUsersUserClientId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1235,9 +1266,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserEmailEmail({
+  const res = await sdk.getUsersUserEmailEmail({
     email: "Vincenzo19@gmail.com",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1272,7 +1304,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserLocation();
+  const res = await sdk.getUsersUserLocation();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1306,7 +1339,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPaymentHistory();
+  const res = await sdk.getUsersUserMemberSubscriptionPaymentHistory();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1340,7 +1374,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPaymentMethod();
+  const res = await sdk.getUsersUserMemberSubscriptionPaymentMethod();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1374,7 +1409,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPlan();
+  const res = await sdk.getUsersUserMemberSubscriptionPlan();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1408,9 +1444,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionPlanId({
+  const res = await sdk.getUsersUserMemberSubscriptionPlanId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1445,9 +1482,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberSubscriptionId({
+  const res = await sdk.getUsersUserMemberSubscriptionId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1482,9 +1520,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberId({
+  const res = await sdk.getUsersUserMemberId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1519,9 +1558,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberIdAdvocate({
+  const res = await sdk.getUsersUserMemberIdAdvocate({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1556,9 +1596,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberIdSubscription({
+  const res = await sdk.getUsersUserMemberIdSubscription({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1593,9 +1634,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscription({
+  const res = await sdk.getUsersUserMemberMemberIdNextgenSubscription({
     memberId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1630,9 +1672,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscriptionPlan({
+  const res = await sdk.getUsersUserMemberMemberIdNextgenSubscriptionPlan({
     memberId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1667,10 +1710,11 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscriptionPlanId({
+  const res = await sdk.getUsersUserMemberMemberIdNextgenSubscriptionPlanId({
     id: "<ID>",
     memberId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1705,10 +1749,11 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserMemberMemberIdNextgenSubscriptionId({
+  const res = await sdk.getUsersUserMemberMemberIdNextgenSubscriptionId({
     id: "<ID>",
     memberId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1743,7 +1788,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserOccupation();
+  const res = await sdk.getUsersUserOccupation();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1777,9 +1823,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserPublicId({
+  const res = await sdk.getUsersUserPublicId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1814,9 +1861,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserTagId({
+  const res = await sdk.getUsersUserTagId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1851,9 +1899,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.getUsersUserId({
+  const res = await sdk.getUsersUserId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1889,7 +1938,7 @@ import { AccountUpdateRequestStatus, AccountUpdateRequestUsage } from "Wingspan-
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersAccountId({
+  const res = await sdk.patchUsersAccountId({
     accountUpdateRequest: {
       integration: {
         quickbooks: {},
@@ -1898,6 +1947,7 @@ import { AccountUpdateRequestStatus, AccountUpdateRequestUsage } from "Wingspan-
     },
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1932,7 +1982,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersActivityId({
+  const res = await sdk.patchUsersActivityId({
     activityUpdateRequest: {
       context: {},
       events: {},
@@ -1940,6 +1990,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     },
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -1975,10 +2026,11 @@ import { AuthorizationUpdateRequestAllowedAction } from "Wingspan-Users-API/dist
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersAuthorizationAuthorizationId({
+  const res = await sdk.patchUsersAuthorizationAuthorizationId({
     authorizationUpdateRequest: {},
     authorizationId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2013,9 +2065,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersOrganizationUserUserId({
+  const res = await sdk.patchUsersOrganizationUserUserId({
     userId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2045,11 +2098,11 @@ Update the relationship details or permissions between a user and its parent org
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 import {
-  OrganizationInheritanceStrategyExternalFinancialAccounts,
-  OrganizationInheritanceStrategyFundingSource,
-  OrganizationInheritanceStrategyPayoutSettings,
-  OrganizationInheritanceStrategyWingspanAccount,
-  OrganizationInheritanceStrategyWingspanFinancialSettings,
+  ExternalFinancialAccounts,
+  FundingSource,
+  PayoutSettings,
+  WingspanAccount,
+  WingspanFinancialSettings,
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
@@ -2057,18 +2110,19 @@ import {
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersOrganizationUserUserIdAssociate({
+  const res = await sdk.patchUsersOrganizationUserUserIdAssociate({
     organizationUserAssociationUpdate: {
       inheritanceStrategy: {
-        externalFinancialAccounts: OrganizationInheritanceStrategyExternalFinancialAccounts.None,
-        fundingSource: OrganizationInheritanceStrategyFundingSource.None,
-        payoutSettings: OrganizationInheritanceStrategyPayoutSettings.None,
-        wingspanAccount: OrganizationInheritanceStrategyWingspanAccount.Parent,
-        wingspanFinancialSettings: OrganizationInheritanceStrategyWingspanFinancialSettings.Parent,
+        externalFinancialAccounts: ExternalFinancialAccounts.None,
+        fundingSource: FundingSource.None,
+        payoutSettings: PayoutSettings.None,
+        wingspanAccount: WingspanAccount.Parent,
+        wingspanFinancialSettings: WingspanFinancialSettings.Parent,
       },
     },
     userId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2103,7 +2157,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersSessionApiId({
+  const res = await sdk.patchUsersSessionApiId({
     apiSessionUpdateRequest: {
       labels: {
         "key": "string",
@@ -2111,6 +2165,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     },
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2145,9 +2200,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersSessionOtp({
+  const res = await sdk.patchUsersSessionOtp({
     code: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2183,10 +2239,11 @@ import { SubscriptionGrantUpdateRequestPackage, SubscriptionGrantUpdateRequestPa
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersSubscriptionGrantId({
+  const res = await sdk.patchUsersSubscriptionGrantId({
     subscriptionGrantUpdateRequest: {},
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2215,14 +2272,14 @@ Updates the details of an existing client using the given unique identifier base
 
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
-import { CompanyStructure } from "Wingspan-Users-API/dist/sdk/models/shared";
+import { Structure } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersUserClientId({
+  const res = await sdk.patchUsersUserClientId({
     clientUpdateRequest: {
       clientId: "string",
       profile: {
@@ -2246,6 +2303,7 @@ import { CompanyStructure } from "Wingspan-Users-API/dist/sdk/models/shared";
     },
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2280,7 +2338,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersUserMemberSubscriptionPaymentMethod({});
+  const res = await sdk.patchUsersUserMemberSubscriptionPaymentMethod({});
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2320,10 +2379,11 @@ import {
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersUserMemberSubscriptionId({
+  const res = await sdk.patchUsersUserMemberSubscriptionId({
     subscriptionUpdateRequest: {},
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2354,6 +2414,8 @@ Updates the details of an existing subscription for the specified member based o
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 import {
   CompanyWriteStructure,
+  FilingCode,
+  FilingType,
   MemberProfileVisibilityMapAddress,
   MemberProfileVisibilityMapPhone,
   MemberProfileWriteBookkeepingProductsUsed,
@@ -2363,9 +2425,7 @@ import {
   MemberProfileWriteInterests,
   MemberProfileWriteProductAspectImportance,
   MemberProfileWriteProductImportance,
-  MemberTaxInfoFilingCode,
-  MemberTaxInfoFilingType,
-  SixHundredAndSeventeenceb0bc24fcf187ab7e6b13633442b8671de98ff04917ce2c41034e5482b5fStatus,
+  Status,
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
@@ -2373,7 +2433,7 @@ import {
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersUserMemberId({
+  const res = await sdk.patchUsersUserMemberId({
     memberUpdateRequest: {
       memberId: "string",
       profile: {
@@ -2421,6 +2481,7 @@ import {
     id: "<ID>",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2459,10 +2520,11 @@ import {
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersUserMemberIdSubscription({
+  const res = await sdk.patchUsersUserMemberIdSubscription({
     subscriptionUpdateRequest: {},
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2502,11 +2564,12 @@ import {
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersUserMemberMemberIdNextgenSubscriptionId({
+  const res = await sdk.patchUsersUserMemberMemberIdNextgenSubscriptionId({
     subscriptionUpdateRequest: {},
     id: "<ID>",
     memberId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2535,20 +2598,21 @@ Enables modifications to the existing user account information using the specifi
 
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
-import { UserProfileGender } from "Wingspan-Users-API/dist/sdk/models/shared";
+import { Gender } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersUserId({
+  const res = await sdk.patchUsersUserId({
     userUpdateRequest: {
       notificationSettings: {},
       profile: {},
     },
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2583,12 +2647,13 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersUserIdVerificationEmail({
+  const res = await sdk.patchUsersUserIdVerificationEmail({
     completeEmailVerificationRequest: {
       emailVerificationId: "string",
     },
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2623,12 +2688,13 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.patchUsersUserIdVerificationPhone({
+  const res = await sdk.patchUsersUserIdVerificationPhone({
     completePhoneVerificationRequest: {
       code: "string",
     },
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2669,7 +2735,7 @@ import {
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersAccount({
+  const res = await sdk.postUsersAccount({
     canBeUsedFor: {},
     numbers: {
       account: "31307069",
@@ -2679,6 +2745,7 @@ import {
     ],
     usedFor: {},
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2713,7 +2780,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersAccountLink({});
+  const res = await sdk.postUsersAccountLink({});
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2748,10 +2816,11 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersAccountRequirements({
+  const res = await sdk.postUsersAccountRequirements({
     country: "Tokelau",
     currency: "Uganda Shilling",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2786,9 +2855,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersActivity({
+  const res = await sdk.postUsersActivity({
     userId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2823,9 +2893,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersAuthentication({
+  const res = await sdk.postUsersAuthentication({
     email: "Malvina_Christiansen@gmail.com",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2854,40 +2925,37 @@ Grants or verifies specific permissions (scopes) for a user based on the provide
 
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
-import {
-  AuthorizationCreateRequestAllowedAction,
-  ScopeModificationAction,
-  ScopeModificationComparator,
-} from "Wingspan-Users-API/dist/sdk/models/shared";
+import { Action, AllowedAction, Comparator } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersAuthorization({
+  const res = await sdk.postUsersAuthorization({
     requestingUserId: "string",
     scopeModifications: {
       payments: {
         memberClient: [
           {
-            action: ScopeModificationAction.Allow,
+            action: Action.Allow,
             attribute: "string",
-            comparator: ScopeModificationComparator.Includes,
+            comparator: Comparator.Includes,
             value: "string",
           },
         ],
         payable: [
           {
-            action: ScopeModificationAction.Deny,
+            action: Action.Deny,
             attribute: "string",
-            comparator: ScopeModificationComparator.Equals,
+            comparator: Comparator.Equals,
             value: "string",
           },
         ],
       },
     },
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2922,9 +2990,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersFlatfileAuthToken({
+  const res = await sdk.postUsersFlatfileAuthToken({
     embedId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2959,10 +3028,11 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersGuestAccountNumbers({
+  const res = await sdk.postUsersGuestAccountNumbers({
     accountId: "string",
     publicToken: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -2991,19 +3061,20 @@ Enables the creation of a new user account that will be linked to the organizati
 
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
-import { NewUserSettingsUserAccountType, UserCreateRequestStatus, UserProfileGender } from "Wingspan-Users-API/dist/sdk/models/shared";
+import { Gender, UserAccountType, UserCreateRequestStatus } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersOrganizationUser({
+  const res = await sdk.postUsersOrganizationUser({
     email: "Finn_Kunze32@hotmail.com",
     notificationSettings: {},
     profile: {},
     settings: {},
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3033,11 +3104,11 @@ Associates a user (child account) to a specific parent organization account, ena
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 import {
-  OrganizationInheritanceStrategyExternalFinancialAccounts,
-  OrganizationInheritanceStrategyFundingSource,
-  OrganizationInheritanceStrategyPayoutSettings,
-  OrganizationInheritanceStrategyWingspanAccount,
-  OrganizationInheritanceStrategyWingspanFinancialSettings,
+  ExternalFinancialAccounts,
+  FundingSource,
+  PayoutSettings,
+  WingspanAccount,
+  WingspanFinancialSettings,
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
@@ -3045,18 +3116,19 @@ import {
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersOrganizationUserUserIdAssociate({
+  const res = await sdk.postUsersOrganizationUserUserIdAssociate({
     organizationUserAssociation: {
       inheritanceStrategy: {
-        externalFinancialAccounts: OrganizationInheritanceStrategyExternalFinancialAccounts.None,
-        fundingSource: OrganizationInheritanceStrategyFundingSource.Parent,
-        payoutSettings: OrganizationInheritanceStrategyPayoutSettings.None,
-        wingspanAccount: OrganizationInheritanceStrategyWingspanAccount.Parent,
-        wingspanFinancialSettings: OrganizationInheritanceStrategyWingspanFinancialSettings.None,
+        externalFinancialAccounts: ExternalFinancialAccounts.None,
+        fundingSource: FundingSource.Parent,
+        payoutSettings: PayoutSettings.None,
+        wingspanAccount: WingspanAccount.Parent,
+        wingspanFinancialSettings: WingspanFinancialSettings.None,
       },
     },
     userId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3091,7 +3163,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersPendingSession({});
+  const res = await sdk.postUsersPendingSession({});
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3120,19 +3193,20 @@ Allows the creation of a new user with a "pending" status. This can be utilized 
 
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
-import { NewUserSettingsUserAccountType, UserCreateRequestStatus, UserProfileGender } from "Wingspan-Users-API/dist/sdk/models/shared";
+import { Gender, UserAccountType, UserCreateRequestStatus } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersPendingUser({
+  const res = await sdk.postUsersPendingUser({
     email: "Vicente11@hotmail.com",
     notificationSettings: {},
     profile: {},
     settings: {},
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3167,7 +3241,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersSession({});
+  const res = await sdk.postUsersSession({});
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3202,11 +3277,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersSessionApi({
+  const res = await sdk.postUsersSessionApi({
     labels: {
       "key": "string",
     },
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3242,7 +3318,8 @@ import { OtpSessionCreateRequestChannel } from "Wingspan-Users-API/dist/sdk/mode
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersSessionOtp({});
+  const res = await sdk.postUsersSessionOtp({});
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3277,7 +3354,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersSessionRequestingUser({});
+  const res = await sdk.postUsersSessionRequestingUser({});
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3312,9 +3390,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersSessionSingleSignOn({
+  const res = await sdk.postUsersSessionSingleSignOn({
     singleSignOnCode: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3349,9 +3428,10 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersSessionSocialAuthGoogle({
+  const res = await sdk.postUsersSessionSocialAuthGoogle({
     idToken: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3387,11 +3467,12 @@ import { SubscriptionGrantCreateRequestPackage, SubscriptionGrantCreateRequestPa
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersSubscriptionGrant({
+  const res = await sdk.postUsersSubscriptionGrant({
     granteeId: "string",
     package: SubscriptionGrantCreateRequestPackage.None,
     packageTier: SubscriptionGrantCreateRequestPackageTier.Premium,
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3420,19 +3501,20 @@ Allows the creation of a new user account by providing necessary details.
 
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
-import { NewUserSettingsUserAccountType, UserCreateRequestStatus, UserProfileGender } from "Wingspan-Users-API/dist/sdk/models/shared";
+import { Gender, UserAccountType, UserCreateRequestStatus } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersUser({
+  const res = await sdk.postUsersUser({
     email: "Juana_Balistreri@gmail.com",
     notificationSettings: {},
     profile: {},
     settings: {},
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3461,14 +3543,14 @@ Creates a new client entry using the provided details and the specified identifi
 
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
-import { CompanyStructure } from "Wingspan-Users-API/dist/sdk/models/shared";
+import { Structure } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersUserClientId({
+  const res = await sdk.postUsersUserClientId({
     clientCreateRequest: {
       profile: {
         address: {
@@ -3492,6 +3574,7 @@ import { CompanyStructure } from "Wingspan-Users-API/dist/sdk/models/shared";
     },
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3526,7 +3609,8 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersUserMemberSubscriptionPaymentMethod({});
+  const res = await sdk.postUsersUserMemberSubscriptionPaymentMethod({});
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3557,6 +3641,8 @@ Creates a new subscription for the specified member based on the provided detail
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 import {
   CompanyWriteStructure,
+  FilingCode,
+  FilingType,
   MemberProfileVisibilityMapAddress,
   MemberProfileVisibilityMapPhone,
   MemberProfileWriteBookkeepingProductsUsed,
@@ -3566,9 +3652,7 @@ import {
   MemberProfileWriteInterests,
   MemberProfileWriteProductAspectImportance,
   MemberProfileWriteProductImportance,
-  MemberTaxInfoFilingCode,
-  MemberTaxInfoFilingType,
-  SixHundredAndSeventeenceb0bc24fcf187ab7e6b13633442b8671de98ff04917ce2c41034e5482b5fStatus,
+  Status,
 } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
@@ -3576,7 +3660,7 @@ import {
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersUserMemberId({
+  const res = await sdk.postUsersUserMemberId({
     memberCreateRequest: {
       profile: {
         address: {
@@ -3624,6 +3708,7 @@ import {
     id: "<ID>",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3662,10 +3747,11 @@ import {
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersUserMemberIdSubscription({
+  const res = await sdk.postUsersUserMemberIdSubscription({
     subscriptionCreateRequest: {},
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3705,10 +3791,11 @@ import {
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersUserMemberMemberIdNextgenSubscription({
+  const res = await sdk.postUsersUserMemberMemberIdNextgenSubscription({
     subscriptionCreateRequest: {},
     memberId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3737,17 +3824,18 @@ Request to start the password reset process for a user. Upon successful request,
 
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
-import { PasswordResetRequestUserType } from "Wingspan-Users-API/dist/sdk/models/shared";
+import { UserType } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersUserPasswordReset({
+  const res = await sdk.postUsersUserPasswordReset({
     email: "Corrine44@yahoo.com",
-    userType: PasswordResetRequestUserType.Member,
+    userType: UserType.Member,
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3782,12 +3870,13 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersUserIdVerificationEmail({
+  const res = await sdk.postUsersUserIdVerificationEmail({
     beginEmailVerificationRequest: {
       email: "Grayce.Krajcik92@gmail.com",
     },
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3822,10 +3911,11 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersUserIdVerificationExistingEmail({
+  const res = await sdk.postUsersUserIdVerificationExistingEmail({
     beginExistingEmailVerificationRequest: {},
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -3854,19 +3944,20 @@ Initiates the phone verification procedure by sending an OTP or verification cod
 
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
-import { BeginPhoneVerificationRequestChannel } from "Wingspan-Users-API/dist/sdk/models/shared";
+import { Channel } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new WingspanUsersAPI({
     bearerAuth: "",
   });
 
-  const res = await sdk.wingspanUsersAPI.postUsersUserIdVerificationPhone({
+  const res = await sdk.postUsersUserIdVerificationPhone({
     beginPhoneVerificationRequest: {
       phone: "(410) 435-0691 x609",
     },
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

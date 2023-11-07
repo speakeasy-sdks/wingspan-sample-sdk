@@ -9,7 +9,7 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
         bearerAuth: "",
     });
 
-    const res = await sdk.wingspanUsersAPI.deleteUsersAccountId({
+    const res = await sdk.deleteUsersAccountId({
         id: "<ID>",
     });
 

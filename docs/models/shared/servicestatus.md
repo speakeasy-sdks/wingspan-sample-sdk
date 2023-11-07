@@ -3,7 +3,7 @@
 
 ## Fields
 
-| Field                                                                 | Type                                                                  | Required                                                              | Description                                                           |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| `benefits`                                                            | [ServiceStatusBenefits](../../models/shared/servicestatusbenefits.md) | :heavy_minus_sign:                                                    | N/A                                                                   |
-| `payments`                                                            | [ServiceStatusPayments](../../models/shared/servicestatuspayments.md) | :heavy_minus_sign:                                                    | N/A                                                                   |
+| Field                                              | Type                                               | Required                                           | Description                                        |
+| -------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
+| `benefits`                                         | [shared.Benefits](../../models/shared/benefits.md) | :heavy_minus_sign:                                 | N/A                                                |
+| `payments`                                         | [shared.Payments](../../models/shared/payments.md) | :heavy_minus_sign:                                 | N/A                                                |
