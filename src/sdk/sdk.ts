@@ -56,9 +56,9 @@ export class SDKConfiguration {
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "1.0.0";
-    sdkVersion = "0.3.0";
-    genVersion = "2.181.1";
-    userAgent = "speakeasy-sdk/typescript 0.3.0 2.181.1 1.0.0 Wingspan-Users-API";
+    sdkVersion = "0.3.1";
+    genVersion = "2.185.0";
+    userAgent = "speakeasy-sdk/typescript 0.3.1 2.185.0 1.0.0 Wingspan-Users-API";
     retryConfig?: utils.RetryConfig;
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -79,7 +79,7 @@ export class WingspanUsersAPI {
             serverURL = ServerList[serverIdx];
         }
 
-        const defaultClient = props?.defaultClient ?? axios.create({ baseURL: serverURL });
+        const defaultClient = props?.defaultClient ?? axios.create();
         this.sdkConfiguration = new SDKConfiguration({
             defaultClient: defaultClient,
             security: new shared.Security({ bearerAuth: props?.bearerAuth }),
@@ -107,7 +107,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/account/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/account/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -124,7 +124,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "delete",
             headers: headers,
             responseType: "arraybuffer",
@@ -188,7 +188,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/activity/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/activity/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -205,7 +205,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "delete",
             headers: headers,
             responseType: "arraybuffer",
@@ -269,7 +269,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/authorization/{authorizationId}",
             req
@@ -290,7 +290,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "delete",
             headers: headers,
             responseType: "arraybuffer",
@@ -357,7 +357,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/session/api/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/session/api/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -374,7 +374,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "delete",
             headers: headers,
             responseType: "arraybuffer",
@@ -441,7 +441,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/session/token/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/session/token/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -458,7 +458,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "delete",
             headers: headers,
             responseType: "arraybuffer",
@@ -511,7 +511,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/subscription-grant/{id}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/subscription-grant/{id}",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -528,7 +532,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "delete",
             headers: headers,
             responseType: "arraybuffer",
@@ -592,7 +596,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/member/subscription/{id}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/member/subscription/{id}",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -609,7 +617,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "delete",
             headers: headers,
             responseType: "arraybuffer",
@@ -676,7 +684,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/member/{id}/subscription", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/member/{id}/subscription",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -693,7 +705,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "delete",
             headers: headers,
             responseType: "arraybuffer",
@@ -760,7 +772,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/user/member/{memberId}/nextgen-subscription/{id}",
             req
@@ -781,7 +793,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "delete",
             headers: headers,
             responseType: "arraybuffer",
@@ -841,7 +853,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -858,7 +870,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -905,7 +917,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/account";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/account";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -922,7 +934,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -991,7 +1003,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/account/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/account/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -1008,7 +1020,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -1066,7 +1078,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/activity";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/activity";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -1083,7 +1095,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -1152,7 +1164,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/activity/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/activity/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -1169,7 +1181,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -1234,7 +1246,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/authorization";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/authorization";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -1251,7 +1263,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -1321,7 +1333,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/authorization/accounts/{userId}",
             req
@@ -1342,7 +1354,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -1412,7 +1424,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/authorization/{authorizationId}",
             req
@@ -1433,7 +1445,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -1495,7 +1507,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/authorized-scope-groups";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/authorized-scope-groups";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -1512,7 +1524,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -1582,7 +1594,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/authorized-scope-groups/{requestingUserId}",
             req
@@ -1603,7 +1615,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -1665,7 +1677,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/authorized-scopes";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/authorized-scopes";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -1682,7 +1694,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -1752,7 +1764,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/authorized-scopes/{requestingUserId}",
             req
@@ -1773,7 +1785,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -1835,7 +1847,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string =
+        const operationUrl: string =
             baseURL.replace(/\/$/, "") + "/users/granted-subscriber/subscription-grant";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
@@ -1853,7 +1865,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -1918,7 +1930,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/organization/user";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/organization/user";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -1935,7 +1947,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2005,7 +2017,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/organization/user/{userId}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/organization/user/{userId}",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -2022,7 +2038,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2086,7 +2102,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/organization/user/{userId}/session",
             req
@@ -2107,7 +2123,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2169,7 +2185,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/session/api";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/session/api";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -2186,7 +2202,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2256,7 +2272,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/session/api/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/session/api/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -2273,7 +2289,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2340,7 +2356,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/session/token/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/session/token/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -2357,7 +2373,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2405,7 +2421,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/subscription-grant";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/subscription-grant";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -2422,7 +2438,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2492,7 +2508,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/subscription-grant/{id}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/subscription-grant/{id}",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -2509,7 +2529,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2576,7 +2596,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/client/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/user/client/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -2593,7 +2613,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2660,7 +2680,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/email/{email}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/user/email/{email}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -2677,7 +2697,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2739,7 +2759,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/user/location";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/user/location";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -2756,7 +2776,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2818,7 +2838,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string =
+        const operationUrl: string =
             baseURL.replace(/\/$/, "") + "/users/user/member/subscription/payment/history";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
@@ -2836,7 +2856,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2895,7 +2915,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string =
+        const operationUrl: string =
             baseURL.replace(/\/$/, "") + "/users/user/member/subscription/payment/method";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
@@ -2913,7 +2933,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -2969,7 +2989,8 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/user/member/subscription/plan";
+        const operationUrl: string =
+            baseURL.replace(/\/$/, "") + "/users/user/member/subscription/plan";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -2986,7 +3007,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3053,7 +3074,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/user/member/subscription/plan/{id}",
             req
@@ -3074,7 +3095,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3135,7 +3156,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/member/subscription/{id}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/member/subscription/{id}",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -3152,7 +3177,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3219,7 +3244,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/member/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/user/member/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -3236,7 +3261,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3300,7 +3325,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/member/{id}/advocate", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/member/{id}/advocate",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -3317,7 +3346,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3384,7 +3413,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/member/{id}/subscription", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/member/{id}/subscription",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -3401,7 +3434,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3468,7 +3501,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/user/member/{memberId}/nextgen-subscription",
             req
@@ -3489,7 +3522,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3559,7 +3592,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/user/member/{memberId}/nextgen-subscription-plan",
             req
@@ -3580,7 +3613,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3650,7 +3683,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/user/member/{memberId}/nextgen-subscription-plan/{id}",
             req
@@ -3671,7 +3704,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3738,7 +3771,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/user/member/{memberId}/nextgen-subscription/{id}",
             req
@@ -3759,7 +3792,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3821,7 +3854,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/user/occupation";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/user/occupation";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -3838,7 +3871,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3908,7 +3941,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/public/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/user/public/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -3925,7 +3958,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -3992,7 +4025,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/tag/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/user/tag/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -4009,7 +4042,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -4075,7 +4108,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/user/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -4092,7 +4125,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -4155,7 +4188,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/account/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/account/{id}", req);
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -4190,7 +4223,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -4255,7 +4288,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/activity/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/activity/{id}", req);
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -4290,7 +4323,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -4355,7 +4388,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/authorization/{authorizationId}",
             req
@@ -4394,7 +4427,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -4462,7 +4495,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/organization/user/{userId}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/organization/user/{userId}",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -4479,7 +4516,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -4543,7 +4580,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/organization/user/{userId}/associate",
             req
@@ -4582,7 +4619,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -4650,7 +4687,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/session/api/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/session/api/{id}", req);
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -4685,7 +4722,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -4753,7 +4790,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/session/otp";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/session/otp";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -4784,7 +4821,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -4838,7 +4875,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/subscription-grant/{id}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/subscription-grant/{id}",
+            req
+        );
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -4873,7 +4914,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -4941,7 +4982,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/client/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/user/client/{id}", req);
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -4976,7 +5017,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -5041,7 +5082,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string =
+        const operationUrl: string =
             baseURL.replace(/\/$/, "") + "/users/user/member/subscription/payment/method";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
@@ -5073,7 +5114,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -5138,7 +5179,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/member/subscription/{id}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/member/subscription/{id}",
+            req
+        );
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -5173,7 +5218,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -5241,7 +5286,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/member/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/user/member/{id}", req);
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -5276,7 +5321,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -5341,7 +5386,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/member/{id}/subscription", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/member/{id}/subscription",
+            req
+        );
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -5376,7 +5425,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -5444,7 +5493,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/user/member/{memberId}/nextgen-subscription/{id}",
             req
@@ -5483,7 +5532,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -5551,7 +5600,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/user/{id}", req);
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -5586,7 +5635,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -5650,7 +5699,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/{id}/verification/email", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/{id}/verification/email",
+            req
+        );
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -5685,7 +5738,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -5753,7 +5806,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/{id}/verification/phone", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/{id}/verification/phone",
+            req
+        );
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -5788,7 +5845,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "patch",
             headers: headers,
             responseType: "arraybuffer",
@@ -5856,7 +5913,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/account";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/account";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -5887,7 +5944,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -5951,7 +6008,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/account-link";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/account-link";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -5982,7 +6039,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -6050,7 +6107,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/account-requirements";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/account-requirements";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -6081,7 +6138,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -6149,7 +6206,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/activity";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/activity";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -6180,7 +6237,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -6244,7 +6301,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/authentication";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/authentication";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -6275,7 +6332,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -6343,7 +6400,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/authorization";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/authorization";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -6374,7 +6431,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -6442,7 +6499,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/flatfile-auth-token";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/flatfile-auth-token";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -6473,7 +6530,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -6541,7 +6598,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/guest/account-numbers";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/guest/account-numbers";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -6572,7 +6629,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -6640,7 +6697,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/organization/user";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/organization/user";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -6671,7 +6728,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -6736,7 +6793,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/organization/user/{userId}/associate",
             req
@@ -6775,7 +6832,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -6843,7 +6900,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/pending/session";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/pending/session";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -6874,7 +6931,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -6928,7 +6985,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/pending/user";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/pending/user";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -6959,7 +7016,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -7024,7 +7081,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/session";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/session";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -7055,7 +7112,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -7108,7 +7165,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/session/api";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/session/api";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -7139,7 +7196,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -7207,7 +7264,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/session/otp";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/session/otp";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -7238,7 +7295,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -7292,7 +7349,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/session/requesting-user";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/session/requesting-user";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -7323,7 +7380,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -7377,7 +7434,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/session/single-sign-on";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/session/single-sign-on";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -7408,7 +7465,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -7476,7 +7533,8 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/session/social-auth/google";
+        const operationUrl: string =
+            baseURL.replace(/\/$/, "") + "/users/session/social-auth/google";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -7507,7 +7565,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -7575,7 +7633,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/subscription-grant";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/subscription-grant";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -7606,7 +7664,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -7674,7 +7732,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/user";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/user";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -7705,7 +7763,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -7769,7 +7827,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/client/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/user/client/{id}", req);
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -7804,7 +7862,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -7869,7 +7927,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string =
+        const operationUrl: string =
             baseURL.replace(/\/$/, "") + "/users/user/member/subscription/payment/method";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
@@ -7901,7 +7959,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -7969,7 +8027,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/member/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/users/user/member/{id}", req);
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -8004,7 +8062,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -8069,7 +8127,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/member/{id}/subscription", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/member/{id}/subscription",
+            req
+        );
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -8104,7 +8166,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -8172,7 +8234,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/user/member/{memberId}/nextgen-subscription",
             req
@@ -8211,7 +8273,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -8279,7 +8341,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/users/user/password/reset";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/users/user/password/reset";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -8310,7 +8372,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -8364,7 +8426,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/{id}/verification/email", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/{id}/verification/email",
+            req
+        );
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -8399,7 +8465,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -8467,7 +8533,7 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/users/user/{id}/verification/existing-email",
             req
@@ -8506,7 +8572,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -8574,7 +8640,11 @@ export class WingspanUsersAPI {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/users/user/{id}/verification/phone", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/users/user/{id}/verification/phone",
+            req
+        );
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -8609,7 +8679,7 @@ export class WingspanUsersAPI {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",

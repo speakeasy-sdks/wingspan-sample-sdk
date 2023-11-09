@@ -121,7 +121,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -130,16 +129,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                        | Type                                                                                             | Required                                                                                         | Description                                                                                      |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| `request`                                                                                        | [operations.DeleteUsersAccountIdRequest](../../models/operations/deleteusersaccountidrequest.md) | :heavy_check_mark:                                                                               | The request object to use for the request.                                                       |
-| `config`                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                     | :heavy_minus_sign:                                                                               | Available config options for making requests.                                                    |
+| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `request`                                                                                            | [operations.DeleteUsersAccountIdRequest](../../sdk/models/operations/deleteusersaccountidrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
+| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
 
 
 ### Response
 
-**Promise<[operations.DeleteUsersAccountIdResponse](../../models/operations/deleteusersaccountidresponse.md)>**
+**Promise<[operations.DeleteUsersAccountIdResponse](../../sdk/models/operations/deleteusersaccountidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## deleteUsersActivityId
 
@@ -159,7 +162,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -168,16 +170,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                          | Type                                                                                               | Required                                                                                           | Description                                                                                        |
-| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `request`                                                                                          | [operations.DeleteUsersActivityIdRequest](../../models/operations/deleteusersactivityidrequest.md) | :heavy_check_mark:                                                                                 | The request object to use for the request.                                                         |
-| `config`                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                       | :heavy_minus_sign:                                                                                 | Available config options for making requests.                                                      |
+| Parameter                                                                                              | Type                                                                                                   | Required                                                                                               | Description                                                                                            |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                              | [operations.DeleteUsersActivityIdRequest](../../sdk/models/operations/deleteusersactivityidrequest.md) | :heavy_check_mark:                                                                                     | The request object to use for the request.                                                             |
+| `config`                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                           | :heavy_minus_sign:                                                                                     | Available config options for making requests.                                                          |
 
 
 ### Response
 
-**Promise<[operations.DeleteUsersActivityIdResponse](../../models/operations/deleteusersactivityidresponse.md)>**
+**Promise<[operations.DeleteUsersActivityIdResponse](../../sdk/models/operations/deleteusersactivityidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## deleteUsersAuthorizationAuthorizationId
 
@@ -197,7 +203,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     authorizationId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -206,16 +211,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                              | Type                                                                                                                                   | Required                                                                                                                               | Description                                                                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                              | [operations.DeleteUsersAuthorizationAuthorizationIdRequest](../../models/operations/deleteusersauthorizationauthorizationidrequest.md) | :heavy_check_mark:                                                                                                                     | The request object to use for the request.                                                                                             |
-| `config`                                                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                           | :heavy_minus_sign:                                                                                                                     | Available config options for making requests.                                                                                          |
+| Parameter                                                                                                                                  | Type                                                                                                                                       | Required                                                                                                                                   | Description                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                                  | [operations.DeleteUsersAuthorizationAuthorizationIdRequest](../../sdk/models/operations/deleteusersauthorizationauthorizationidrequest.md) | :heavy_check_mark:                                                                                                                         | The request object to use for the request.                                                                                                 |
+| `config`                                                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                               | :heavy_minus_sign:                                                                                                                         | Available config options for making requests.                                                                                              |
 
 
 ### Response
 
-**Promise<[operations.DeleteUsersAuthorizationAuthorizationIdResponse](../../models/operations/deleteusersauthorizationauthorizationidresponse.md)>**
+**Promise<[operations.DeleteUsersAuthorizationAuthorizationIdResponse](../../sdk/models/operations/deleteusersauthorizationauthorizationidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## deleteUsersSessionApiId
 
@@ -235,7 +244,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -244,16 +252,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                              | Type                                                                                                   | Required                                                                                               | Description                                                                                            |
-| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                              | [operations.DeleteUsersSessionApiIdRequest](../../models/operations/deleteuserssessionapiidrequest.md) | :heavy_check_mark:                                                                                     | The request object to use for the request.                                                             |
-| `config`                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                           | :heavy_minus_sign:                                                                                     | Available config options for making requests.                                                          |
+| Parameter                                                                                                  | Type                                                                                                       | Required                                                                                                   | Description                                                                                                |
+| ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                  | [operations.DeleteUsersSessionApiIdRequest](../../sdk/models/operations/deleteuserssessionapiidrequest.md) | :heavy_check_mark:                                                                                         | The request object to use for the request.                                                                 |
+| `config`                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                               | :heavy_minus_sign:                                                                                         | Available config options for making requests.                                                              |
 
 
 ### Response
 
-**Promise<[operations.DeleteUsersSessionApiIdResponse](../../models/operations/deleteuserssessionapiidresponse.md)>**
+**Promise<[operations.DeleteUsersSessionApiIdResponse](../../sdk/models/operations/deleteuserssessionapiidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## deleteUsersSessionTokenId
 
@@ -273,7 +285,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -282,16 +293,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                  | Type                                                                                                       | Required                                                                                                   | Description                                                                                                |
-| ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                  | [operations.DeleteUsersSessionTokenIdRequest](../../models/operations/deleteuserssessiontokenidrequest.md) | :heavy_check_mark:                                                                                         | The request object to use for the request.                                                                 |
-| `config`                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                               | :heavy_minus_sign:                                                                                         | Available config options for making requests.                                                              |
+| Parameter                                                                                                      | Type                                                                                                           | Required                                                                                                       | Description                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                      | [operations.DeleteUsersSessionTokenIdRequest](../../sdk/models/operations/deleteuserssessiontokenidrequest.md) | :heavy_check_mark:                                                                                             | The request object to use for the request.                                                                     |
+| `config`                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                   | :heavy_minus_sign:                                                                                             | Available config options for making requests.                                                                  |
 
 
 ### Response
 
-**Promise<[operations.DeleteUsersSessionTokenIdResponse](../../models/operations/deleteuserssessiontokenidresponse.md)>**
+**Promise<[operations.DeleteUsersSessionTokenIdResponse](../../sdk/models/operations/deleteuserssessiontokenidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## deleteUsersSubscriptionGrantId
 
@@ -311,7 +326,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -320,16 +334,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                            | Type                                                                                                                 | Required                                                                                                             | Description                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                            | [operations.DeleteUsersSubscriptionGrantIdRequest](../../models/operations/deleteuserssubscriptiongrantidrequest.md) | :heavy_check_mark:                                                                                                   | The request object to use for the request.                                                                           |
-| `config`                                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                         | :heavy_minus_sign:                                                                                                   | Available config options for making requests.                                                                        |
+| Parameter                                                                                                                | Type                                                                                                                     | Required                                                                                                                 | Description                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                | [operations.DeleteUsersSubscriptionGrantIdRequest](../../sdk/models/operations/deleteuserssubscriptiongrantidrequest.md) | :heavy_check_mark:                                                                                                       | The request object to use for the request.                                                                               |
+| `config`                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                             | :heavy_minus_sign:                                                                                                       | Available config options for making requests.                                                                            |
 
 
 ### Response
 
-**Promise<[operations.DeleteUsersSubscriptionGrantIdResponse](../../models/operations/deleteuserssubscriptiongrantidresponse.md)>**
+**Promise<[operations.DeleteUsersSubscriptionGrantIdResponse](../../sdk/models/operations/deleteuserssubscriptiongrantidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## deleteUsersUserMemberSubscriptionId
 
@@ -349,7 +367,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -358,16 +375,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                      | Type                                                                                                                           | Required                                                                                                                       | Description                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                      | [operations.DeleteUsersUserMemberSubscriptionIdRequest](../../models/operations/deleteusersusermembersubscriptionidrequest.md) | :heavy_check_mark:                                                                                                             | The request object to use for the request.                                                                                     |
-| `config`                                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                   | :heavy_minus_sign:                                                                                                             | Available config options for making requests.                                                                                  |
+| Parameter                                                                                                                          | Type                                                                                                                               | Required                                                                                                                           | Description                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                          | [operations.DeleteUsersUserMemberSubscriptionIdRequest](../../sdk/models/operations/deleteusersusermembersubscriptionidrequest.md) | :heavy_check_mark:                                                                                                                 | The request object to use for the request.                                                                                         |
+| `config`                                                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                       | :heavy_minus_sign:                                                                                                                 | Available config options for making requests.                                                                                      |
 
 
 ### Response
 
-**Promise<[operations.DeleteUsersUserMemberSubscriptionIdResponse](../../models/operations/deleteusersusermembersubscriptionidresponse.md)>**
+**Promise<[operations.DeleteUsersUserMemberSubscriptionIdResponse](../../sdk/models/operations/deleteusersusermembersubscriptionidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## deleteUsersUserMemberIdSubscription
 
@@ -387,7 +408,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -396,16 +416,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                      | Type                                                                                                                           | Required                                                                                                                       | Description                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                      | [operations.DeleteUsersUserMemberIdSubscriptionRequest](../../models/operations/deleteusersusermemberidsubscriptionrequest.md) | :heavy_check_mark:                                                                                                             | The request object to use for the request.                                                                                     |
-| `config`                                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                   | :heavy_minus_sign:                                                                                                             | Available config options for making requests.                                                                                  |
+| Parameter                                                                                                                          | Type                                                                                                                               | Required                                                                                                                           | Description                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                          | [operations.DeleteUsersUserMemberIdSubscriptionRequest](../../sdk/models/operations/deleteusersusermemberidsubscriptionrequest.md) | :heavy_check_mark:                                                                                                                 | The request object to use for the request.                                                                                         |
+| `config`                                                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                       | :heavy_minus_sign:                                                                                                                 | Available config options for making requests.                                                                                      |
 
 
 ### Response
 
-**Promise<[operations.DeleteUsersUserMemberIdSubscriptionResponse](../../models/operations/deleteusersusermemberidsubscriptionresponse.md)>**
+**Promise<[operations.DeleteUsersUserMemberIdSubscriptionResponse](../../sdk/models/operations/deleteusersusermemberidsubscriptionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## deleteUsersUserMemberMemberIdNextgenSubscriptionId
 
@@ -426,7 +450,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     memberId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -435,16 +458,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                                                    | Type                                                                                                                                                         | Required                                                                                                                                                     | Description                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                                                    | [operations.DeleteUsersUserMemberMemberIdNextgenSubscriptionIdRequest](../../models/operations/deleteusersusermembermemberidnextgensubscriptionidrequest.md) | :heavy_check_mark:                                                                                                                                           | The request object to use for the request.                                                                                                                   |
-| `config`                                                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                                 | :heavy_minus_sign:                                                                                                                                           | Available config options for making requests.                                                                                                                |
+| Parameter                                                                                                                                                        | Type                                                                                                                                                             | Required                                                                                                                                                         | Description                                                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                                                        | [operations.DeleteUsersUserMemberMemberIdNextgenSubscriptionIdRequest](../../sdk/models/operations/deleteusersusermembermemberidnextgensubscriptionidrequest.md) | :heavy_check_mark:                                                                                                                                               | The request object to use for the request.                                                                                                                       |
+| `config`                                                                                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                                     | :heavy_minus_sign:                                                                                                                                               | Available config options for making requests.                                                                                                                    |
 
 
 ### Response
 
-**Promise<[operations.DeleteUsersUserMemberMemberIdNextgenSubscriptionIdResponse](../../models/operations/deleteusersusermembermemberidnextgensubscriptionidresponse.md)>**
+**Promise<[operations.DeleteUsersUserMemberMemberIdNextgenSubscriptionIdResponse](../../sdk/models/operations/deleteusersusermembermemberidnextgensubscriptionidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsers
 
@@ -462,7 +489,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsers();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -478,8 +504,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersResponse](../../models/operations/getusersresponse.md)>**
+**Promise<[operations.GetUsersResponse](../../sdk/models/operations/getusersresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersAccount
 
@@ -497,7 +527,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersAccount();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -513,8 +542,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersAccountResponse](../../models/operations/getusersaccountresponse.md)>**
+**Promise<[operations.GetUsersAccountResponse](../../sdk/models/operations/getusersaccountresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersAccountId
 
@@ -534,7 +567,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -543,16 +575,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| `request`                                                                                  | [operations.GetUsersAccountIdRequest](../../models/operations/getusersaccountidrequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
-| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
+| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `request`                                                                                      | [operations.GetUsersAccountIdRequest](../../sdk/models/operations/getusersaccountidrequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
+| `config`                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                   | :heavy_minus_sign:                                                                             | Available config options for making requests.                                                  |
 
 
 ### Response
 
-**Promise<[operations.GetUsersAccountIdResponse](../../models/operations/getusersaccountidresponse.md)>**
+**Promise<[operations.GetUsersAccountIdResponse](../../sdk/models/operations/getusersaccountidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersActivity
 
@@ -570,7 +606,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersActivity();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -586,8 +621,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersActivityResponse](../../models/operations/getusersactivityresponse.md)>**
+**Promise<[operations.GetUsersActivityResponse](../../sdk/models/operations/getusersactivityresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersActivityId
 
@@ -607,7 +646,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -616,16 +654,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                    | Type                                                                                         | Required                                                                                     | Description                                                                                  |
-| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| `request`                                                                                    | [operations.GetUsersActivityIdRequest](../../models/operations/getusersactivityidrequest.md) | :heavy_check_mark:                                                                           | The request object to use for the request.                                                   |
-| `config`                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                 | :heavy_minus_sign:                                                                           | Available config options for making requests.                                                |
+| Parameter                                                                                        | Type                                                                                             | Required                                                                                         | Description                                                                                      |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| `request`                                                                                        | [operations.GetUsersActivityIdRequest](../../sdk/models/operations/getusersactivityidrequest.md) | :heavy_check_mark:                                                                               | The request object to use for the request.                                                       |
+| `config`                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                     | :heavy_minus_sign:                                                                               | Available config options for making requests.                                                    |
 
 
 ### Response
 
-**Promise<[operations.GetUsersActivityIdResponse](../../models/operations/getusersactivityidresponse.md)>**
+**Promise<[operations.GetUsersActivityIdResponse](../../sdk/models/operations/getusersactivityidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersAuthorization
 
@@ -643,7 +685,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersAuthorization();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -659,8 +700,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersAuthorizationResponse](../../models/operations/getusersauthorizationresponse.md)>**
+**Promise<[operations.GetUsersAuthorizationResponse](../../sdk/models/operations/getusersauthorizationresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersAuthorizationAccountsUserId
 
@@ -680,7 +725,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     userId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -689,16 +733,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                      | Type                                                                                                                           | Required                                                                                                                       | Description                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                      | [operations.GetUsersAuthorizationAccountsUserIdRequest](../../models/operations/getusersauthorizationaccountsuseridrequest.md) | :heavy_check_mark:                                                                                                             | The request object to use for the request.                                                                                     |
-| `config`                                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                   | :heavy_minus_sign:                                                                                                             | Available config options for making requests.                                                                                  |
+| Parameter                                                                                                                          | Type                                                                                                                               | Required                                                                                                                           | Description                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                          | [operations.GetUsersAuthorizationAccountsUserIdRequest](../../sdk/models/operations/getusersauthorizationaccountsuseridrequest.md) | :heavy_check_mark:                                                                                                                 | The request object to use for the request.                                                                                         |
+| `config`                                                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                       | :heavy_minus_sign:                                                                                                                 | Available config options for making requests.                                                                                      |
 
 
 ### Response
 
-**Promise<[operations.GetUsersAuthorizationAccountsUserIdResponse](../../models/operations/getusersauthorizationaccountsuseridresponse.md)>**
+**Promise<[operations.GetUsersAuthorizationAccountsUserIdResponse](../../sdk/models/operations/getusersauthorizationaccountsuseridresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersAuthorizationAuthorizationId
 
@@ -718,7 +766,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     authorizationId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -727,16 +774,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                        | Type                                                                                                                             | Required                                                                                                                         | Description                                                                                                                      |
-| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                        | [operations.GetUsersAuthorizationAuthorizationIdRequest](../../models/operations/getusersauthorizationauthorizationidrequest.md) | :heavy_check_mark:                                                                                                               | The request object to use for the request.                                                                                       |
-| `config`                                                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                     | :heavy_minus_sign:                                                                                                               | Available config options for making requests.                                                                                    |
+| Parameter                                                                                                                            | Type                                                                                                                                 | Required                                                                                                                             | Description                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                            | [operations.GetUsersAuthorizationAuthorizationIdRequest](../../sdk/models/operations/getusersauthorizationauthorizationidrequest.md) | :heavy_check_mark:                                                                                                                   | The request object to use for the request.                                                                                           |
+| `config`                                                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                         | :heavy_minus_sign:                                                                                                                   | Available config options for making requests.                                                                                        |
 
 
 ### Response
 
-**Promise<[operations.GetUsersAuthorizationAuthorizationIdResponse](../../models/operations/getusersauthorizationauthorizationidresponse.md)>**
+**Promise<[operations.GetUsersAuthorizationAuthorizationIdResponse](../../sdk/models/operations/getusersauthorizationauthorizationidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersAuthorizedScopeGroups
 
@@ -754,7 +805,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersAuthorizedScopeGroups();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -770,8 +820,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersAuthorizedScopeGroupsResponse](../../models/operations/getusersauthorizedscopegroupsresponse.md)>**
+**Promise<[operations.GetUsersAuthorizedScopeGroupsResponse](../../sdk/models/operations/getusersauthorizedscopegroupsresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersAuthorizedScopeGroupsRequestingUserId
 
@@ -791,7 +845,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     requestingUserId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -800,16 +853,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                                          | Type                                                                                                                                               | Required                                                                                                                                           | Description                                                                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                                          | [operations.GetUsersAuthorizedScopeGroupsRequestingUserIdRequest](../../models/operations/getusersauthorizedscopegroupsrequestinguseridrequest.md) | :heavy_check_mark:                                                                                                                                 | The request object to use for the request.                                                                                                         |
-| `config`                                                                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                       | :heavy_minus_sign:                                                                                                                                 | Available config options for making requests.                                                                                                      |
+| Parameter                                                                                                                                              | Type                                                                                                                                                   | Required                                                                                                                                               | Description                                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                                              | [operations.GetUsersAuthorizedScopeGroupsRequestingUserIdRequest](../../sdk/models/operations/getusersauthorizedscopegroupsrequestinguseridrequest.md) | :heavy_check_mark:                                                                                                                                     | The request object to use for the request.                                                                                                             |
+| `config`                                                                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                           | :heavy_minus_sign:                                                                                                                                     | Available config options for making requests.                                                                                                          |
 
 
 ### Response
 
-**Promise<[operations.GetUsersAuthorizedScopeGroupsRequestingUserIdResponse](../../models/operations/getusersauthorizedscopegroupsrequestinguseridresponse.md)>**
+**Promise<[operations.GetUsersAuthorizedScopeGroupsRequestingUserIdResponse](../../sdk/models/operations/getusersauthorizedscopegroupsrequestinguseridresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersAuthorizedScopes
 
@@ -827,7 +884,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersAuthorizedScopes();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -843,8 +899,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersAuthorizedScopesResponse](../../models/operations/getusersauthorizedscopesresponse.md)>**
+**Promise<[operations.GetUsersAuthorizedScopesResponse](../../sdk/models/operations/getusersauthorizedscopesresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersAuthorizedScopesRequestingUserId
 
@@ -864,7 +924,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     requestingUserId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -873,16 +932,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                                | Type                                                                                                                                     | Required                                                                                                                                 | Description                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                                | [operations.GetUsersAuthorizedScopesRequestingUserIdRequest](../../models/operations/getusersauthorizedscopesrequestinguseridrequest.md) | :heavy_check_mark:                                                                                                                       | The request object to use for the request.                                                                                               |
-| `config`                                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                             | :heavy_minus_sign:                                                                                                                       | Available config options for making requests.                                                                                            |
+| Parameter                                                                                                                                    | Type                                                                                                                                         | Required                                                                                                                                     | Description                                                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                                    | [operations.GetUsersAuthorizedScopesRequestingUserIdRequest](../../sdk/models/operations/getusersauthorizedscopesrequestinguseridrequest.md) | :heavy_check_mark:                                                                                                                           | The request object to use for the request.                                                                                                   |
+| `config`                                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                 | :heavy_minus_sign:                                                                                                                           | Available config options for making requests.                                                                                                |
 
 
 ### Response
 
-**Promise<[operations.GetUsersAuthorizedScopesRequestingUserIdResponse](../../models/operations/getusersauthorizedscopesrequestinguseridresponse.md)>**
+**Promise<[operations.GetUsersAuthorizedScopesRequestingUserIdResponse](../../sdk/models/operations/getusersauthorizedscopesrequestinguseridresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersGrantedSubscriberSubscriptionGrant
 
@@ -900,7 +963,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersGrantedSubscriberSubscriptionGrant();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -916,8 +978,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersGrantedSubscriberSubscriptionGrantResponse](../../models/operations/getusersgrantedsubscribersubscriptiongrantresponse.md)>**
+**Promise<[operations.GetUsersGrantedSubscriberSubscriptionGrantResponse](../../sdk/models/operations/getusersgrantedsubscribersubscriptiongrantresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersOrganizationUser
 
@@ -935,7 +1001,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersOrganizationUser();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -951,8 +1016,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersOrganizationUserResponse](../../models/operations/getusersorganizationuserresponse.md)>**
+**Promise<[operations.GetUsersOrganizationUserResponse](../../sdk/models/operations/getusersorganizationuserresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersOrganizationUserUserId
 
@@ -972,7 +1041,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     userId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -981,16 +1049,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                            | Type                                                                                                                 | Required                                                                                                             | Description                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                            | [operations.GetUsersOrganizationUserUserIdRequest](../../models/operations/getusersorganizationuseruseridrequest.md) | :heavy_check_mark:                                                                                                   | The request object to use for the request.                                                                           |
-| `config`                                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                         | :heavy_minus_sign:                                                                                                   | Available config options for making requests.                                                                        |
+| Parameter                                                                                                                | Type                                                                                                                     | Required                                                                                                                 | Description                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                | [operations.GetUsersOrganizationUserUserIdRequest](../../sdk/models/operations/getusersorganizationuseruseridrequest.md) | :heavy_check_mark:                                                                                                       | The request object to use for the request.                                                                               |
+| `config`                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                             | :heavy_minus_sign:                                                                                                       | Available config options for making requests.                                                                            |
 
 
 ### Response
 
-**Promise<[operations.GetUsersOrganizationUserUserIdResponse](../../models/operations/getusersorganizationuseruseridresponse.md)>**
+**Promise<[operations.GetUsersOrganizationUserUserIdResponse](../../sdk/models/operations/getusersorganizationuseruseridresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersOrganizationUserUserIdSession
 
@@ -1010,7 +1082,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     userId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1019,16 +1090,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                          | Type                                                                                                                               | Required                                                                                                                           | Description                                                                                                                        |
-| ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                          | [operations.GetUsersOrganizationUserUserIdSessionRequest](../../models/operations/getusersorganizationuseruseridsessionrequest.md) | :heavy_check_mark:                                                                                                                 | The request object to use for the request.                                                                                         |
-| `config`                                                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                       | :heavy_minus_sign:                                                                                                                 | Available config options for making requests.                                                                                      |
+| Parameter                                                                                                                              | Type                                                                                                                                   | Required                                                                                                                               | Description                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                              | [operations.GetUsersOrganizationUserUserIdSessionRequest](../../sdk/models/operations/getusersorganizationuseruseridsessionrequest.md) | :heavy_check_mark:                                                                                                                     | The request object to use for the request.                                                                                             |
+| `config`                                                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                           | :heavy_minus_sign:                                                                                                                     | Available config options for making requests.                                                                                          |
 
 
 ### Response
 
-**Promise<[operations.GetUsersOrganizationUserUserIdSessionResponse](../../models/operations/getusersorganizationuseruseridsessionresponse.md)>**
+**Promise<[operations.GetUsersOrganizationUserUserIdSessionResponse](../../sdk/models/operations/getusersorganizationuseruseridsessionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersSessionApi
 
@@ -1046,7 +1121,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersSessionApi();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1062,8 +1136,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersSessionApiResponse](../../models/operations/getuserssessionapiresponse.md)>**
+**Promise<[operations.GetUsersSessionApiResponse](../../sdk/models/operations/getuserssessionapiresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersSessionApiId
 
@@ -1083,7 +1161,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1092,16 +1169,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                        | Type                                                                                             | Required                                                                                         | Description                                                                                      |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| `request`                                                                                        | [operations.GetUsersSessionApiIdRequest](../../models/operations/getuserssessionapiidrequest.md) | :heavy_check_mark:                                                                               | The request object to use for the request.                                                       |
-| `config`                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                     | :heavy_minus_sign:                                                                               | Available config options for making requests.                                                    |
+| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `request`                                                                                            | [operations.GetUsersSessionApiIdRequest](../../sdk/models/operations/getuserssessionapiidrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
+| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
 
 
 ### Response
 
-**Promise<[operations.GetUsersSessionApiIdResponse](../../models/operations/getuserssessionapiidresponse.md)>**
+**Promise<[operations.GetUsersSessionApiIdResponse](../../sdk/models/operations/getuserssessionapiidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersSessionTokenId
 
@@ -1121,7 +1202,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1130,16 +1210,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `request`                                                                                            | [operations.GetUsersSessionTokenIdRequest](../../models/operations/getuserssessiontokenidrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
-| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
+| Parameter                                                                                                | Type                                                                                                     | Required                                                                                                 | Description                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                | [operations.GetUsersSessionTokenIdRequest](../../sdk/models/operations/getuserssessiontokenidrequest.md) | :heavy_check_mark:                                                                                       | The request object to use for the request.                                                               |
+| `config`                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                             | :heavy_minus_sign:                                                                                       | Available config options for making requests.                                                            |
 
 
 ### Response
 
-**Promise<[operations.GetUsersSessionTokenIdResponse](../../models/operations/getuserssessiontokenidresponse.md)>**
+**Promise<[operations.GetUsersSessionTokenIdResponse](../../sdk/models/operations/getuserssessiontokenidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersSubscriptionGrant
 
@@ -1157,7 +1241,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersSubscriptionGrant();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1173,8 +1256,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersSubscriptionGrantResponse](../../models/operations/getuserssubscriptiongrantresponse.md)>**
+**Promise<[operations.GetUsersSubscriptionGrantResponse](../../sdk/models/operations/getuserssubscriptiongrantresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersSubscriptionGrantId
 
@@ -1194,7 +1281,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1203,16 +1289,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                      | Type                                                                                                           | Required                                                                                                       | Description                                                                                                    |
-| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                      | [operations.GetUsersSubscriptionGrantIdRequest](../../models/operations/getuserssubscriptiongrantidrequest.md) | :heavy_check_mark:                                                                                             | The request object to use for the request.                                                                     |
-| `config`                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                   | :heavy_minus_sign:                                                                                             | Available config options for making requests.                                                                  |
+| Parameter                                                                                                          | Type                                                                                                               | Required                                                                                                           | Description                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                          | [operations.GetUsersSubscriptionGrantIdRequest](../../sdk/models/operations/getuserssubscriptiongrantidrequest.md) | :heavy_check_mark:                                                                                                 | The request object to use for the request.                                                                         |
+| `config`                                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                       | :heavy_minus_sign:                                                                                                 | Available config options for making requests.                                                                      |
 
 
 ### Response
 
-**Promise<[operations.GetUsersSubscriptionGrantIdResponse](../../models/operations/getuserssubscriptiongrantidresponse.md)>**
+**Promise<[operations.GetUsersSubscriptionGrantIdResponse](../../sdk/models/operations/getuserssubscriptiongrantidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserClientId
 
@@ -1232,7 +1322,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1241,16 +1330,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                        | Type                                                                                             | Required                                                                                         | Description                                                                                      |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| `request`                                                                                        | [operations.GetUsersUserClientIdRequest](../../models/operations/getusersuserclientidrequest.md) | :heavy_check_mark:                                                                               | The request object to use for the request.                                                       |
-| `config`                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                     | :heavy_minus_sign:                                                                               | Available config options for making requests.                                                    |
+| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `request`                                                                                            | [operations.GetUsersUserClientIdRequest](../../sdk/models/operations/getusersuserclientidrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
+| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserClientIdResponse](../../models/operations/getusersuserclientidresponse.md)>**
+**Promise<[operations.GetUsersUserClientIdResponse](../../sdk/models/operations/getusersuserclientidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserEmailEmail
 
@@ -1270,7 +1363,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     email: "Vincenzo19@gmail.com",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1279,16 +1371,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `request`                                                                                            | [operations.GetUsersUserEmailEmailRequest](../../models/operations/getusersuseremailemailrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
-| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
+| Parameter                                                                                                | Type                                                                                                     | Required                                                                                                 | Description                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                | [operations.GetUsersUserEmailEmailRequest](../../sdk/models/operations/getusersuseremailemailrequest.md) | :heavy_check_mark:                                                                                       | The request object to use for the request.                                                               |
+| `config`                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                             | :heavy_minus_sign:                                                                                       | Available config options for making requests.                                                            |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserEmailEmailResponse](../../models/operations/getusersuseremailemailresponse.md)>**
+**Promise<[operations.GetUsersUserEmailEmailResponse](../../sdk/models/operations/getusersuseremailemailresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserLocation
 
@@ -1306,7 +1402,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersUserLocation();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1322,8 +1417,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersUserLocationResponse](../../models/operations/getusersuserlocationresponse.md)>**
+**Promise<[operations.GetUsersUserLocationResponse](../../sdk/models/operations/getusersuserlocationresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberSubscriptionPaymentHistory
 
@@ -1341,7 +1440,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersUserMemberSubscriptionPaymentHistory();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1357,8 +1455,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberSubscriptionPaymentHistoryResponse](../../models/operations/getusersusermembersubscriptionpaymenthistoryresponse.md)>**
+**Promise<[operations.GetUsersUserMemberSubscriptionPaymentHistoryResponse](../../sdk/models/operations/getusersusermembersubscriptionpaymenthistoryresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberSubscriptionPaymentMethod
 
@@ -1376,7 +1478,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersUserMemberSubscriptionPaymentMethod();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1392,8 +1493,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberSubscriptionPaymentMethodResponse](../../models/operations/getusersusermembersubscriptionpaymentmethodresponse.md)>**
+**Promise<[operations.GetUsersUserMemberSubscriptionPaymentMethodResponse](../../sdk/models/operations/getusersusermembersubscriptionpaymentmethodresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberSubscriptionPlan
 
@@ -1411,7 +1516,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersUserMemberSubscriptionPlan();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1427,8 +1531,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberSubscriptionPlanResponse](../../models/operations/getusersusermembersubscriptionplanresponse.md)>**
+**Promise<[operations.GetUsersUserMemberSubscriptionPlanResponse](../../sdk/models/operations/getusersusermembersubscriptionplanresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberSubscriptionPlanId
 
@@ -1448,7 +1556,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1457,16 +1564,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                        | Type                                                                                                                             | Required                                                                                                                         | Description                                                                                                                      |
-| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                        | [operations.GetUsersUserMemberSubscriptionPlanIdRequest](../../models/operations/getusersusermembersubscriptionplanidrequest.md) | :heavy_check_mark:                                                                                                               | The request object to use for the request.                                                                                       |
-| `config`                                                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                     | :heavy_minus_sign:                                                                                                               | Available config options for making requests.                                                                                    |
+| Parameter                                                                                                                            | Type                                                                                                                                 | Required                                                                                                                             | Description                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                            | [operations.GetUsersUserMemberSubscriptionPlanIdRequest](../../sdk/models/operations/getusersusermembersubscriptionplanidrequest.md) | :heavy_check_mark:                                                                                                                   | The request object to use for the request.                                                                                           |
+| `config`                                                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                         | :heavy_minus_sign:                                                                                                                   | Available config options for making requests.                                                                                        |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberSubscriptionPlanIdResponse](../../models/operations/getusersusermembersubscriptionplanidresponse.md)>**
+**Promise<[operations.GetUsersUserMemberSubscriptionPlanIdResponse](../../sdk/models/operations/getusersusermembersubscriptionplanidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberSubscriptionId
 
@@ -1486,7 +1597,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1495,16 +1605,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                | Type                                                                                                                     | Required                                                                                                                 | Description                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                | [operations.GetUsersUserMemberSubscriptionIdRequest](../../models/operations/getusersusermembersubscriptionidrequest.md) | :heavy_check_mark:                                                                                                       | The request object to use for the request.                                                                               |
-| `config`                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                             | :heavy_minus_sign:                                                                                                       | Available config options for making requests.                                                                            |
+| Parameter                                                                                                                    | Type                                                                                                                         | Required                                                                                                                     | Description                                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                    | [operations.GetUsersUserMemberSubscriptionIdRequest](../../sdk/models/operations/getusersusermembersubscriptionidrequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
+| `config`                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                 | :heavy_minus_sign:                                                                                                           | Available config options for making requests.                                                                                |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberSubscriptionIdResponse](../../models/operations/getusersusermembersubscriptionidresponse.md)>**
+**Promise<[operations.GetUsersUserMemberSubscriptionIdResponse](../../sdk/models/operations/getusersusermembersubscriptionidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberId
 
@@ -1524,7 +1638,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1533,16 +1646,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                        | Type                                                                                             | Required                                                                                         | Description                                                                                      |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| `request`                                                                                        | [operations.GetUsersUserMemberIdRequest](../../models/operations/getusersusermemberidrequest.md) | :heavy_check_mark:                                                                               | The request object to use for the request.                                                       |
-| `config`                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                     | :heavy_minus_sign:                                                                               | Available config options for making requests.                                                    |
+| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `request`                                                                                            | [operations.GetUsersUserMemberIdRequest](../../sdk/models/operations/getusersusermemberidrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
+| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberIdResponse](../../models/operations/getusersusermemberidresponse.md)>**
+**Promise<[operations.GetUsersUserMemberIdResponse](../../sdk/models/operations/getusersusermemberidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberIdAdvocate
 
@@ -1562,7 +1679,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1571,16 +1687,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                        | Type                                                                                                             | Required                                                                                                         | Description                                                                                                      |
-| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                        | [operations.GetUsersUserMemberIdAdvocateRequest](../../models/operations/getusersusermemberidadvocaterequest.md) | :heavy_check_mark:                                                                                               | The request object to use for the request.                                                                       |
-| `config`                                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                     | :heavy_minus_sign:                                                                                               | Available config options for making requests.                                                                    |
+| Parameter                                                                                                            | Type                                                                                                                 | Required                                                                                                             | Description                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                            | [operations.GetUsersUserMemberIdAdvocateRequest](../../sdk/models/operations/getusersusermemberidadvocaterequest.md) | :heavy_check_mark:                                                                                                   | The request object to use for the request.                                                                           |
+| `config`                                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                         | :heavy_minus_sign:                                                                                                   | Available config options for making requests.                                                                        |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberIdAdvocateResponse](../../models/operations/getusersusermemberidadvocateresponse.md)>**
+**Promise<[operations.GetUsersUserMemberIdAdvocateResponse](../../sdk/models/operations/getusersusermemberidadvocateresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberIdSubscription
 
@@ -1600,7 +1720,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1609,16 +1728,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                | Type                                                                                                                     | Required                                                                                                                 | Description                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                | [operations.GetUsersUserMemberIdSubscriptionRequest](../../models/operations/getusersusermemberidsubscriptionrequest.md) | :heavy_check_mark:                                                                                                       | The request object to use for the request.                                                                               |
-| `config`                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                             | :heavy_minus_sign:                                                                                                       | Available config options for making requests.                                                                            |
+| Parameter                                                                                                                    | Type                                                                                                                         | Required                                                                                                                     | Description                                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                    | [operations.GetUsersUserMemberIdSubscriptionRequest](../../sdk/models/operations/getusersusermemberidsubscriptionrequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
+| `config`                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                 | :heavy_minus_sign:                                                                                                           | Available config options for making requests.                                                                                |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberIdSubscriptionResponse](../../models/operations/getusersusermemberidsubscriptionresponse.md)>**
+**Promise<[operations.GetUsersUserMemberIdSubscriptionResponse](../../sdk/models/operations/getusersusermemberidsubscriptionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberMemberIdNextgenSubscription
 
@@ -1638,7 +1761,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     memberId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1647,16 +1769,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                                          | Type                                                                                                                                               | Required                                                                                                                                           | Description                                                                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                                          | [operations.GetUsersUserMemberMemberIdNextgenSubscriptionRequest](../../models/operations/getusersusermembermemberidnextgensubscriptionrequest.md) | :heavy_check_mark:                                                                                                                                 | The request object to use for the request.                                                                                                         |
-| `config`                                                                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                       | :heavy_minus_sign:                                                                                                                                 | Available config options for making requests.                                                                                                      |
+| Parameter                                                                                                                                              | Type                                                                                                                                                   | Required                                                                                                                                               | Description                                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                                              | [operations.GetUsersUserMemberMemberIdNextgenSubscriptionRequest](../../sdk/models/operations/getusersusermembermemberidnextgensubscriptionrequest.md) | :heavy_check_mark:                                                                                                                                     | The request object to use for the request.                                                                                                             |
+| `config`                                                                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                           | :heavy_minus_sign:                                                                                                                                     | Available config options for making requests.                                                                                                          |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberMemberIdNextgenSubscriptionResponse](../../models/operations/getusersusermembermemberidnextgensubscriptionresponse.md)>**
+**Promise<[operations.GetUsersUserMemberMemberIdNextgenSubscriptionResponse](../../sdk/models/operations/getusersusermembermemberidnextgensubscriptionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberMemberIdNextgenSubscriptionPlan
 
@@ -1676,7 +1802,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     memberId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1685,16 +1810,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                                                  | Type                                                                                                                                                       | Required                                                                                                                                                   | Description                                                                                                                                                |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                                                  | [operations.GetUsersUserMemberMemberIdNextgenSubscriptionPlanRequest](../../models/operations/getusersusermembermemberidnextgensubscriptionplanrequest.md) | :heavy_check_mark:                                                                                                                                         | The request object to use for the request.                                                                                                                 |
-| `config`                                                                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                               | :heavy_minus_sign:                                                                                                                                         | Available config options for making requests.                                                                                                              |
+| Parameter                                                                                                                                                      | Type                                                                                                                                                           | Required                                                                                                                                                       | Description                                                                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                                                      | [operations.GetUsersUserMemberMemberIdNextgenSubscriptionPlanRequest](../../sdk/models/operations/getusersusermembermemberidnextgensubscriptionplanrequest.md) | :heavy_check_mark:                                                                                                                                             | The request object to use for the request.                                                                                                                     |
+| `config`                                                                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                                   | :heavy_minus_sign:                                                                                                                                             | Available config options for making requests.                                                                                                                  |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberMemberIdNextgenSubscriptionPlanResponse](../../models/operations/getusersusermembermemberidnextgensubscriptionplanresponse.md)>**
+**Promise<[operations.GetUsersUserMemberMemberIdNextgenSubscriptionPlanResponse](../../sdk/models/operations/getusersusermembermemberidnextgensubscriptionplanresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberMemberIdNextgenSubscriptionPlanId
 
@@ -1715,7 +1844,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     memberId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1724,16 +1852,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                                                      | Type                                                                                                                                                           | Required                                                                                                                                                       | Description                                                                                                                                                    |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                                                      | [operations.GetUsersUserMemberMemberIdNextgenSubscriptionPlanIdRequest](../../models/operations/getusersusermembermemberidnextgensubscriptionplanidrequest.md) | :heavy_check_mark:                                                                                                                                             | The request object to use for the request.                                                                                                                     |
-| `config`                                                                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                                   | :heavy_minus_sign:                                                                                                                                             | Available config options for making requests.                                                                                                                  |
+| Parameter                                                                                                                                                          | Type                                                                                                                                                               | Required                                                                                                                                                           | Description                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                                                          | [operations.GetUsersUserMemberMemberIdNextgenSubscriptionPlanIdRequest](../../sdk/models/operations/getusersusermembermemberidnextgensubscriptionplanidrequest.md) | :heavy_check_mark:                                                                                                                                                 | The request object to use for the request.                                                                                                                         |
+| `config`                                                                                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                                       | :heavy_minus_sign:                                                                                                                                                 | Available config options for making requests.                                                                                                                      |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberMemberIdNextgenSubscriptionPlanIdResponse](../../models/operations/getusersusermembermemberidnextgensubscriptionplanidresponse.md)>**
+**Promise<[operations.GetUsersUserMemberMemberIdNextgenSubscriptionPlanIdResponse](../../sdk/models/operations/getusersusermembermemberidnextgensubscriptionplanidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserMemberMemberIdNextgenSubscriptionId
 
@@ -1754,7 +1886,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     memberId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1763,16 +1894,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                                              | Type                                                                                                                                                   | Required                                                                                                                                               | Description                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                                              | [operations.GetUsersUserMemberMemberIdNextgenSubscriptionIdRequest](../../models/operations/getusersusermembermemberidnextgensubscriptionidrequest.md) | :heavy_check_mark:                                                                                                                                     | The request object to use for the request.                                                                                                             |
-| `config`                                                                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                           | :heavy_minus_sign:                                                                                                                                     | Available config options for making requests.                                                                                                          |
+| Parameter                                                                                                                                                  | Type                                                                                                                                                       | Required                                                                                                                                                   | Description                                                                                                                                                |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                                                  | [operations.GetUsersUserMemberMemberIdNextgenSubscriptionIdRequest](../../sdk/models/operations/getusersusermembermemberidnextgensubscriptionidrequest.md) | :heavy_check_mark:                                                                                                                                         | The request object to use for the request.                                                                                                                 |
+| `config`                                                                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                               | :heavy_minus_sign:                                                                                                                                         | Available config options for making requests.                                                                                                              |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserMemberMemberIdNextgenSubscriptionIdResponse](../../models/operations/getusersusermembermemberidnextgensubscriptionidresponse.md)>**
+**Promise<[operations.GetUsersUserMemberMemberIdNextgenSubscriptionIdResponse](../../sdk/models/operations/getusersusermembermemberidnextgensubscriptionidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserOccupation
 
@@ -1790,7 +1925,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.getUsersUserOccupation();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1806,8 +1940,12 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Response
 
-**Promise<[operations.GetUsersUserOccupationResponse](../../models/operations/getusersuseroccupationresponse.md)>**
+**Promise<[operations.GetUsersUserOccupationResponse](../../sdk/models/operations/getusersuseroccupationresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserPublicId
 
@@ -1827,7 +1965,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1836,16 +1973,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                        | Type                                                                                             | Required                                                                                         | Description                                                                                      |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| `request`                                                                                        | [operations.GetUsersUserPublicIdRequest](../../models/operations/getusersuserpublicidrequest.md) | :heavy_check_mark:                                                                               | The request object to use for the request.                                                       |
-| `config`                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                     | :heavy_minus_sign:                                                                               | Available config options for making requests.                                                    |
+| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `request`                                                                                            | [operations.GetUsersUserPublicIdRequest](../../sdk/models/operations/getusersuserpublicidrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
+| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserPublicIdResponse](../../models/operations/getusersuserpublicidresponse.md)>**
+**Promise<[operations.GetUsersUserPublicIdResponse](../../sdk/models/operations/getusersuserpublicidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserTagId
 
@@ -1865,7 +2006,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1874,16 +2014,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| `request`                                                                                  | [operations.GetUsersUserTagIdRequest](../../models/operations/getusersusertagidrequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
-| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
+| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `request`                                                                                      | [operations.GetUsersUserTagIdRequest](../../sdk/models/operations/getusersusertagidrequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
+| `config`                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                   | :heavy_minus_sign:                                                                             | Available config options for making requests.                                                  |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserTagIdResponse](../../models/operations/getusersusertagidresponse.md)>**
+**Promise<[operations.GetUsersUserTagIdResponse](../../sdk/models/operations/getusersusertagidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getUsersUserId
 
@@ -1903,7 +2047,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1912,16 +2055,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                            | Type                                                                                 | Required                                                                             | Description                                                                          |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| `request`                                                                            | [operations.GetUsersUserIdRequest](../../models/operations/getusersuseridrequest.md) | :heavy_check_mark:                                                                   | The request object to use for the request.                                           |
-| `config`                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                         | :heavy_minus_sign:                                                                   | Available config options for making requests.                                        |
+| Parameter                                                                                | Type                                                                                     | Required                                                                                 | Description                                                                              |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `request`                                                                                | [operations.GetUsersUserIdRequest](../../sdk/models/operations/getusersuseridrequest.md) | :heavy_check_mark:                                                                       | The request object to use for the request.                                               |
+| `config`                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                             | :heavy_minus_sign:                                                                       | Available config options for making requests.                                            |
 
 
 ### Response
 
-**Promise<[operations.GetUsersUserIdResponse](../../models/operations/getusersuseridresponse.md)>**
+**Promise<[operations.GetUsersUserIdResponse](../../sdk/models/operations/getusersuseridresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersAccountId
 
@@ -1948,7 +2095,6 @@ import { AccountUpdateRequestStatus, AccountUpdateRequestUsage } from "Wingspan-
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -1957,16 +2103,20 @@ import { AccountUpdateRequestStatus, AccountUpdateRequestUsage } from "Wingspan-
 
 ### Parameters
 
-| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
-| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| `request`                                                                                      | [operations.PatchUsersAccountIdRequest](../../models/operations/patchusersaccountidrequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
-| `config`                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                   | :heavy_minus_sign:                                                                             | Available config options for making requests.                                                  |
+| Parameter                                                                                          | Type                                                                                               | Required                                                                                           | Description                                                                                        |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `request`                                                                                          | [operations.PatchUsersAccountIdRequest](../../sdk/models/operations/patchusersaccountidrequest.md) | :heavy_check_mark:                                                                                 | The request object to use for the request.                                                         |
+| `config`                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                       | :heavy_minus_sign:                                                                                 | Available config options for making requests.                                                      |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersAccountIdResponse](../../models/operations/patchusersaccountidresponse.md)>**
+**Promise<[operations.PatchUsersAccountIdResponse](../../sdk/models/operations/patchusersaccountidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersActivityId
 
@@ -1991,7 +2141,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2000,16 +2149,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                        | Type                                                                                             | Required                                                                                         | Description                                                                                      |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| `request`                                                                                        | [operations.PatchUsersActivityIdRequest](../../models/operations/patchusersactivityidrequest.md) | :heavy_check_mark:                                                                               | The request object to use for the request.                                                       |
-| `config`                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                     | :heavy_minus_sign:                                                                               | Available config options for making requests.                                                    |
+| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `request`                                                                                            | [operations.PatchUsersActivityIdRequest](../../sdk/models/operations/patchusersactivityidrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
+| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersActivityIdResponse](../../models/operations/patchusersactivityidresponse.md)>**
+**Promise<[operations.PatchUsersActivityIdResponse](../../sdk/models/operations/patchusersactivityidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersAuthorizationAuthorizationId
 
@@ -2031,7 +2184,6 @@ import { AuthorizationUpdateRequestAllowedAction } from "Wingspan-Users-API/dist
     authorizationId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2040,16 +2192,20 @@ import { AuthorizationUpdateRequestAllowedAction } from "Wingspan-Users-API/dist
 
 ### Parameters
 
-| Parameter                                                                                                                            | Type                                                                                                                                 | Required                                                                                                                             | Description                                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                            | [operations.PatchUsersAuthorizationAuthorizationIdRequest](../../models/operations/patchusersauthorizationauthorizationidrequest.md) | :heavy_check_mark:                                                                                                                   | The request object to use for the request.                                                                                           |
-| `config`                                                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                         | :heavy_minus_sign:                                                                                                                   | Available config options for making requests.                                                                                        |
+| Parameter                                                                                                                                | Type                                                                                                                                     | Required                                                                                                                                 | Description                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                                | [operations.PatchUsersAuthorizationAuthorizationIdRequest](../../sdk/models/operations/patchusersauthorizationauthorizationidrequest.md) | :heavy_check_mark:                                                                                                                       | The request object to use for the request.                                                                                               |
+| `config`                                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                             | :heavy_minus_sign:                                                                                                                       | Available config options for making requests.                                                                                            |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersAuthorizationAuthorizationIdResponse](../../models/operations/patchusersauthorizationauthorizationidresponse.md)>**
+**Promise<[operations.PatchUsersAuthorizationAuthorizationIdResponse](../../sdk/models/operations/patchusersauthorizationauthorizationidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersOrganizationUserUserId
 
@@ -2069,7 +2225,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     userId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2078,16 +2233,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                | Type                                                                                                                     | Required                                                                                                                 | Description                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                | [operations.PatchUsersOrganizationUserUserIdRequest](../../models/operations/patchusersorganizationuseruseridrequest.md) | :heavy_check_mark:                                                                                                       | The request object to use for the request.                                                                               |
-| `config`                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                             | :heavy_minus_sign:                                                                                                       | Available config options for making requests.                                                                            |
+| Parameter                                                                                                                    | Type                                                                                                                         | Required                                                                                                                     | Description                                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                    | [operations.PatchUsersOrganizationUserUserIdRequest](../../sdk/models/operations/patchusersorganizationuseruseridrequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
+| `config`                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                 | :heavy_minus_sign:                                                                                                           | Available config options for making requests.                                                                                |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersOrganizationUserUserIdResponse](../../models/operations/patchusersorganizationuseruseridresponse.md)>**
+**Promise<[operations.PatchUsersOrganizationUserUserIdResponse](../../sdk/models/operations/patchusersorganizationuseruseridresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersOrganizationUserUserIdAssociate
 
@@ -2123,7 +2282,6 @@ import {
     userId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2132,16 +2290,20 @@ import {
 
 ### Parameters
 
-| Parameter                                                                                                                                  | Type                                                                                                                                       | Required                                                                                                                                   | Description                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                                  | [operations.PatchUsersOrganizationUserUserIdAssociateRequest](../../models/operations/patchusersorganizationuseruseridassociaterequest.md) | :heavy_check_mark:                                                                                                                         | The request object to use for the request.                                                                                                 |
-| `config`                                                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                               | :heavy_minus_sign:                                                                                                                         | Available config options for making requests.                                                                                              |
+| Parameter                                                                                                                                      | Type                                                                                                                                           | Required                                                                                                                                       | Description                                                                                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                                      | [operations.PatchUsersOrganizationUserUserIdAssociateRequest](../../sdk/models/operations/patchusersorganizationuseruseridassociaterequest.md) | :heavy_check_mark:                                                                                                                             | The request object to use for the request.                                                                                                     |
+| `config`                                                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                   | :heavy_minus_sign:                                                                                                                             | Available config options for making requests.                                                                                                  |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersOrganizationUserUserIdAssociateResponse](../../models/operations/patchusersorganizationuseruseridassociateresponse.md)>**
+**Promise<[operations.PatchUsersOrganizationUserUserIdAssociateResponse](../../sdk/models/operations/patchusersorganizationuseruseridassociateresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersSessionApiId
 
@@ -2166,7 +2328,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2175,16 +2336,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `request`                                                                                            | [operations.PatchUsersSessionApiIdRequest](../../models/operations/patchuserssessionapiidrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
-| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
+| Parameter                                                                                                | Type                                                                                                     | Required                                                                                                 | Description                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                | [operations.PatchUsersSessionApiIdRequest](../../sdk/models/operations/patchuserssessionapiidrequest.md) | :heavy_check_mark:                                                                                       | The request object to use for the request.                                                               |
+| `config`                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                             | :heavy_minus_sign:                                                                                       | Available config options for making requests.                                                            |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersSessionApiIdResponse](../../models/operations/patchuserssessionapiidresponse.md)>**
+**Promise<[operations.PatchUsersSessionApiIdResponse](../../sdk/models/operations/patchuserssessionapiidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersSessionOtp
 
@@ -2204,7 +2369,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     code: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2213,16 +2377,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                          | Type                                                                                               | Required                                                                                           | Description                                                                                        |
-| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `request`                                                                                          | [shared.CompletePhoneVerificationRequest](../../models/shared/completephoneverificationrequest.md) | :heavy_check_mark:                                                                                 | The request object to use for the request.                                                         |
-| `config`                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                       | :heavy_minus_sign:                                                                                 | Available config options for making requests.                                                      |
+| Parameter                                                                                              | Type                                                                                                   | Required                                                                                               | Description                                                                                            |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                              | [shared.CompletePhoneVerificationRequest](../../sdk/models/shared/completephoneverificationrequest.md) | :heavy_check_mark:                                                                                     | The request object to use for the request.                                                             |
+| `config`                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                           | :heavy_minus_sign:                                                                                     | Available config options for making requests.                                                          |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersSessionOtpResponse](../../models/operations/patchuserssessionotpresponse.md)>**
+**Promise<[operations.PatchUsersSessionOtpResponse](../../sdk/models/operations/patchuserssessionotpresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersSubscriptionGrantId
 
@@ -2244,7 +2412,6 @@ import { SubscriptionGrantUpdateRequestPackage, SubscriptionGrantUpdateRequestPa
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2253,16 +2420,20 @@ import { SubscriptionGrantUpdateRequestPackage, SubscriptionGrantUpdateRequestPa
 
 ### Parameters
 
-| Parameter                                                                                                          | Type                                                                                                               | Required                                                                                                           | Description                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                          | [operations.PatchUsersSubscriptionGrantIdRequest](../../models/operations/patchuserssubscriptiongrantidrequest.md) | :heavy_check_mark:                                                                                                 | The request object to use for the request.                                                                         |
-| `config`                                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                       | :heavy_minus_sign:                                                                                                 | Available config options for making requests.                                                                      |
+| Parameter                                                                                                              | Type                                                                                                                   | Required                                                                                                               | Description                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                              | [operations.PatchUsersSubscriptionGrantIdRequest](../../sdk/models/operations/patchuserssubscriptiongrantidrequest.md) | :heavy_check_mark:                                                                                                     | The request object to use for the request.                                                                             |
+| `config`                                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                           | :heavy_minus_sign:                                                                                                     | Available config options for making requests.                                                                          |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersSubscriptionGrantIdResponse](../../models/operations/patchuserssubscriptiongrantidresponse.md)>**
+**Promise<[operations.PatchUsersSubscriptionGrantIdResponse](../../sdk/models/operations/patchuserssubscriptiongrantidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersUserClientId
 
@@ -2304,7 +2475,6 @@ import { Structure } from "Wingspan-Users-API/dist/sdk/models/shared";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2313,16 +2483,20 @@ import { Structure } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 ### Parameters
 
-| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `request`                                                                                            | [operations.PatchUsersUserClientIdRequest](../../models/operations/patchusersuserclientidrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
-| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
+| Parameter                                                                                                | Type                                                                                                     | Required                                                                                                 | Description                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                | [operations.PatchUsersUserClientIdRequest](../../sdk/models/operations/patchusersuserclientidrequest.md) | :heavy_check_mark:                                                                                       | The request object to use for the request.                                                               |
+| `config`                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                             | :heavy_minus_sign:                                                                                       | Available config options for making requests.                                                            |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersUserClientIdResponse](../../models/operations/patchusersuserclientidresponse.md)>**
+**Promise<[operations.PatchUsersUserClientIdResponse](../../sdk/models/operations/patchusersuserclientidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersUserMemberSubscriptionPaymentMethod
 
@@ -2340,7 +2514,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.patchUsersUserMemberSubscriptionPaymentMethod({});
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2349,16 +2522,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                            | Type                                                                                 | Required                                                                             | Description                                                                          |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| `request`                                                                            | [shared.PaymentMethodWriteRequest](../../models/shared/paymentmethodwriterequest.md) | :heavy_check_mark:                                                                   | The request object to use for the request.                                           |
-| `config`                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                         | :heavy_minus_sign:                                                                   | Available config options for making requests.                                        |
+| Parameter                                                                                | Type                                                                                     | Required                                                                                 | Description                                                                              |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `request`                                                                                | [shared.PaymentMethodWriteRequest](../../sdk/models/shared/paymentmethodwriterequest.md) | :heavy_check_mark:                                                                       | The request object to use for the request.                                               |
+| `config`                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                             | :heavy_minus_sign:                                                                       | Available config options for making requests.                                            |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersUserMemberSubscriptionPaymentMethodResponse](../../models/operations/patchusersusermembersubscriptionpaymentmethodresponse.md)>**
+**Promise<[operations.PatchUsersUserMemberSubscriptionPaymentMethodResponse](../../sdk/models/operations/patchusersusermembersubscriptionpaymentmethodresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersUserMemberSubscriptionId
 
@@ -2384,7 +2561,6 @@ import {
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2393,16 +2569,20 @@ import {
 
 ### Parameters
 
-| Parameter                                                                                                                    | Type                                                                                                                         | Required                                                                                                                     | Description                                                                                                                  |
-| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                    | [operations.PatchUsersUserMemberSubscriptionIdRequest](../../models/operations/patchusersusermembersubscriptionidrequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
-| `config`                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                 | :heavy_minus_sign:                                                                                                           | Available config options for making requests.                                                                                |
+| Parameter                                                                                                                        | Type                                                                                                                             | Required                                                                                                                         | Description                                                                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                        | [operations.PatchUsersUserMemberSubscriptionIdRequest](../../sdk/models/operations/patchusersusermembersubscriptionidrequest.md) | :heavy_check_mark:                                                                                                               | The request object to use for the request.                                                                                       |
+| `config`                                                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                     | :heavy_minus_sign:                                                                                                               | Available config options for making requests.                                                                                    |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersUserMemberSubscriptionIdResponse](../../models/operations/patchusersusermembersubscriptionidresponse.md)>**
+**Promise<[operations.PatchUsersUserMemberSubscriptionIdResponse](../../sdk/models/operations/patchusersusermembersubscriptionidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersUserMemberId
 
@@ -2481,7 +2661,6 @@ import {
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2490,16 +2669,20 @@ import {
 
 ### Parameters
 
-| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `request`                                                                                            | [operations.PatchUsersUserMemberIdRequest](../../models/operations/patchusersusermemberidrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
-| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
+| Parameter                                                                                                | Type                                                                                                     | Required                                                                                                 | Description                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                | [operations.PatchUsersUserMemberIdRequest](../../sdk/models/operations/patchusersusermemberidrequest.md) | :heavy_check_mark:                                                                                       | The request object to use for the request.                                                               |
+| `config`                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                             | :heavy_minus_sign:                                                                                       | Available config options for making requests.                                                            |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersUserMemberIdResponse](../../models/operations/patchusersusermemberidresponse.md)>**
+**Promise<[operations.PatchUsersUserMemberIdResponse](../../sdk/models/operations/patchusersusermemberidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersUserMemberIdSubscription
 
@@ -2525,7 +2708,6 @@ import {
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2534,16 +2716,20 @@ import {
 
 ### Parameters
 
-| Parameter                                                                                                                    | Type                                                                                                                         | Required                                                                                                                     | Description                                                                                                                  |
-| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                    | [operations.PatchUsersUserMemberIdSubscriptionRequest](../../models/operations/patchusersusermemberidsubscriptionrequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
-| `config`                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                 | :heavy_minus_sign:                                                                                                           | Available config options for making requests.                                                                                |
+| Parameter                                                                                                                        | Type                                                                                                                             | Required                                                                                                                         | Description                                                                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                        | [operations.PatchUsersUserMemberIdSubscriptionRequest](../../sdk/models/operations/patchusersusermemberidsubscriptionrequest.md) | :heavy_check_mark:                                                                                                               | The request object to use for the request.                                                                                       |
+| `config`                                                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                     | :heavy_minus_sign:                                                                                                               | Available config options for making requests.                                                                                    |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersUserMemberIdSubscriptionResponse](../../models/operations/patchusersusermemberidsubscriptionresponse.md)>**
+**Promise<[operations.PatchUsersUserMemberIdSubscriptionResponse](../../sdk/models/operations/patchusersusermemberidsubscriptionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersUserMemberMemberIdNextgenSubscriptionId
 
@@ -2570,7 +2756,6 @@ import {
     memberId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2579,16 +2764,20 @@ import {
 
 ### Parameters
 
-| Parameter                                                                                                                                                  | Type                                                                                                                                                       | Required                                                                                                                                                   | Description                                                                                                                                                |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                                                  | [operations.PatchUsersUserMemberMemberIdNextgenSubscriptionIdRequest](../../models/operations/patchusersusermembermemberidnextgensubscriptionidrequest.md) | :heavy_check_mark:                                                                                                                                         | The request object to use for the request.                                                                                                                 |
-| `config`                                                                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                               | :heavy_minus_sign:                                                                                                                                         | Available config options for making requests.                                                                                                              |
+| Parameter                                                                                                                                                      | Type                                                                                                                                                           | Required                                                                                                                                                       | Description                                                                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                                                      | [operations.PatchUsersUserMemberMemberIdNextgenSubscriptionIdRequest](../../sdk/models/operations/patchusersusermembermemberidnextgensubscriptionidrequest.md) | :heavy_check_mark:                                                                                                                                             | The request object to use for the request.                                                                                                                     |
+| `config`                                                                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                                   | :heavy_minus_sign:                                                                                                                                             | Available config options for making requests.                                                                                                                  |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersUserMemberMemberIdNextgenSubscriptionIdResponse](../../models/operations/patchusersusermembermemberidnextgensubscriptionidresponse.md)>**
+**Promise<[operations.PatchUsersUserMemberMemberIdNextgenSubscriptionIdResponse](../../sdk/models/operations/patchusersusermembermemberidnextgensubscriptionidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersUserId
 
@@ -2613,7 +2802,6 @@ import { Gender } from "Wingspan-Users-API/dist/sdk/models/shared";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2622,16 +2810,20 @@ import { Gender } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 ### Parameters
 
-| Parameter                                                                                | Type                                                                                     | Required                                                                                 | Description                                                                              |
-| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| `request`                                                                                | [operations.PatchUsersUserIdRequest](../../models/operations/patchusersuseridrequest.md) | :heavy_check_mark:                                                                       | The request object to use for the request.                                               |
-| `config`                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                             | :heavy_minus_sign:                                                                       | Available config options for making requests.                                            |
+| Parameter                                                                                    | Type                                                                                         | Required                                                                                     | Description                                                                                  |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `request`                                                                                    | [operations.PatchUsersUserIdRequest](../../sdk/models/operations/patchusersuseridrequest.md) | :heavy_check_mark:                                                                           | The request object to use for the request.                                                   |
+| `config`                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                 | :heavy_minus_sign:                                                                           | Available config options for making requests.                                                |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersUserIdResponse](../../models/operations/patchusersuseridresponse.md)>**
+**Promise<[operations.PatchUsersUserIdResponse](../../sdk/models/operations/patchusersuseridresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersUserIdVerificationEmail
 
@@ -2654,7 +2846,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2663,16 +2854,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                  | Type                                                                                                                       | Required                                                                                                                   | Description                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                  | [operations.PatchUsersUserIdVerificationEmailRequest](../../models/operations/patchusersuseridverificationemailrequest.md) | :heavy_check_mark:                                                                                                         | The request object to use for the request.                                                                                 |
-| `config`                                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                               | :heavy_minus_sign:                                                                                                         | Available config options for making requests.                                                                              |
+| Parameter                                                                                                                      | Type                                                                                                                           | Required                                                                                                                       | Description                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                      | [operations.PatchUsersUserIdVerificationEmailRequest](../../sdk/models/operations/patchusersuseridverificationemailrequest.md) | :heavy_check_mark:                                                                                                             | The request object to use for the request.                                                                                     |
+| `config`                                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                   | :heavy_minus_sign:                                                                                                             | Available config options for making requests.                                                                                  |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersUserIdVerificationEmailResponse](../../models/operations/patchusersuseridverificationemailresponse.md)>**
+**Promise<[operations.PatchUsersUserIdVerificationEmailResponse](../../sdk/models/operations/patchusersuseridverificationemailresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patchUsersUserIdVerificationPhone
 
@@ -2695,7 +2890,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2704,16 +2898,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                  | Type                                                                                                                       | Required                                                                                                                   | Description                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                  | [operations.PatchUsersUserIdVerificationPhoneRequest](../../models/operations/patchusersuseridverificationphonerequest.md) | :heavy_check_mark:                                                                                                         | The request object to use for the request.                                                                                 |
-| `config`                                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                               | :heavy_minus_sign:                                                                                                         | Available config options for making requests.                                                                              |
+| Parameter                                                                                                                      | Type                                                                                                                           | Required                                                                                                                       | Description                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                      | [operations.PatchUsersUserIdVerificationPhoneRequest](../../sdk/models/operations/patchusersuseridverificationphonerequest.md) | :heavy_check_mark:                                                                                                             | The request object to use for the request.                                                                                     |
+| `config`                                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                   | :heavy_minus_sign:                                                                                                             | Available config options for making requests.                                                                                  |
 
 
 ### Response
 
-**Promise<[operations.PatchUsersUserIdVerificationPhoneResponse](../../models/operations/patchusersuseridverificationphoneresponse.md)>**
+**Promise<[operations.PatchUsersUserIdVerificationPhoneResponse](../../sdk/models/operations/patchusersuseridverificationphoneresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersAccount
 
@@ -2746,7 +2944,6 @@ import {
     usedFor: {},
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2755,16 +2952,20 @@ import {
 
 ### Parameters
 
-| Parameter                                                                  | Type                                                                       | Required                                                                   | Description                                                                |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `request`                                                                  | [shared.AccountCreateRequest](../../models/shared/accountcreaterequest.md) | :heavy_check_mark:                                                         | The request object to use for the request.                                 |
-| `config`                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)               | :heavy_minus_sign:                                                         | Available config options for making requests.                              |
+| Parameter                                                                      | Type                                                                           | Required                                                                       | Description                                                                    |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| `request`                                                                      | [shared.AccountCreateRequest](../../sdk/models/shared/accountcreaterequest.md) | :heavy_check_mark:                                                             | The request object to use for the request.                                     |
+| `config`                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                   | :heavy_minus_sign:                                                             | Available config options for making requests.                                  |
 
 
 ### Response
 
-**Promise<[operations.PostUsersAccountResponse](../../models/operations/postusersaccountresponse.md)>**
+**Promise<[operations.PostUsersAccountResponse](../../sdk/models/operations/postusersaccountresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersAccountLink
 
@@ -2782,7 +2983,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.postUsersAccountLink({});
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2791,16 +2991,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                          | Type                                                               | Required                                                           | Description                                                        |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
-| `request`                                                          | [shared.LinkTokenRequest](../../models/shared/linktokenrequest.md) | :heavy_check_mark:                                                 | The request object to use for the request.                         |
-| `config`                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)       | :heavy_minus_sign:                                                 | Available config options for making requests.                      |
+| Parameter                                                              | Type                                                                   | Required                                                               | Description                                                            |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| `request`                                                              | [shared.LinkTokenRequest](../../sdk/models/shared/linktokenrequest.md) | :heavy_check_mark:                                                     | The request object to use for the request.                             |
+| `config`                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)           | :heavy_minus_sign:                                                     | Available config options for making requests.                          |
 
 
 ### Response
 
-**Promise<[operations.PostUsersAccountLinkResponse](../../models/operations/postusersaccountlinkresponse.md)>**
+**Promise<[operations.PostUsersAccountLinkResponse](../../sdk/models/operations/postusersaccountlinkresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersAccountRequirements
 
@@ -2821,7 +3025,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     currency: "Uganda Shilling",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2830,16 +3033,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                              | Type                                                                                   | Required                                                                               | Description                                                                            |
-| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `request`                                                                              | [shared.AccountRequirementsRequest](../../models/shared/accountrequirementsrequest.md) | :heavy_check_mark:                                                                     | The request object to use for the request.                                             |
-| `config`                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                           | :heavy_minus_sign:                                                                     | Available config options for making requests.                                          |
+| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `request`                                                                                  | [shared.AccountRequirementsRequest](../../sdk/models/shared/accountrequirementsrequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
+| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
 
 
 ### Response
 
-**Promise<[operations.PostUsersAccountRequirementsResponse](../../models/operations/postusersaccountrequirementsresponse.md)>**
+**Promise<[operations.PostUsersAccountRequirementsResponse](../../sdk/models/operations/postusersaccountrequirementsresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersActivity
 
@@ -2859,7 +3066,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     userId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2868,16 +3074,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                    | Type                                                                         | Required                                                                     | Description                                                                  |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `request`                                                                    | [shared.ActivityCreateRequest](../../models/shared/activitycreaterequest.md) | :heavy_check_mark:                                                           | The request object to use for the request.                                   |
-| `config`                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                 | :heavy_minus_sign:                                                           | Available config options for making requests.                                |
+| Parameter                                                                        | Type                                                                             | Required                                                                         | Description                                                                      |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `request`                                                                        | [shared.ActivityCreateRequest](../../sdk/models/shared/activitycreaterequest.md) | :heavy_check_mark:                                                               | The request object to use for the request.                                       |
+| `config`                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                     | :heavy_minus_sign:                                                               | Available config options for making requests.                                    |
 
 
 ### Response
 
-**Promise<[operations.PostUsersActivityResponse](../../models/operations/postusersactivityresponse.md)>**
+**Promise<[operations.PostUsersActivityResponse](../../sdk/models/operations/postusersactivityresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersAuthentication
 
@@ -2897,7 +3107,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     email: "Malvina_Christiansen@gmail.com",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2906,16 +3115,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                    | Type                                                                         | Required                                                                     | Description                                                                  |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `request`                                                                    | [shared.AuthenticationRequest](../../models/shared/authenticationrequest.md) | :heavy_check_mark:                                                           | The request object to use for the request.                                   |
-| `config`                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                 | :heavy_minus_sign:                                                           | Available config options for making requests.                                |
+| Parameter                                                                        | Type                                                                             | Required                                                                         | Description                                                                      |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `request`                                                                        | [shared.AuthenticationRequest](../../sdk/models/shared/authenticationrequest.md) | :heavy_check_mark:                                                               | The request object to use for the request.                                       |
+| `config`                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                     | :heavy_minus_sign:                                                               | Available config options for making requests.                                    |
 
 
 ### Response
 
-**Promise<[operations.PostUsersAuthenticationResponse](../../models/operations/postusersauthenticationresponse.md)>**
+**Promise<[operations.PostUsersAuthenticationResponse](../../sdk/models/operations/postusersauthenticationresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersAuthorization
 
@@ -2956,7 +3169,6 @@ import { Action, AllowedAction, Comparator } from "Wingspan-Users-API/dist/sdk/m
     },
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -2965,16 +3177,20 @@ import { Action, AllowedAction, Comparator } from "Wingspan-Users-API/dist/sdk/m
 
 ### Parameters
 
-| Parameter                                                                              | Type                                                                                   | Required                                                                               | Description                                                                            |
-| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `request`                                                                              | [shared.AuthorizationCreateRequest](../../models/shared/authorizationcreaterequest.md) | :heavy_check_mark:                                                                     | The request object to use for the request.                                             |
-| `config`                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                           | :heavy_minus_sign:                                                                     | Available config options for making requests.                                          |
+| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `request`                                                                                  | [shared.AuthorizationCreateRequest](../../sdk/models/shared/authorizationcreaterequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
+| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
 
 
 ### Response
 
-**Promise<[operations.PostUsersAuthorizationResponse](../../models/operations/postusersauthorizationresponse.md)>**
+**Promise<[operations.PostUsersAuthorizationResponse](../../sdk/models/operations/postusersauthorizationresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersFlatfileAuthToken
 
@@ -2994,7 +3210,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     embedId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3003,16 +3218,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                          | Type                                                                               | Required                                                                           | Description                                                                        |
-| ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| `request`                                                                          | [shared.FlatfileAuthTokenRequest](../../models/shared/flatfileauthtokenrequest.md) | :heavy_check_mark:                                                                 | The request object to use for the request.                                         |
-| `config`                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                       | :heavy_minus_sign:                                                                 | Available config options for making requests.                                      |
+| Parameter                                                                              | Type                                                                                   | Required                                                                               | Description                                                                            |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `request`                                                                              | [shared.FlatfileAuthTokenRequest](../../sdk/models/shared/flatfileauthtokenrequest.md) | :heavy_check_mark:                                                                     | The request object to use for the request.                                             |
+| `config`                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                           | :heavy_minus_sign:                                                                     | Available config options for making requests.                                          |
 
 
 ### Response
 
-**Promise<[operations.PostUsersFlatfileAuthTokenResponse](../../models/operations/postusersflatfileauthtokenresponse.md)>**
+**Promise<[operations.PostUsersFlatfileAuthTokenResponse](../../sdk/models/operations/postusersflatfileauthtokenresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersGuestAccountNumbers
 
@@ -3033,7 +3252,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     publicToken: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3042,16 +3260,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                | Type                                                                     | Required                                                                 | Description                                                              |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| `request`                                                                | [shared.GuestAccountRequest](../../models/shared/guestaccountrequest.md) | :heavy_check_mark:                                                       | The request object to use for the request.                               |
-| `config`                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)             | :heavy_minus_sign:                                                       | Available config options for making requests.                            |
+| Parameter                                                                    | Type                                                                         | Required                                                                     | Description                                                                  |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| `request`                                                                    | [shared.GuestAccountRequest](../../sdk/models/shared/guestaccountrequest.md) | :heavy_check_mark:                                                           | The request object to use for the request.                                   |
+| `config`                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                 | :heavy_minus_sign:                                                           | Available config options for making requests.                                |
 
 
 ### Response
 
-**Promise<[operations.PostUsersGuestAccountNumbersResponse](../../models/operations/postusersguestaccountnumbersresponse.md)>**
+**Promise<[operations.PostUsersGuestAccountNumbersResponse](../../sdk/models/operations/postusersguestaccountnumbersresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersOrganizationUser
 
@@ -3075,7 +3297,6 @@ import { Gender, UserAccountType, UserCreateRequestStatus } from "Wingspan-Users
     settings: {},
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3084,16 +3305,20 @@ import { Gender, UserAccountType, UserCreateRequestStatus } from "Wingspan-Users
 
 ### Parameters
 
-| Parameter                                                            | Type                                                                 | Required                                                             | Description                                                          |
-| -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| `request`                                                            | [shared.UserCreateRequest](../../models/shared/usercreaterequest.md) | :heavy_check_mark:                                                   | The request object to use for the request.                           |
-| `config`                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)         | :heavy_minus_sign:                                                   | Available config options for making requests.                        |
+| Parameter                                                                | Type                                                                     | Required                                                                 | Description                                                              |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| `request`                                                                | [shared.UserCreateRequest](../../sdk/models/shared/usercreaterequest.md) | :heavy_check_mark:                                                       | The request object to use for the request.                               |
+| `config`                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)             | :heavy_minus_sign:                                                       | Available config options for making requests.                            |
 
 
 ### Response
 
-**Promise<[operations.PostUsersOrganizationUserResponse](../../models/operations/postusersorganizationuserresponse.md)>**
+**Promise<[operations.PostUsersOrganizationUserResponse](../../sdk/models/operations/postusersorganizationuserresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersOrganizationUserUserIdAssociate
 
@@ -3129,7 +3354,6 @@ import {
     userId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3138,16 +3362,20 @@ import {
 
 ### Parameters
 
-| Parameter                                                                                                                                | Type                                                                                                                                     | Required                                                                                                                                 | Description                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                                | [operations.PostUsersOrganizationUserUserIdAssociateRequest](../../models/operations/postusersorganizationuseruseridassociaterequest.md) | :heavy_check_mark:                                                                                                                       | The request object to use for the request.                                                                                               |
-| `config`                                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                             | :heavy_minus_sign:                                                                                                                       | Available config options for making requests.                                                                                            |
+| Parameter                                                                                                                                    | Type                                                                                                                                         | Required                                                                                                                                     | Description                                                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                                    | [operations.PostUsersOrganizationUserUserIdAssociateRequest](../../sdk/models/operations/postusersorganizationuseruseridassociaterequest.md) | :heavy_check_mark:                                                                                                                           | The request object to use for the request.                                                                                                   |
+| `config`                                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                 | :heavy_minus_sign:                                                                                                                           | Available config options for making requests.                                                                                                |
 
 
 ### Response
 
-**Promise<[operations.PostUsersOrganizationUserUserIdAssociateResponse](../../models/operations/postusersorganizationuseruseridassociateresponse.md)>**
+**Promise<[operations.PostUsersOrganizationUserUserIdAssociateResponse](../../sdk/models/operations/postusersorganizationuseruseridassociateresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersPendingSession
 
@@ -3165,7 +3393,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.postUsersPendingSession({});
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3174,16 +3401,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                  | Type                                                                       | Required                                                                   | Description                                                                |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `request`                                                                  | [shared.SessionCreateRequest](../../models/shared/sessioncreaterequest.md) | :heavy_check_mark:                                                         | The request object to use for the request.                                 |
-| `config`                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)               | :heavy_minus_sign:                                                         | Available config options for making requests.                              |
+| Parameter                                                                      | Type                                                                           | Required                                                                       | Description                                                                    |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| `request`                                                                      | [shared.SessionCreateRequest](../../sdk/models/shared/sessioncreaterequest.md) | :heavy_check_mark:                                                             | The request object to use for the request.                                     |
+| `config`                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                   | :heavy_minus_sign:                                                             | Available config options for making requests.                                  |
 
 
 ### Response
 
-**Promise<[operations.PostUsersPendingSessionResponse](../../models/operations/postuserspendingsessionresponse.md)>**
+**Promise<[operations.PostUsersPendingSessionResponse](../../sdk/models/operations/postuserspendingsessionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersPendingUser
 
@@ -3207,7 +3438,6 @@ import { Gender, UserAccountType, UserCreateRequestStatus } from "Wingspan-Users
     settings: {},
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3216,16 +3446,20 @@ import { Gender, UserAccountType, UserCreateRequestStatus } from "Wingspan-Users
 
 ### Parameters
 
-| Parameter                                                            | Type                                                                 | Required                                                             | Description                                                          |
-| -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| `request`                                                            | [shared.UserCreateRequest](../../models/shared/usercreaterequest.md) | :heavy_check_mark:                                                   | The request object to use for the request.                           |
-| `config`                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)         | :heavy_minus_sign:                                                   | Available config options for making requests.                        |
+| Parameter                                                                | Type                                                                     | Required                                                                 | Description                                                              |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| `request`                                                                | [shared.UserCreateRequest](../../sdk/models/shared/usercreaterequest.md) | :heavy_check_mark:                                                       | The request object to use for the request.                               |
+| `config`                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)             | :heavy_minus_sign:                                                       | Available config options for making requests.                            |
 
 
 ### Response
 
-**Promise<[operations.PostUsersPendingUserResponse](../../models/operations/postuserspendinguserresponse.md)>**
+**Promise<[operations.PostUsersPendingUserResponse](../../sdk/models/operations/postuserspendinguserresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersSession
 
@@ -3243,7 +3477,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.postUsersSession({});
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3252,16 +3485,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                  | Type                                                                       | Required                                                                   | Description                                                                |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `request`                                                                  | [shared.SessionCreateRequest](../../models/shared/sessioncreaterequest.md) | :heavy_check_mark:                                                         | The request object to use for the request.                                 |
-| `config`                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)               | :heavy_minus_sign:                                                         | Available config options for making requests.                              |
+| Parameter                                                                      | Type                                                                           | Required                                                                       | Description                                                                    |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| `request`                                                                      | [shared.SessionCreateRequest](../../sdk/models/shared/sessioncreaterequest.md) | :heavy_check_mark:                                                             | The request object to use for the request.                                     |
+| `config`                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                   | :heavy_minus_sign:                                                             | Available config options for making requests.                                  |
 
 
 ### Response
 
-**Promise<[operations.PostUsersSessionResponse](../../models/operations/postuserssessionresponse.md)>**
+**Promise<[operations.PostUsersSessionResponse](../../sdk/models/operations/postuserssessionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersSessionApi
 
@@ -3283,7 +3520,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     },
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3292,16 +3528,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                        | Type                                                                             | Required                                                                         | Description                                                                      |
-| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| `request`                                                                        | [shared.ApiSessionCreateRequest](../../models/shared/apisessioncreaterequest.md) | :heavy_check_mark:                                                               | The request object to use for the request.                                       |
-| `config`                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                     | :heavy_minus_sign:                                                               | Available config options for making requests.                                    |
+| Parameter                                                                            | Type                                                                                 | Required                                                                             | Description                                                                          |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| `request`                                                                            | [shared.ApiSessionCreateRequest](../../sdk/models/shared/apisessioncreaterequest.md) | :heavy_check_mark:                                                                   | The request object to use for the request.                                           |
+| `config`                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                         | :heavy_minus_sign:                                                                   | Available config options for making requests.                                        |
 
 
 ### Response
 
-**Promise<[operations.PostUsersSessionApiResponse](../../models/operations/postuserssessionapiresponse.md)>**
+**Promise<[operations.PostUsersSessionApiResponse](../../sdk/models/operations/postuserssessionapiresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersSessionOtp
 
@@ -3320,7 +3560,6 @@ import { OtpSessionCreateRequestChannel } from "Wingspan-Users-API/dist/sdk/mode
 
   const res = await sdk.postUsersSessionOtp({});
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3329,16 +3568,20 @@ import { OtpSessionCreateRequestChannel } from "Wingspan-Users-API/dist/sdk/mode
 
 ### Parameters
 
-| Parameter                                                                        | Type                                                                             | Required                                                                         | Description                                                                      |
-| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| `request`                                                                        | [shared.OtpSessionCreateRequest](../../models/shared/otpsessioncreaterequest.md) | :heavy_check_mark:                                                               | The request object to use for the request.                                       |
-| `config`                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                     | :heavy_minus_sign:                                                               | Available config options for making requests.                                    |
+| Parameter                                                                            | Type                                                                                 | Required                                                                             | Description                                                                          |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| `request`                                                                            | [shared.OtpSessionCreateRequest](../../sdk/models/shared/otpsessioncreaterequest.md) | :heavy_check_mark:                                                                   | The request object to use for the request.                                           |
+| `config`                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                         | :heavy_minus_sign:                                                                   | Available config options for making requests.                                        |
 
 
 ### Response
 
-**Promise<[operations.PostUsersSessionOtpResponse](../../models/operations/postuserssessionotpresponse.md)>**
+**Promise<[operations.PostUsersSessionOtpResponse](../../sdk/models/operations/postuserssessionotpresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersSessionRequestingUser
 
@@ -3356,7 +3599,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.postUsersSessionRequestingUser({});
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3365,16 +3607,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                  | Type                                                                       | Required                                                                   | Description                                                                |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `request`                                                                  | [shared.SessionCreateRequest](../../models/shared/sessioncreaterequest.md) | :heavy_check_mark:                                                         | The request object to use for the request.                                 |
-| `config`                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)               | :heavy_minus_sign:                                                         | Available config options for making requests.                              |
+| Parameter                                                                      | Type                                                                           | Required                                                                       | Description                                                                    |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| `request`                                                                      | [shared.SessionCreateRequest](../../sdk/models/shared/sessioncreaterequest.md) | :heavy_check_mark:                                                             | The request object to use for the request.                                     |
+| `config`                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                   | :heavy_minus_sign:                                                             | Available config options for making requests.                                  |
 
 
 ### Response
 
-**Promise<[operations.PostUsersSessionRequestingUserResponse](../../models/operations/postuserssessionrequestinguserresponse.md)>**
+**Promise<[operations.PostUsersSessionRequestingUserResponse](../../sdk/models/operations/postuserssessionrequestinguserresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersSessionSingleSignOn
 
@@ -3394,7 +3640,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     singleSignOnCode: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3403,16 +3648,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                        | Type                                                                             | Required                                                                         | Description                                                                      |
-| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| `request`                                                                        | [shared.SsoSessionCreateRequest](../../models/shared/ssosessioncreaterequest.md) | :heavy_check_mark:                                                               | The request object to use for the request.                                       |
-| `config`                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                     | :heavy_minus_sign:                                                               | Available config options for making requests.                                    |
+| Parameter                                                                            | Type                                                                                 | Required                                                                             | Description                                                                          |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| `request`                                                                            | [shared.SsoSessionCreateRequest](../../sdk/models/shared/ssosessioncreaterequest.md) | :heavy_check_mark:                                                                   | The request object to use for the request.                                           |
+| `config`                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                         | :heavy_minus_sign:                                                                   | Available config options for making requests.                                        |
 
 
 ### Response
 
-**Promise<[operations.PostUsersSessionSingleSignOnResponse](../../models/operations/postuserssessionsinglesignonresponse.md)>**
+**Promise<[operations.PostUsersSessionSingleSignOnResponse](../../sdk/models/operations/postuserssessionsinglesignonresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersSessionSocialAuthGoogle
 
@@ -3432,7 +3681,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     idToken: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3441,16 +3689,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                        | Type                                                                             | Required                                                                         | Description                                                                      |
-| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| `request`                                                                        | [shared.SignInWithGoogleRequest](../../models/shared/signinwithgooglerequest.md) | :heavy_check_mark:                                                               | The request object to use for the request.                                       |
-| `config`                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                     | :heavy_minus_sign:                                                               | Available config options for making requests.                                    |
+| Parameter                                                                            | Type                                                                                 | Required                                                                             | Description                                                                          |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| `request`                                                                            | [shared.SignInWithGoogleRequest](../../sdk/models/shared/signinwithgooglerequest.md) | :heavy_check_mark:                                                                   | The request object to use for the request.                                           |
+| `config`                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                         | :heavy_minus_sign:                                                                   | Available config options for making requests.                                        |
 
 
 ### Response
 
-**Promise<[operations.PostUsersSessionSocialAuthGoogleResponse](../../models/operations/postuserssessionsocialauthgoogleresponse.md)>**
+**Promise<[operations.PostUsersSessionSocialAuthGoogleResponse](../../sdk/models/operations/postuserssessionsocialauthgoogleresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersSubscriptionGrant
 
@@ -3473,7 +3725,6 @@ import { SubscriptionGrantCreateRequestPackage, SubscriptionGrantCreateRequestPa
     packageTier: SubscriptionGrantCreateRequestPackageTier.Premium,
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3482,16 +3733,20 @@ import { SubscriptionGrantCreateRequestPackage, SubscriptionGrantCreateRequestPa
 
 ### Parameters
 
-| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
-| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| `request`                                                                                      | [shared.SubscriptionGrantCreateRequest](../../models/shared/subscriptiongrantcreaterequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
-| `config`                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                   | :heavy_minus_sign:                                                                             | Available config options for making requests.                                                  |
+| Parameter                                                                                          | Type                                                                                               | Required                                                                                           | Description                                                                                        |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `request`                                                                                          | [shared.SubscriptionGrantCreateRequest](../../sdk/models/shared/subscriptiongrantcreaterequest.md) | :heavy_check_mark:                                                                                 | The request object to use for the request.                                                         |
+| `config`                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                       | :heavy_minus_sign:                                                                                 | Available config options for making requests.                                                      |
 
 
 ### Response
 
-**Promise<[operations.PostUsersSubscriptionGrantResponse](../../models/operations/postuserssubscriptiongrantresponse.md)>**
+**Promise<[operations.PostUsersSubscriptionGrantResponse](../../sdk/models/operations/postuserssubscriptiongrantresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersUser
 
@@ -3515,7 +3770,6 @@ import { Gender, UserAccountType, UserCreateRequestStatus } from "Wingspan-Users
     settings: {},
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3524,16 +3778,20 @@ import { Gender, UserAccountType, UserCreateRequestStatus } from "Wingspan-Users
 
 ### Parameters
 
-| Parameter                                                            | Type                                                                 | Required                                                             | Description                                                          |
-| -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| `request`                                                            | [shared.UserCreateRequest](../../models/shared/usercreaterequest.md) | :heavy_check_mark:                                                   | The request object to use for the request.                           |
-| `config`                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)         | :heavy_minus_sign:                                                   | Available config options for making requests.                        |
+| Parameter                                                                | Type                                                                     | Required                                                                 | Description                                                              |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| `request`                                                                | [shared.UserCreateRequest](../../sdk/models/shared/usercreaterequest.md) | :heavy_check_mark:                                                       | The request object to use for the request.                               |
+| `config`                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)             | :heavy_minus_sign:                                                       | Available config options for making requests.                            |
 
 
 ### Response
 
-**Promise<[operations.PostUsersUserResponse](../../models/operations/postusersuserresponse.md)>**
+**Promise<[operations.PostUsersUserResponse](../../sdk/models/operations/postusersuserresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersUserClientId
 
@@ -3575,7 +3833,6 @@ import { Structure } from "Wingspan-Users-API/dist/sdk/models/shared";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3584,16 +3841,20 @@ import { Structure } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 ### Parameters
 
-| Parameter                                                                                          | Type                                                                                               | Required                                                                                           | Description                                                                                        |
-| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `request`                                                                                          | [operations.PostUsersUserClientIdRequest](../../models/operations/postusersuserclientidrequest.md) | :heavy_check_mark:                                                                                 | The request object to use for the request.                                                         |
-| `config`                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                       | :heavy_minus_sign:                                                                                 | Available config options for making requests.                                                      |
+| Parameter                                                                                              | Type                                                                                                   | Required                                                                                               | Description                                                                                            |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                              | [operations.PostUsersUserClientIdRequest](../../sdk/models/operations/postusersuserclientidrequest.md) | :heavy_check_mark:                                                                                     | The request object to use for the request.                                                             |
+| `config`                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                           | :heavy_minus_sign:                                                                                     | Available config options for making requests.                                                          |
 
 
 ### Response
 
-**Promise<[operations.PostUsersUserClientIdResponse](../../models/operations/postusersuserclientidresponse.md)>**
+**Promise<[operations.PostUsersUserClientIdResponse](../../sdk/models/operations/postusersuserclientidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersUserMemberSubscriptionPaymentMethod
 
@@ -3611,7 +3872,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
   const res = await sdk.postUsersUserMemberSubscriptionPaymentMethod({});
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3620,16 +3880,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                            | Type                                                                                 | Required                                                                             | Description                                                                          |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| `request`                                                                            | [shared.PaymentMethodWriteRequest](../../models/shared/paymentmethodwriterequest.md) | :heavy_check_mark:                                                                   | The request object to use for the request.                                           |
-| `config`                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                         | :heavy_minus_sign:                                                                   | Available config options for making requests.                                        |
+| Parameter                                                                                | Type                                                                                     | Required                                                                                 | Description                                                                              |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `request`                                                                                | [shared.PaymentMethodWriteRequest](../../sdk/models/shared/paymentmethodwriterequest.md) | :heavy_check_mark:                                                                       | The request object to use for the request.                                               |
+| `config`                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                             | :heavy_minus_sign:                                                                       | Available config options for making requests.                                            |
 
 
 ### Response
 
-**Promise<[operations.PostUsersUserMemberSubscriptionPaymentMethodResponse](../../models/operations/postusersusermembersubscriptionpaymentmethodresponse.md)>**
+**Promise<[operations.PostUsersUserMemberSubscriptionPaymentMethodResponse](../../sdk/models/operations/postusersusermembersubscriptionpaymentmethodresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersUserMemberId
 
@@ -3708,7 +3972,6 @@ import {
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3717,16 +3980,20 @@ import {
 
 ### Parameters
 
-| Parameter                                                                                          | Type                                                                                               | Required                                                                                           | Description                                                                                        |
-| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `request`                                                                                          | [operations.PostUsersUserMemberIdRequest](../../models/operations/postusersusermemberidrequest.md) | :heavy_check_mark:                                                                                 | The request object to use for the request.                                                         |
-| `config`                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                       | :heavy_minus_sign:                                                                                 | Available config options for making requests.                                                      |
+| Parameter                                                                                              | Type                                                                                                   | Required                                                                                               | Description                                                                                            |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                              | [operations.PostUsersUserMemberIdRequest](../../sdk/models/operations/postusersusermemberidrequest.md) | :heavy_check_mark:                                                                                     | The request object to use for the request.                                                             |
+| `config`                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                           | :heavy_minus_sign:                                                                                     | Available config options for making requests.                                                          |
 
 
 ### Response
 
-**Promise<[operations.PostUsersUserMemberIdResponse](../../models/operations/postusersusermemberidresponse.md)>**
+**Promise<[operations.PostUsersUserMemberIdResponse](../../sdk/models/operations/postusersusermemberidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersUserMemberIdSubscription
 
@@ -3752,7 +4019,6 @@ import {
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3761,16 +4027,20 @@ import {
 
 ### Parameters
 
-| Parameter                                                                                                                  | Type                                                                                                                       | Required                                                                                                                   | Description                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                  | [operations.PostUsersUserMemberIdSubscriptionRequest](../../models/operations/postusersusermemberidsubscriptionrequest.md) | :heavy_check_mark:                                                                                                         | The request object to use for the request.                                                                                 |
-| `config`                                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                               | :heavy_minus_sign:                                                                                                         | Available config options for making requests.                                                                              |
+| Parameter                                                                                                                      | Type                                                                                                                           | Required                                                                                                                       | Description                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                      | [operations.PostUsersUserMemberIdSubscriptionRequest](../../sdk/models/operations/postusersusermemberidsubscriptionrequest.md) | :heavy_check_mark:                                                                                                             | The request object to use for the request.                                                                                     |
+| `config`                                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                   | :heavy_minus_sign:                                                                                                             | Available config options for making requests.                                                                                  |
 
 
 ### Response
 
-**Promise<[operations.PostUsersUserMemberIdSubscriptionResponse](../../models/operations/postusersusermemberidsubscriptionresponse.md)>**
+**Promise<[operations.PostUsersUserMemberIdSubscriptionResponse](../../sdk/models/operations/postusersusermemberidsubscriptionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersUserMemberMemberIdNextgenSubscription
 
@@ -3796,7 +4066,6 @@ import {
     memberId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3805,16 +4074,20 @@ import {
 
 ### Parameters
 
-| Parameter                                                                                                                                            | Type                                                                                                                                                 | Required                                                                                                                                             | Description                                                                                                                                          |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                                            | [operations.PostUsersUserMemberMemberIdNextgenSubscriptionRequest](../../models/operations/postusersusermembermemberidnextgensubscriptionrequest.md) | :heavy_check_mark:                                                                                                                                   | The request object to use for the request.                                                                                                           |
-| `config`                                                                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                         | :heavy_minus_sign:                                                                                                                                   | Available config options for making requests.                                                                                                        |
+| Parameter                                                                                                                                                | Type                                                                                                                                                     | Required                                                                                                                                                 | Description                                                                                                                                              |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                                                | [operations.PostUsersUserMemberMemberIdNextgenSubscriptionRequest](../../sdk/models/operations/postusersusermembermemberidnextgensubscriptionrequest.md) | :heavy_check_mark:                                                                                                                                       | The request object to use for the request.                                                                                                               |
+| `config`                                                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                             | :heavy_minus_sign:                                                                                                                                       | Available config options for making requests.                                                                                                            |
 
 
 ### Response
 
-**Promise<[operations.PostUsersUserMemberMemberIdNextgenSubscriptionResponse](../../models/operations/postusersusermembermemberidnextgensubscriptionresponse.md)>**
+**Promise<[operations.PostUsersUserMemberMemberIdNextgenSubscriptionResponse](../../sdk/models/operations/postusersusermembermemberidnextgensubscriptionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersUserPasswordReset
 
@@ -3836,7 +4109,6 @@ import { UserType } from "Wingspan-Users-API/dist/sdk/models/shared";
     userType: UserType.Member,
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3845,16 +4117,20 @@ import { UserType } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 ### Parameters
 
-| Parameter                                                                  | Type                                                                       | Required                                                                   | Description                                                                |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `request`                                                                  | [shared.PasswordResetRequest](../../models/shared/passwordresetrequest.md) | :heavy_check_mark:                                                         | The request object to use for the request.                                 |
-| `config`                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)               | :heavy_minus_sign:                                                         | Available config options for making requests.                              |
+| Parameter                                                                      | Type                                                                           | Required                                                                       | Description                                                                    |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| `request`                                                                      | [shared.PasswordResetRequest](../../sdk/models/shared/passwordresetrequest.md) | :heavy_check_mark:                                                             | The request object to use for the request.                                     |
+| `config`                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                   | :heavy_minus_sign:                                                             | Available config options for making requests.                                  |
 
 
 ### Response
 
-**Promise<[operations.PostUsersUserPasswordResetResponse](../../models/operations/postusersuserpasswordresetresponse.md)>**
+**Promise<[operations.PostUsersUserPasswordResetResponse](../../sdk/models/operations/postusersuserpasswordresetresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersUserIdVerificationEmail
 
@@ -3877,7 +4153,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3886,16 +4161,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                | Type                                                                                                                     | Required                                                                                                                 | Description                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                | [operations.PostUsersUserIdVerificationEmailRequest](../../models/operations/postusersuseridverificationemailrequest.md) | :heavy_check_mark:                                                                                                       | The request object to use for the request.                                                                               |
-| `config`                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                             | :heavy_minus_sign:                                                                                                       | Available config options for making requests.                                                                            |
+| Parameter                                                                                                                    | Type                                                                                                                         | Required                                                                                                                     | Description                                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                    | [operations.PostUsersUserIdVerificationEmailRequest](../../sdk/models/operations/postusersuseridverificationemailrequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
+| `config`                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                 | :heavy_minus_sign:                                                                                                           | Available config options for making requests.                                                                                |
 
 
 ### Response
 
-**Promise<[operations.PostUsersUserIdVerificationEmailResponse](../../models/operations/postusersuseridverificationemailresponse.md)>**
+**Promise<[operations.PostUsersUserIdVerificationEmailResponse](../../sdk/models/operations/postusersuseridverificationemailresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersUserIdVerificationExistingEmail
 
@@ -3916,7 +4195,6 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3925,16 +4203,20 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
 
 ### Parameters
 
-| Parameter                                                                                                                                | Type                                                                                                                                     | Required                                                                                                                                 | Description                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                                | [operations.PostUsersUserIdVerificationExistingEmailRequest](../../models/operations/postusersuseridverificationexistingemailrequest.md) | :heavy_check_mark:                                                                                                                       | The request object to use for the request.                                                                                               |
-| `config`                                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                             | :heavy_minus_sign:                                                                                                                       | Available config options for making requests.                                                                                            |
+| Parameter                                                                                                                                    | Type                                                                                                                                         | Required                                                                                                                                     | Description                                                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                                    | [operations.PostUsersUserIdVerificationExistingEmailRequest](../../sdk/models/operations/postusersuseridverificationexistingemailrequest.md) | :heavy_check_mark:                                                                                                                           | The request object to use for the request.                                                                                                   |
+| `config`                                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                                 | :heavy_minus_sign:                                                                                                                           | Available config options for making requests.                                                                                                |
 
 
 ### Response
 
-**Promise<[operations.PostUsersUserIdVerificationExistingEmailResponse](../../models/operations/postusersuseridverificationexistingemailresponse.md)>**
+**Promise<[operations.PostUsersUserIdVerificationExistingEmailResponse](../../sdk/models/operations/postusersuseridverificationexistingemailresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postUsersUserIdVerificationPhone
 
@@ -3958,7 +4240,6 @@ import { Channel } from "Wingspan-Users-API/dist/sdk/models/shared";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -3967,13 +4248,17 @@ import { Channel } from "Wingspan-Users-API/dist/sdk/models/shared";
 
 ### Parameters
 
-| Parameter                                                                                                                | Type                                                                                                                     | Required                                                                                                                 | Description                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                | [operations.PostUsersUserIdVerificationPhoneRequest](../../models/operations/postusersuseridverificationphonerequest.md) | :heavy_check_mark:                                                                                                       | The request object to use for the request.                                                                               |
-| `config`                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                             | :heavy_minus_sign:                                                                                                       | Available config options for making requests.                                                                            |
+| Parameter                                                                                                                    | Type                                                                                                                         | Required                                                                                                                     | Description                                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                    | [operations.PostUsersUserIdVerificationPhoneRequest](../../sdk/models/operations/postusersuseridverificationphonerequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
+| `config`                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                 | :heavy_minus_sign:                                                                                                           | Available config options for making requests.                                                                                |
 
 
 ### Response
 
-**Promise<[operations.PostUsersUserIdVerificationPhoneResponse](../../models/operations/postusersuseridverificationphoneresponse.md)>**
+**Promise<[operations.PostUsersUserIdVerificationPhoneResponse](../../sdk/models/operations/postusersuseridverificationphoneresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
