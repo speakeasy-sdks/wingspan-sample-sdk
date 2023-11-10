@@ -1,6 +1,4 @@
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
