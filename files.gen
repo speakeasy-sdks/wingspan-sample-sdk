@@ -241,7 +241,6 @@ src/sdk/models/shared/security.ts
 src/sdk/models/errors/index.ts
 src/sdk/models/operations/index.ts
 src/sdk/models/shared/index.ts
-USAGE.md
 docs/sdk/models/operations/deleteusersaccountidrequest.md
 docs/sdk/models/operations/deleteusersaccountidresponse.md
 docs/sdk/models/operations/deleteusersactivityidrequest.md
@@ -624,4 +623,5 @@ docs/sdk/models/shared/channel.md
 docs/sdk/models/shared/beginphoneverificationrequest.md
 docs/sdk/models/shared/security.md
 docs/sdks/wingspanusersapi/README.md
+USAGE.md
 .gitattributes

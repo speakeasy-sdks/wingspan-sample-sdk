@@ -1,10 +1,10 @@
-<!-- Start SDK Example Usage -->
+<!-- Start SDK Example Usage [usage] -->
 ```typescript
 import { WingspanUsersAPI } from "Wingspan-Users-API";
 
-(async () => {
+async function run() {
     const sdk = new WingspanUsersAPI({
-        bearerAuth: "",
+        bearerAuth: "<YOUR_BEARER_TOKEN_HERE>",
     });
 
     const res = await sdk.deleteUsersAccountId({
@@ -14,7 +14,9 @@ import { WingspanUsersAPI } from "Wingspan-Users-API";
     if (res.statusCode == 200) {
         // handle response
     }
-})();
+}
+
+run();
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->
