@@ -13,7 +13,6 @@ export enum AccountCreateRequestStatus {
     Pending = "Pending",
     Disconnected = "Disconnected",
     Ephemeral = "Ephemeral",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum AccountCreateRequestSubType {
@@ -21,20 +20,17 @@ export enum AccountCreateRequestSubType {
     Checking = "Checking",
     Savings = "Savings",
     CreditCard = "CreditCard",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum AccountCreateRequestType {
     Depository = "Depository",
     Credit = "Credit",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum AccountCreateRequestUsage {
     Business = "Business",
     Personal = "Personal",
     Mixed = "Mixed",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class AccountCreateRequest extends SpeakeasyBase {

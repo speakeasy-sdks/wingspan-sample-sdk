@@ -3,8 +3,7 @@
 
 ## Values
 
-| Name                     | Value                    |
-| ------------------------ | ------------------------ |
-| `Sms`                    | SMS                      |
-| `Email`                  | Email                    |
-| `LessThanNilGreaterThan` | <nil>                    |
+| Name    | Value   |
+| ------- | ------- |
+| `Sms`   | SMS     |
+| `Email` | Email   |

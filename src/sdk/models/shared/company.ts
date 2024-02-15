@@ -18,7 +18,6 @@ export enum Structure {
     LLCPartnership = "LLCPartnership",
     CorporationC = "CorporationC",
     Partnership = "Partnership",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class Company extends SpeakeasyBase {

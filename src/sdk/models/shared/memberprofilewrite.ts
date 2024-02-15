@@ -16,7 +16,6 @@ export enum MemberProfileWriteBookkeepingProductsUsed {
     PenAndPaper = "PenAndPaper",
     Spreadsheet = "Spreadsheet",
     Other = "Other",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum MemberProfileWriteFreelanceDuration {
@@ -24,7 +23,6 @@ export enum MemberProfileWriteFreelanceDuration {
     OneToThree = "OneToThree",
     ThreeToFive = "ThreeToFive",
     OverFive = "OverFive",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum MemberProfileWriteFreelanceType {
@@ -32,7 +30,6 @@ export enum MemberProfileWriteFreelanceType {
     FullTime = "FullTime",
     PartTime = "PartTime",
     NotFreelancing = "NotFreelancing",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum MemberProfileWriteIndustry {
@@ -62,7 +59,6 @@ export enum MemberProfileWriteIndustry {
     TransportationOrWarehousing = "TransportationOrWarehousing",
     Utilities = "Utilities",
     WholesaleTrade = "WholesaleTrade",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum MemberProfileWriteInterests {
@@ -75,7 +71,6 @@ export enum MemberProfileWriteInterests {
     TaxSaving = "TaxSaving",
     Benefits = "Benefits",
     Community = "Community",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum MemberProfileWriteProductAspectImportance {
@@ -90,14 +85,12 @@ export enum MemberProfileWriteProductAspectImportance {
     SavingMoneyOnMedicine = "SavingMoneyOnMedicine",
     LegalAndFinancialSupport = "LegalAndFinancialSupport",
     MindAndBodySupport = "MindAndBodySupport",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum MemberProfileWriteProductImportance {
     Payments = "Payments",
     Bookkeeping = "Bookkeeping",
     Benefits = "Benefits",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class MemberProfileWrite extends SpeakeasyBase {

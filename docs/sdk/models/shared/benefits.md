@@ -3,9 +3,8 @@
 
 ## Values
 
-| Name                     | Value                    |
-| ------------------------ | ------------------------ |
-| `Disabled`               | Disabled                 |
-| `Enabled`                | Enabled                  |
-| `Pending`                | Pending                  |
-| `LessThanNilGreaterThan` | <nil>                    |
+| Name       | Value      |
+| ---------- | ---------- |
+| `Disabled` | Disabled   |
+| `Enabled`  | Enabled    |
+| `Pending`  | Pending    |

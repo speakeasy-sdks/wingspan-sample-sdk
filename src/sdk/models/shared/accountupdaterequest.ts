@@ -13,14 +13,12 @@ export enum AccountUpdateRequestStatus {
     Pending = "Pending",
     Disconnected = "Disconnected",
     Ephemeral = "Ephemeral",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum AccountUpdateRequestUsage {
     Business = "Business",
     Personal = "Personal",
     Mixed = "Mixed",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class AccountUpdateRequest extends SpeakeasyBase {

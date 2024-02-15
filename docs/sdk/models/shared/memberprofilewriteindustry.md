@@ -31,4 +31,3 @@
 | `TransportationOrWarehousing`                    | TransportationOrWarehousing                      |
 | `Utilities`                                      | Utilities                                        |
 | `WholesaleTrade`                                 | WholesaleTrade                                   |
-| `LessThanNilGreaterThan`                         | <nil>                                            |

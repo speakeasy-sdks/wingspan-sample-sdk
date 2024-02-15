@@ -3,8 +3,7 @@
 
 ## Values
 
-| Name                     | Value                    |
-| ------------------------ | ------------------------ |
-| `Yearly`                 | Yearly                   |
-| `Monthly`                | Monthly                  |
-| `LessThanNilGreaterThan` | <nil>                    |
+| Name      | Value     |
+| --------- | --------- |
+| `Yearly`  | Yearly    |
+| `Monthly` | Monthly   |

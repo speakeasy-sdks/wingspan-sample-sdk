@@ -8,7 +8,6 @@ import { Expose } from "class-transformer";
 export enum Channel {
     PhoneCall = "PhoneCall",
     Sms = "SMS",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class BeginPhoneVerificationRequest extends SpeakeasyBase {

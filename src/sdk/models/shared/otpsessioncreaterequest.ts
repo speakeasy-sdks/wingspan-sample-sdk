@@ -8,7 +8,6 @@ import { Expose } from "class-transformer";
 export enum OtpSessionCreateRequestChannel {
     Sms = "SMS",
     Email = "Email",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class OtpSessionCreateRequest extends SpeakeasyBase {

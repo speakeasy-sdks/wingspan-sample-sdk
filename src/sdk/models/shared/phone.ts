@@ -8,19 +8,16 @@ import { Expose } from "class-transformer";
 export enum PhoneChannel {
     PhoneCall = "PhoneCall",
     Sms = "SMS",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum ChannelPendingVerification {
     PhoneCall = "PhoneCall",
     Sms = "SMS",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum PhoneStatus {
     Pending = "Pending",
     Verified = "Verified",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class Phone extends SpeakeasyBase {

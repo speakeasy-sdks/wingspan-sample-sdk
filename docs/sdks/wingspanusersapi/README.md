@@ -118,7 +118,7 @@ async function run() {
   });
 
   const res = await sdk.deleteUsersAccountId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -161,7 +161,7 @@ async function run() {
   });
 
   const res = await sdk.deleteUsersActivityId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -204,7 +204,7 @@ async function run() {
   });
 
   const res = await sdk.deleteUsersAuthorizationAuthorizationId({
-    authorizationId: "string",
+    authorizationId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -247,7 +247,7 @@ async function run() {
   });
 
   const res = await sdk.deleteUsersSessionApiId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -290,7 +290,7 @@ async function run() {
   });
 
   const res = await sdk.deleteUsersSessionTokenId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -333,7 +333,7 @@ async function run() {
   });
 
   const res = await sdk.deleteUsersSubscriptionGrantId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -376,7 +376,7 @@ async function run() {
   });
 
   const res = await sdk.deleteUsersUserMemberSubscriptionId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -419,7 +419,7 @@ async function run() {
   });
 
   const res = await sdk.deleteUsersUserMemberIdSubscription({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -462,8 +462,8 @@ async function run() {
   });
 
   const res = await sdk.deleteUsersUserMemberMemberIdNextgenSubscriptionId({
-    id: "<ID>",
-    memberId: "string",
+    id: "<id>",
+    memberId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -586,7 +586,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersAccountId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -669,7 +669,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersActivityId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -752,7 +752,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersAuthorizationAccountsUserId({
-    userId: "string",
+    userId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -795,7 +795,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersAuthorizationAuthorizationId({
-    authorizationId: "string",
+    authorizationId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -878,7 +878,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersAuthorizedScopeGroupsRequestingUserId({
-    requestingUserId: "string",
+    requestingUserId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -961,7 +961,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersAuthorizedScopesRequestingUserId({
-    requestingUserId: "string",
+    requestingUserId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -1084,7 +1084,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersOrganizationUserUserId({
-    userId: "string",
+    userId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -1127,7 +1127,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersOrganizationUserUserIdSession({
-    userId: "string",
+    userId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -1210,7 +1210,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersSessionApiId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -1253,7 +1253,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersSessionTokenId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -1336,7 +1336,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersSubscriptionGrantId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -1379,7 +1379,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserClientId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -1625,7 +1625,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserMemberSubscriptionPlanId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -1668,7 +1668,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserMemberSubscriptionId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -1711,7 +1711,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserMemberId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -1754,7 +1754,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserMemberIdAdvocate({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -1797,7 +1797,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserMemberIdSubscription({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -1840,7 +1840,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserMemberMemberIdNextgenSubscription({
-    memberId: "string",
+    memberId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -1883,7 +1883,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserMemberMemberIdNextgenSubscriptionPlan({
-    memberId: "string",
+    memberId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -1926,8 +1926,8 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserMemberMemberIdNextgenSubscriptionPlanId({
-    id: "<ID>",
-    memberId: "string",
+    id: "<id>",
+    memberId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -1970,8 +1970,8 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserMemberMemberIdNextgenSubscriptionId({
-    id: "<ID>",
-    memberId: "string",
+    id: "<id>",
+    memberId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -2054,7 +2054,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserPublicId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2097,7 +2097,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserTagId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2140,7 +2140,7 @@ async function run() {
   });
 
   const res = await sdk.getUsersUserId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2190,7 +2190,7 @@ async function run() {
       },
       usedFor: {},
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2238,7 +2238,7 @@ async function run() {
       events: {},
       flows: {},
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2283,7 +2283,7 @@ async function run() {
 
   const res = await sdk.patchUsersAuthorizationAuthorizationId({
     authorizationUpdateRequest: {},
-    authorizationId: "string",
+    authorizationId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -2326,7 +2326,7 @@ async function run() {
   });
 
   const res = await sdk.patchUsersOrganizationUserUserId({
-    userId: "string",
+    userId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -2385,7 +2385,7 @@ async function run() {
         wingspanFinancialSettings: WingspanFinancialSettings.Parent,
       },
     },
-    userId: "string",
+    userId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -2430,10 +2430,10 @@ async function run() {
   const res = await sdk.patchUsersSessionApiId({
     apiSessionUpdateRequest: {
       labels: {
-        "key": "string",
+        "key": "<value>",
       },
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2476,7 +2476,7 @@ async function run() {
   });
 
   const res = await sdk.patchUsersSessionOtp({
-    code: "string",
+    code: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -2521,7 +2521,7 @@ async function run() {
 
   const res = await sdk.patchUsersSubscriptionGrantId({
     subscriptionGrantUpdateRequest: {},
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2566,7 +2566,7 @@ async function run() {
 
   const res = await sdk.patchUsersUserClientId({
     clientUpdateRequest: {
-      clientId: "string",
+      clientId: "<value>",
       profile: {
         address: {
           country: "Aruba",
@@ -2574,7 +2574,7 @@ async function run() {
         company: {
           companyOwners: [
             {
-              memberId: "string",
+              memberId: "<value>",
             },
           ],
           links: {},
@@ -2586,7 +2586,7 @@ async function run() {
         subscriptionPaymentMethod: {},
       },
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2676,7 +2676,7 @@ async function run() {
 
   const res = await sdk.patchUsersUserMemberSubscriptionId({
     subscriptionUpdateRequest: {},
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2735,7 +2735,7 @@ async function run() {
 
   const res = await sdk.patchUsersUserMemberId({
     memberUpdateRequest: {
-      memberId: "string",
+      memberId: "<value>",
       profile: {
         address: {
           country: "Guadeloupe",
@@ -2748,7 +2748,7 @@ async function run() {
             {
               email: "Jonas_Harber4@gmail.com",
               member: {},
-              memberId: "string",
+              memberId: "<value>",
             },
           ],
           links: {},
@@ -2757,18 +2757,18 @@ async function run() {
           country: "Bosnia and Herzegovina",
         },
         interests: [
-          MemberProfileWriteInterests.Invoicing,
+          MemberProfileWriteInterests.Documents,
         ],
         productAspectImportance: [
           MemberProfileWriteProductAspectImportance.HealthInsurance,
         ],
         productImportance: [
-          MemberProfileWriteProductImportance.LessThanNilGreaterThan,
+          MemberProfileWriteProductImportance.Benefits,
         ],
         taxInfo: {
           occupations: [
             {
-              category: "string",
+              category: "<value>",
             },
           ],
         },
@@ -2778,7 +2778,7 @@ async function run() {
         },
       },
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2827,7 +2827,7 @@ async function run() {
 
   const res = await sdk.patchUsersUserMemberIdSubscription({
     subscriptionUpdateRequest: {},
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2876,8 +2876,8 @@ async function run() {
 
   const res = await sdk.patchUsersUserMemberMemberIdNextgenSubscriptionId({
     subscriptionUpdateRequest: {},
-    id: "<ID>",
-    memberId: "string",
+    id: "<id>",
+    memberId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -2925,7 +2925,7 @@ async function run() {
       notificationSettings: {},
       profile: {},
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -2969,9 +2969,9 @@ async function run() {
 
   const res = await sdk.patchUsersUserIdVerificationEmail({
     completeEmailVerificationRequest: {
-      emailVerificationId: "string",
+      emailVerificationId: "<value>",
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -3015,9 +3015,9 @@ async function run() {
 
   const res = await sdk.patchUsersUserIdVerificationPhone({
     completePhoneVerificationRequest: {
-      code: "string",
+      code: "<value>",
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -3071,7 +3071,7 @@ async function run() {
       account: "31307069",
     },
     owners: [
-      "string",
+      "<value>",
     ],
     usedFor: {},
   });
@@ -3201,7 +3201,7 @@ async function run() {
   });
 
   const res = await sdk.postUsersActivity({
-    userId: "string",
+    userId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -3288,23 +3288,23 @@ async function run() {
   });
 
   const res = await sdk.postUsersAuthorization({
-    requestingUserId: "string",
+    requestingUserId: "<value>",
     scopeModifications: {
       payments: {
         memberClient: [
           {
             action: Action.Allow,
-            attribute: "string",
+            attribute: "<value>",
             comparator: Comparator.Includes,
-            value: "string",
+            value: "<value>",
           },
         ],
         payable: [
           {
             action: Action.Deny,
-            attribute: "string",
+            attribute: "<value>",
             comparator: Comparator.Equals,
-            value: "string",
+            value: "<value>",
           },
         ],
       },
@@ -3351,7 +3351,7 @@ async function run() {
   });
 
   const res = await sdk.postUsersFlatfileAuthToken({
-    embedId: "string",
+    embedId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -3394,8 +3394,8 @@ async function run() {
   });
 
   const res = await sdk.postUsersGuestAccountNumbers({
-    accountId: "string",
-    publicToken: "string",
+    accountId: "<value>",
+    publicToken: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -3501,7 +3501,7 @@ async function run() {
         wingspanFinancialSettings: WingspanFinancialSettings.None,
       },
     },
-    userId: "string",
+    userId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -3674,7 +3674,7 @@ async function run() {
 
   const res = await sdk.postUsersSessionApi({
     labels: {
-      "key": "string",
+      "key": "<value>",
     },
   });
 
@@ -3801,7 +3801,7 @@ async function run() {
   });
 
   const res = await sdk.postUsersSessionSingleSignOn({
-    singleSignOnCode: "string",
+    singleSignOnCode: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -3844,7 +3844,7 @@ async function run() {
   });
 
   const res = await sdk.postUsersSessionSocialAuthGoogle({
-    idToken: "string",
+    idToken: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -3888,7 +3888,7 @@ async function run() {
   });
 
   const res = await sdk.postUsersSubscriptionGrant({
-    granteeId: "string",
+    granteeId: "<value>",
     package: SubscriptionGrantCreateRequestPackage.None,
     packageTier: SubscriptionGrantCreateRequestPackageTier.Premium,
   });
@@ -3989,7 +3989,7 @@ async function run() {
         company: {
           companyOwners: [
             {
-              memberId: "string",
+              memberId: "<value>",
             },
           ],
           links: {},
@@ -4000,9 +4000,9 @@ async function run() {
         ],
         subscriptionPaymentMethod: {},
       },
-      userId: "string",
+      userId: "<value>",
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -4107,14 +4107,14 @@ async function run() {
           country: "Saudi Arabia",
         },
         bookkeepingProductsUsed: [
-          MemberProfileWriteBookkeepingProductsUsed.PenAndPaper,
+          MemberProfileWriteBookkeepingProductsUsed.Cpa,
         ],
         company: {
           companyOwners: [
             {
               email: "Roderick50@gmail.com",
               member: {},
-              memberId: "string",
+              memberId: "<value>",
             },
           ],
           links: {},
@@ -4126,7 +4126,7 @@ async function run() {
           MemberProfileWriteInterests.Marketing,
         ],
         productAspectImportance: [
-          MemberProfileWriteProductAspectImportance.LessThanNilGreaterThan,
+          MemberProfileWriteProductAspectImportance.MindAndBodySupport,
         ],
         productImportance: [
           MemberProfileWriteProductImportance.Benefits,
@@ -4134,7 +4134,7 @@ async function run() {
         taxInfo: {
           occupations: [
             {
-              category: "string",
+              category: "<value>",
             },
           ],
         },
@@ -4143,9 +4143,9 @@ async function run() {
           tax: {},
         },
       },
-      userId: "string",
+      userId: "<value>",
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -4194,7 +4194,7 @@ async function run() {
 
   const res = await sdk.postUsersUserMemberIdSubscription({
     subscriptionCreateRequest: {},
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -4243,7 +4243,7 @@ async function run() {
 
   const res = await sdk.postUsersUserMemberMemberIdNextgenSubscription({
     subscriptionCreateRequest: {},
-    memberId: "string",
+    memberId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -4334,7 +4334,7 @@ async function run() {
     beginEmailVerificationRequest: {
       email: "Grayce.Krajcik92@gmail.com",
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -4378,7 +4378,7 @@ async function run() {
 
   const res = await sdk.postUsersUserIdVerificationExistingEmail({
     beginExistingEmailVerificationRequest: {},
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -4425,7 +4425,7 @@ async function run() {
     beginPhoneVerificationRequest: {
       phone: "(410) 435-0691 x609",
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {

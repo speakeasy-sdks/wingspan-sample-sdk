@@ -11,13 +11,11 @@ export enum SubscriptionGrantUpdateRequestPackage {
     Essentials = "Essentials",
     Professional = "Professional",
     Corporate = "Corporate",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum SubscriptionGrantUpdateRequestPackageTier {
     Basic = "Basic",
     Premium = "Premium",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class SubscriptionGrantUpdateRequest extends SpeakeasyBase {

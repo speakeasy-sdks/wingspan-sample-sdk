@@ -16,7 +16,6 @@ export enum BookkeepingProductsUsed {
     PenAndPaper = "PenAndPaper",
     Spreadsheet = "Spreadsheet",
     Other = "Other",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum FreelanceDuration {
@@ -24,7 +23,6 @@ export enum FreelanceDuration {
     OneToThree = "OneToThree",
     ThreeToFive = "ThreeToFive",
     OverFive = "OverFive",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum FreelanceType {
@@ -32,7 +30,6 @@ export enum FreelanceType {
     FullTime = "FullTime",
     PartTime = "PartTime",
     NotFreelancing = "NotFreelancing",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum Industry {
@@ -62,7 +59,6 @@ export enum Industry {
     TransportationOrWarehousing = "TransportationOrWarehousing",
     Utilities = "Utilities",
     WholesaleTrade = "WholesaleTrade",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum Interests {
@@ -75,7 +71,6 @@ export enum Interests {
     TaxSaving = "TaxSaving",
     Benefits = "Benefits",
     Community = "Community",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum ProductAspectImportance {
@@ -90,14 +85,12 @@ export enum ProductAspectImportance {
     SavingMoneyOnMedicine = "SavingMoneyOnMedicine",
     LegalAndFinancialSupport = "LegalAndFinancialSupport",
     MindAndBodySupport = "MindAndBodySupport",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum ProductImportance {
     Payments = "Payments",
     Bookkeeping = "Bookkeeping",
     Benefits = "Benefits",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class MemberProfile extends SpeakeasyBase {

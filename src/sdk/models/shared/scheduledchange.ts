@@ -11,13 +11,11 @@ export enum ScheduledChangePackage {
     Essentials = "Essentials",
     Professional = "Professional",
     Corporate = "Corporate",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum ScheduledChangePackageTier {
     Basic = "Basic",
     Premium = "Premium",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum ScheduledChangeStatus {
@@ -28,13 +26,11 @@ export enum ScheduledChangeStatus {
     PastDue = "past_due",
     Canceled = "canceled",
     Unpaid = "unpaid",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum ScheduledChangeTerm {
     Yearly = "Yearly",
     Monthly = "Monthly",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class ScheduledChange extends SpeakeasyBase {

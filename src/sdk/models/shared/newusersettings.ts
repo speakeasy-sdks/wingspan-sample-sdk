@@ -8,7 +8,6 @@ import { Expose } from "class-transformer";
 export enum UserAccountType {
     Member = "member",
     Enterprise = "enterprise",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class NewUserSettings extends SpeakeasyBase {

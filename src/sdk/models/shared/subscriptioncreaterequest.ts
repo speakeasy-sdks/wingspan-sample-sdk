@@ -11,19 +11,16 @@ export enum SubscriptionCreateRequestPackage {
     Essentials = "Essentials",
     Professional = "Professional",
     Corporate = "Corporate",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum SubscriptionCreateRequestPackageTier {
     Basic = "Basic",
     Premium = "Premium",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum SubscriptionCreateRequestTerm {
     Yearly = "Yearly",
     Monthly = "Monthly",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class SubscriptionCreateRequest extends SpeakeasyBase {

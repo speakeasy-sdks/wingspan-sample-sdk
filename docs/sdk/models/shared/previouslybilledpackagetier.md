@@ -3,8 +3,7 @@
 
 ## Values
 
-| Name                     | Value                    |
-| ------------------------ | ------------------------ |
-| `Basic`                  | Basic                    |
-| `Premium`                | Premium                  |
-| `LessThanNilGreaterThan` | <nil>                    |
+| Name      | Value     |
+| --------- | --------- |
+| `Basic`   | Basic     |
+| `Premium` | Premium   |

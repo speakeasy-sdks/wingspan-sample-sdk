@@ -3,8 +3,7 @@
 
 ## Values
 
-| Name                     | Value                    |
-| ------------------------ | ------------------------ |
-| `Active`                 | Active                   |
-| `Paused`                 | Paused                   |
-| `LessThanNilGreaterThan` | <nil>                    |
+| Name     | Value    |
+| -------- | -------- |
+| `Active` | Active   |
+| `Paused` | Paused   |

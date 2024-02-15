@@ -3,8 +3,7 @@
 
 ## Values
 
-| Name                     | Value                    |
-| ------------------------ | ------------------------ |
-| `Pending`                | Pending                  |
-| `Verified`               | Verified                 |
-| `LessThanNilGreaterThan` | <nil>                    |
+| Name       | Value      |
+| ---------- | ---------- |
+| `Pending`  | Pending    |
+| `Verified` | Verified   |

@@ -3,8 +3,7 @@
 
 ## Values
 
-| Name                     | Value                    |
-| ------------------------ | ------------------------ |
-| `Read`                   | Read                     |
-| `Write`                  | Write                    |
-| `LessThanNilGreaterThan` | <nil>                    |
+| Name    | Value   |
+| ------- | ------- |
+| `Read`  | Read    |
+| `Write` | Write   |

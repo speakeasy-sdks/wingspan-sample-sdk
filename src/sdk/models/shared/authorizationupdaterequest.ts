@@ -8,7 +8,6 @@ import { Expose } from "class-transformer";
 export enum AuthorizationUpdateRequestAllowedAction {
     Read = "Read",
     Write = "Write",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class AuthorizationUpdateRequest extends SpeakeasyBase {

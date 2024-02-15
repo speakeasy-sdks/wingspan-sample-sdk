@@ -14,7 +14,6 @@ export enum GrowthSource {
     Content = "Content",
     Enterprise = "Enterprise",
     EnterpriseClient = "EnterpriseClient",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class ActivityContext extends SpeakeasyBase {

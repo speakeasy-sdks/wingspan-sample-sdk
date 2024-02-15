@@ -11,19 +11,16 @@ export enum PreviouslyBilledPackage {
     Essentials = "Essentials",
     Professional = "Professional",
     Corporate = "Corporate",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum PreviouslyBilledPackageTier {
     Basic = "Basic",
     Premium = "Premium",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum PreviouslyBilledTerm {
     Yearly = "Yearly",
     Monthly = "Monthly",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class PreviouslyBilled extends SpeakeasyBase {

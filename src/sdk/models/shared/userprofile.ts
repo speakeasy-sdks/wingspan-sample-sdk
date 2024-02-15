@@ -9,7 +9,6 @@ export enum Gender {
     Male = "Male",
     Female = "Female",
     Other = "Other",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class UserProfile extends SpeakeasyBase {

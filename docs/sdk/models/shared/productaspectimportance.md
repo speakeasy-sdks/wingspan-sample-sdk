@@ -16,4 +16,3 @@
 | `SavingMoneyOnMedicine`    | SavingMoneyOnMedicine      |
 | `LegalAndFinancialSupport` | LegalAndFinancialSupport   |
 | `MindAndBodySupport`       | MindAndBodySupport         |
-| `LessThanNilGreaterThan`   | <nil>                      |

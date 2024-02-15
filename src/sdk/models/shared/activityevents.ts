@@ -9,28 +9,24 @@ export enum AgreeToClientTermsToDoStatus {
     ToDo = "ToDo",
     InProgress = "InProgress",
     Completed = "Completed",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum FindFirstDeductibleExpenseToDoStatus {
     ToDo = "ToDo",
     InProgress = "InProgress",
     Completed = "Completed",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum KnowingCompanyStructureToDoStatus {
     ToDo = "ToDo",
     InProgress = "InProgress",
     Completed = "Completed",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum WatchTourVideoToDoStatus {
     ToDo = "ToDo",
     InProgress = "InProgress",
     Completed = "Completed",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class ActivityEvents extends SpeakeasyBase {

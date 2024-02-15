@@ -12,13 +12,11 @@ export enum FilingCode {
     H = "H",
     Ms = "MS",
     Qw = "QW",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum FilingType {
     Personal = "Personal",
     Business = "Business",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class MemberTaxInfo extends SpeakeasyBase {

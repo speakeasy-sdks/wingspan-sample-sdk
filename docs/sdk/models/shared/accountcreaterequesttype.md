@@ -3,8 +3,7 @@
 
 ## Values
 
-| Name                     | Value                    |
-| ------------------------ | ------------------------ |
-| `Depository`             | Depository               |
-| `Credit`                 | Credit                   |
-| `LessThanNilGreaterThan` | <nil>                    |
+| Name         | Value        |
+| ------------ | ------------ |
+| `Depository` | Depository   |
+| `Credit`     | Credit       |

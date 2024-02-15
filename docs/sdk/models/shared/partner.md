@@ -3,7 +3,6 @@
 
 ## Values
 
-| Name                     | Value                    |
-| ------------------------ | ------------------------ |
-| `Usa`                    | USA                      |
-| `LessThanNilGreaterThan` | <nil>                    |
+| Name  | Value |
+| ----- | ----- |
+| `Usa` | USA   |

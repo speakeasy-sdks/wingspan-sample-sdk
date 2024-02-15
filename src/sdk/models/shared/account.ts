@@ -24,7 +24,6 @@ export enum SubType {
     Checking = "Checking",
     Savings = "Savings",
     CreditCard = "CreditCard",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum TypeT {
@@ -36,7 +35,6 @@ export enum Usage {
     Business = "Business",
     Personal = "Personal",
     Mixed = "Mixed",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class Account extends SpeakeasyBase {

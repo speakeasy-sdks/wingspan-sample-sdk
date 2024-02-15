@@ -8,7 +8,6 @@ import { Expose } from "class-transformer";
 export enum EmailVerificationStateStatus {
     Pending = "Pending",
     Verified = "Verified",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class EmailVerificationState extends SpeakeasyBase {

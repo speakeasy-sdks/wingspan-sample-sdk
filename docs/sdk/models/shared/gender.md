@@ -3,9 +3,8 @@
 
 ## Values
 
-| Name                     | Value                    |
-| ------------------------ | ------------------------ |
-| `Male`                   | Male                     |
-| `Female`                 | Female                   |
-| `Other`                  | Other                    |
-| `LessThanNilGreaterThan` | <nil>                    |
+| Name     | Value    |
+| -------- | -------- |
+| `Male`   | Male     |
+| `Female` | Female   |
+| `Other`  | Other    |

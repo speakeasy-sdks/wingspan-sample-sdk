@@ -44,7 +44,7 @@ async function run() {
     });
 
     const res = await sdk.deleteUsersAccountId({
-        id: "<ID>",
+        id: "<id>",
     });
 
     if (res.statusCode == 200) {
@@ -183,7 +183,7 @@ async function run() {
     let res;
     try {
         res = await sdk.deleteUsersAccountId({
-            id: "<ID>",
+            id: "<id>",
         });
     } catch (err) {
         if (err instanceof errors.SDKError) {
@@ -228,7 +228,7 @@ async function run() {
     });
 
     const res = await sdk.deleteUsersAccountId({
-        id: "<ID>",
+        id: "<id>",
     });
 
     if (res.statusCode == 200) {
@@ -254,7 +254,7 @@ async function run() {
     });
 
     const res = await sdk.deleteUsersAccountId({
-        id: "<ID>",
+        id: "<id>",
     });
 
     if (res.statusCode == 200) {
@@ -311,7 +311,7 @@ async function run() {
     });
 
     const res = await sdk.deleteUsersAccountId({
-        id: "<ID>",
+        id: "<id>",
     });
 
     if (res.statusCode == 200) {

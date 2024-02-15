@@ -9,14 +9,12 @@ export enum Benefits {
     Disabled = "Disabled",
     Enabled = "Enabled",
     Pending = "Pending",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum Payments {
     Disabled = "Disabled",
     Enabled = "Enabled",
     Pending = "Pending",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class ServiceStatus extends SpeakeasyBase {

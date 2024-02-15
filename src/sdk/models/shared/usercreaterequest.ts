@@ -12,7 +12,6 @@ export enum UserCreateRequestStatus {
     Pending = "Pending",
     Active = "Active",
     Disabled = "Disabled",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class UserCreateRequest extends SpeakeasyBase {

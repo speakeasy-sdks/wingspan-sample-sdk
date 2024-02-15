@@ -9,14 +9,12 @@ export enum MemberProfileVisibilityMapAddress {
     Private = "Private",
     ClientVisible = "ClientVisible",
     Public = "Public",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum MemberProfileVisibilityMapPhone {
     Private = "Private",
     ClientVisible = "ClientVisible",
     Public = "Public",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export class MemberProfileVisibilityMap extends SpeakeasyBase {

@@ -4,15 +4,15 @@ management:
   docChecksum: 3b6f1a380e7993f2fb5eaa45d492f366
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 0.4.1
-  configChecksum: 27ba374eb29104301c322e542309cd92
+  generationVersion: 2.258.2
+  releaseVersion: 0.4.2
+  configChecksum: 38858905603b452bdb4f567b00ed26cf
   repoURL: https://github.com/speakeasy-sdks/wingspan-sample-sdk.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/wingspan-sample-sdk
 features:
   typescript:
-    core: 3.4.1
+    core: 3.4.7
     globalSecurity: 2.82.2
     globalServerURLs: 2.82.1
 generatedFiles:

@@ -8,7 +8,6 @@ import { Expose, Type } from "class-transformer";
 
 export enum Partner {
     Usa = "USA",
-    LessThanNilGreaterThan = "<nil>",
 }
 
 export enum PlanType {
