@@ -1,6 +1,6 @@
 {
   "name": "Wingspan-Users-API",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "author": "wingspan",
   "scripts": {
     "prepare": "tsc --build",
